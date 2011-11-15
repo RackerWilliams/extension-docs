@@ -1,0 +1,5 @@
+AddType application/x-httpd-cgi .cgi
+Options +ExecCGI
+AddHandler cgi-script .cgi .pl
+DirectoryIndex index.cgi
+
