@@ -1,17 +1,32 @@
 #!/usr/bin/perl
 use CGI::Carp 'fatalsToBrowser';
 use File::Spec;
+use POSIX qw(strftime);
 
 ##
 ##  The template currently only supports 4 sections.  The directories
 ##  are expected to be relative to the script path. The names are used
-##  for the section titles. Text, contians the actual template text to
-##  filled in by the AddTemplateText sub.
+##  for the section titles. 
 ##
-@template_data = ({dir => "compute", name => "Compute",        text => ""},
-                  {dir => "auth",    name => "Identity",       text => ""},
-                  {dir => "network", name => "Network",        text => ""},
-                  {dir => "lb",      name => "Load Balancing", text => ""});
+if (!scalar(@template_data)) {
+    @template_data = ({dir => "compute", name => "Compute"},
+                      {dir => "auth",    name => "Identity"},
+                      {dir => "network", name => "Network"},
+                      {dir => "lb",      name => "Load Balancing"});
+}
+
+##
+##  How often to scan the directory for new updates, in seconds. Note
+##  that this is only going to work if you're using mod_perl, if
+##  mod_perl is not used the directory will be scanned with every
+##  request.  The update is per-perl process.
+##
+$update_every = 600; # 10 Mins.
+
+##
+##  The current time
+##
+$current_time = time();
 
 ##
 ##  Walk through the template_data and fill in the template text.
@@ -50,8 +65,19 @@ sub GetScriptDirectory() {
 ##
 ##  Add the template text (if nessasary)...
 ##
+if (!$last_update ||
+    ($current_time - $last_update) > $update_every) {
 
-AddTemplateText();
+    ##
+    ##  Update the, last update time.
+    ##
+    $last_update = $current_time;
+    my $tz = strftime("%z", localtime($last_update));
+    $tz =~ s/(\d{2})(\d{2})/$1:$2/;
+    $last_update_txt = strftime("%Y-%m-%dT%H:%M:%S", localtime($last_update)) . $tz;
+
+    AddTemplateText();
+}
 
 ##
 ##  Print the actual output
@@ -246,8 +272,9 @@ Content-type: text/html
                <tt>mvn generate-sources</tt><br/>
             </li>          
         </ol>
-    </div></div>
+    </div>
+    </div>
     </body>
 </html>
-
+<!-- The extension directory was last scanned at $last_update_txt. -->
 EOT
