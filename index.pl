@@ -43,7 +43,7 @@ sub AddTemplateText() {
         closedir $dh;
 
         $text .= "<p class='tablehead'>$template_data[$i]{'name'}</p>";
-        foreach(@files) {
+        foreach(sort @files) {
             $text .=  "<a href='$template_data[$i]{'dir'}/${_}'>" . $_ . "</a><br/>";
         }
 
