@@ -1,0 +1,4 @@
+Redirect 301 /openstack-extensions/index.html http://docs.rackspacecloud.com/openstack-extensions/index.pl
+AddHandler cgi-script .pl
+Options +ExecCGI
+DirectoryIndex index.html
