@@ -77,16 +77,23 @@ sub AddTemplateText() {
             }
             my $ext_meta_file = File::Spec->catfile ($full_dir,$file,"content","ext_query.xml");
             if (-e $ext_meta_file) {
-                my $ext_meta = XML::LibXML::XPathContext->new(XML::LibXML->new->parse_file($ext_meta_file));
-                $ext_meta->registerNs ("os","http://docs.openstack.org/common/api/v1.0");
-                my $ext_name  = $ext_meta->findvalue('//os:extension[1]/@name');
-                my $ext_desc  = $ext_meta->findvalue('normalize-space(//os:extension[1]/os:description)');
-                my $ext_alias = $ext_meta->findvalue('//os:extension[1]/@alias');
+                eval {
+                    my $ext_meta = XML::LibXML::XPathContext->new(XML::LibXML->new->parse_file($ext_meta_file));
+                    $ext_meta->registerNs ("os","http://docs.openstack.org/common/api/v1.0");
+                    my $ext_name  = $ext_meta->findvalue('//os:extension[1]/@name');
+                    my $ext_desc  = $ext_meta->findvalue('normalize-space(//os:extension[1]/os:description)');
+                    my $ext_alias = $ext_meta->findvalue('//os:extension[1]/@alias');
 
-                $template_text .= "<para><a href='$template_data[$i]{'dir'}/$file'>" . $ext_name .
-                    " (" . $ext_alias . ")</a><br/>" . $ext_desc . "<br/></para><br/>";
+                    $template_text .= "<para><a href='$template_data[$i]{'dir'}/$file'>" . $ext_name .
+                        " (" . $ext_alias . ")</a><br/>" . $ext_desc . "<br/></para><br/>";
+                };
+                if ($@) {
+                    chomp $@;
+                    $template_text .= "\n\n<!-- ERROR : $@ -->\n";
+                    $template_text .=  "<a href='$template_data[$i]{'dir'}/$file'>" . $file . "</a><br/><br/>";
+                }
             } else {
-                $template_text .=  "<a href='$template_data[$i]{'dir'}/$file'>" . $file . "</a><br/>";
+                $template_text .=  "<a href='$template_data[$i]{'dir'}/$file'>" . $file . "</a><br/><br/>";
             }
         }
         $template_text .= "</div></div>";
