@@ -19,7 +19,7 @@ if (!$num_ext_types) {
 }
 
 ##
-##  The columns with their div id names.
+##  The columns with their div class names.
 ##
 if (!$num_columns) {
     @ext_columns = ("oedfirstcolumn", "oedsecondcolumn",
@@ -65,14 +65,14 @@ sub AddTemplateText() {
         my $next_max  = $files_per_column;
         my $col = 0;
         $template_text .= "<h3 class='subhead'>$template_data[$i]{'name'}</h3>";
-        $template_text .= "<div id='oedtable'>";
-        $template_text .= "<div id='$ext_columns[$col]'>";
+        $template_text .= "<div class='oedtable'>";
+        $template_text .= "<div class='$ext_columns[$col]'>";
         for (my $j=0; $j < $num_files; $j++)  {
             $file = $files[$j];
             if (($col+1 < $num_columns) && ($j >= $next_max)) {
                 $col++;
                 $template_text .= "</div>";
-                $template_text .= "<div id='$ext_columns[$col]'>";
+                $template_text .= "<div class='$ext_columns[$col]'>";
                 $next_max += $files_per_column;
             }
             my $ext_meta_file = File::Spec->catfile ($full_dir,$file,"content","ext_query.xml");
@@ -84,16 +84,16 @@ sub AddTemplateText() {
                     my $ext_desc  = $ext_meta->findvalue('normalize-space(//os:extension[1]/os:description)');
                     my $ext_alias = $ext_meta->findvalue('//os:extension[1]/@alias');
 
-                    $template_text .= "<para><a href='$template_data[$i]{'dir'}/$file'>" . $ext_name .
-                        " (" . $ext_alias . ")</a><br/>" . $ext_desc . "<br/></para><br/>";
+                    $template_text .= "<p><a href='$template_data[$i]{'dir'}/$file'>" . $ext_name .
+                        " (" . $ext_alias . ")</a><br>" . $ext_desc . "<br></p><br>";
                 };
                 if ($@) {
                     chomp $@;
                     $template_text .= "\n\n<!-- ERROR : $@ -->\n";
-                    $template_text .=  "<a href='$template_data[$i]{'dir'}/$file'>" . $file . "</a><br/><br/>";
+                    $template_text .=  "<a href='$template_data[$i]{'dir'}/$file'>" . $file . "</a><br><br>";
                 }
             } else {
-                $template_text .=  "<a href='$template_data[$i]{'dir'}/$file'>" . $file . "</a><br/><br/>";
+                $template_text .=  "<a href='$template_data[$i]{'dir'}/$file'>" . $file . "</a><br><br>";
             }
         }
         $template_text .= "</div></div>";
@@ -140,11 +140,11 @@ Content-type: text/html
     <html lang='en'>
         <head>
             <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-                <meta name='google-site-verification' content='Ip5yk0nd8yQHEo8I7SjzVfAiadlHvTvqQHLGwn1GFyU' />
+                <meta name='google-site-verification' content='Ip5yk0nd8yQHEo8I7SjzVfAiadlHvTvqQHLGwn1GFyU'>
                 <title>OpenStack Extensions Documentation</title>
                 
                 <!-- Google Fonts -->
-                <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin' rel='stylesheet' type='text/css'>
+                <link href='http://fonts.googleapis.com/css?family=PT+Sans&amp;subset=latin' rel='stylesheet' type='text/css'>
                     
                     <!-- Framework CSS -->
                     <link rel='stylesheet' href='http://openstack.org/themes/openstack/css/blueprint/screen.css' type='text/css' media='screen, projection'>
@@ -172,8 +172,32 @@ Content-type: text/html
       })();
     
     </script>
-                                        
-                                        
+    <style type="text/css">
+    .oedtable{
+        position:relative;
+        width:120%
+        }
+    .oedfirstcolumn,.oedsecondcolumn,.oedthirdcolumn,.oedfourthcolumn{
+       width:25%;
+       top:0;
+       }
+    .oedsecondcolumn{
+        position:absolute;
+        left:25%;
+    }
+    .oedthirdcolumn{
+        position:absolute;
+        left:50%;
+    }
+    .oedfourthcolumn{
+        position:absolute;
+        left:75%;
+    }
+    #logo a{background-image:url(images/built-for-openstack.png);height:170px}
+    div.searchArea{display:none;position:absolute;top:110px;left:65px;width:630px}
+    p.tablehead{font-size:1.2em;font-weight:bold;margin-bottom:0}
+    .span-16{width:800px}
+</style>
         </head>
         <body class='docshome' id='docshome'>  	
             
@@ -236,48 +260,9 @@ Content-type: text/html
     customSearchControl.draw('cse');
   }, true);
 </script></div>
-                <!--
-                    <link rel='stylesheet' href='http://www.google.com/cse/style/look/default.css' type='text/css' /> -->
-                <!-- <div id='cse' style='width: 100%;'>Loading</div>
-                    <script src='http://www.google.com/jsapi' type='text/javascript'></script>
-                    <script type='text/javascript'>
-                    google.load('search', '1', {language : 'en'});
-                    google.setOnLoadCallback(function() {
-                    var customSearchControl = new google.search.CustomSearchControl('011012898598057286222:elxsl505o0o');
-                    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-                    customSearchControl.draw('cse');
-                    }, true);
-                    </script>
-                    </div> -->
             </div>
 <div class='container'>
 <div id='extensions' class='span-16'>
-<style>
-    #oedtable{
-        position:relative;
-        width:120%
-        }
-    #oedfirstcolumn,#oedsecondcolumn,#oedthirdcolumn,#oedfourthcolumn{
-       width:25%;
-       top:0;
-       }
-    #oedsecondcolumn{
-        position:absolute;
-        left:25%;
-    }
-    #oedthirdcolumn{
-        position:absolute;
-        left:50%;
-    }
-    #oedfourthcolumn{
-        position:absolute;
-        left:75%;
-    }
-    #logo a{background-image:url(images/built-for-openstack.png);height:170px}
-    div.searchArea{display:none;position:absolute;top:110px;left:65px;width:630px}
-    p.tablehead{font-size:1.2em;font-weight:bold;margin-bottom:0}
-    .span-16{width:800px}
-</style>                
 <h2 class='head'>OpenStack Extensions Documentation</h2>  
     This page is for documentation of OpenStack extensions. For OpenStack extensions
         themselves, see <a href='#'>OpenStack Extensions</a> (doesn't exist yet).
@@ -301,8 +286,8 @@ Content-type: text/html
         to a name that fits your project</li>
             <li>Write your documentation in that file.
             </li>
-            <li>Test your documentation by, within the project directory, executing:<br/>
-               <tt>mvn generate-sources</tt><br/>
+            <li>Test your documentation by, within the project directory, executing:<br>
+               <tt>mvn generate-sources</tt><br>
             </li>          
         </ol>
     </div>
