@@ -2,19 +2,37 @@
 use CGI::Carp 'fatalsToBrowser';
 use File::Spec;
 use POSIX qw(strftime);
+use POSIX qw(ceil);
 use XML::LibXML;
 use XML::LibXML::XPathContext;
 
 ##
-##  The template currently only supports 4 sections.  The directories
-##  are expected to be relative to the script path. The names are used
-##  for the section titles. 
+##  The directories are expected to be relative to the split path
+##  @local_dir below. The names are used for the section titles.
 ##
-if (!scalar(@template_data)) {
-    @template_data = ({dir => "compute", name => "Compute"},
-                      {dir => "auth",    name => "Identity"},
-                      {dir => "network", name => "Network"},
-                      {dir => "lb",      name => "Load Balancing"});
+if (!$num_ext_types) {
+    @template_data = ({dir => "compute", name => "Compute Extensions"},
+                      {dir => "auth",    name => "Identity Extensions"},
+                      {dir => "network", name => "Network Extensions"},
+                      {dir => "lb",      name => "Load Balancing Extensions"});
+    $num_ext_types = scalar (@template_data);
+}
+
+##
+##  The columns with their div id names.
+##
+if (!$num_columns) {
+    @ext_columns = ("oedfirstcolumn", "oedsecondcolumn",
+                    "oedthirdcolumn", "oedfourthcolumn");
+    $num_columns = scalar(@ext_columns);
+}
+
+##
+## The directory where we scan for extensions as a split path.
+##
+
+if (!scalar(@local_dir)) {
+    @local_dir = File::Spec->splitpath(GetScriptDirectory());
 }
 
 ##
@@ -31,23 +49,33 @@ $update_every = 600; # 10 Mins.
 $current_time = time();
 
 ##
-##  Walk through the template_data and fill in the template text.
+##  Walk through the template_data and fill in the template_text
 ##
 sub AddTemplateText() {
-    my @local_dir = File::Spec->splitpath(GetScriptDirectory());
-    my $template_no = scalar (@template_data);
-    for (my $i=0; $i < $template_no; $i++) {
-        my $text = "";
+    $template_text = "";
+    for (my $i=0; $i < $num_ext_types; $i++) {
         my $full_dir = File::Spec->catpath($local_dir[0], $local_dir[1], $template_data[$i]{'dir'});
 
         opendir my($dh), $full_dir or die "Couldn't open dir '$full_dir' : $!";
-        my @files = grep { !/^\./ } readdir $dh; 
+        my @files = sort grep { !/^\./ } readdir $dh; 
         closedir $dh;
 
-        $text .= "<p class='tablehead'>$template_data[$i]{'name'}</p>";
-        foreach(sort @files) {
-            my $ext_meta_file = File::Spec->catfile ($full_dir,$_,"content","ext_query.xml");
-
+        my $num_files = scalar(@files);
+        my $files_per_column = ceil ($num_files / $num_columns);
+        my $next_max  = $files_per_column;
+        my $col = 0;
+        $template_text .= "<h3 class='subhead'>$template_data[$i]{'name'}</h3>";
+        $template_text .= "<div id='oedtable'>";
+        $template_text .= "<div id='$ext_columns[$col]'>";
+        for (my $j=0; $j < $num_files; $j++)  {
+            $file = $files[$j];
+            if (($col+1 < $num_columns) && ($j >= $next_max)) {
+                $col++;
+                $template_text .= "</div>";
+                $template_text .= "<div id='$ext_columns[$col]'>";
+                $next_max += $files_per_column;
+            }
+            my $ext_meta_file = File::Spec->catfile ($full_dir,$file,"content","ext_query.xml");
             if (-e $ext_meta_file) {
                 my $ext_meta = XML::LibXML::XPathContext->new(XML::LibXML->new->parse_file($ext_meta_file));
                 $ext_meta->registerNs ("os","http://docs.openstack.org/common/api/v1.0");
@@ -55,14 +83,13 @@ sub AddTemplateText() {
                 my $ext_desc  = $ext_meta->findvalue('normalize-space(//os:extension[1]/os:description)');
                 my $ext_alias = $ext_meta->findvalue('//os:extension[1]/@alias');
 
-                $text .= "<para><a href='$template_data[$i]{'dir'}/${_}' title='$ext_desc'>" . $ext_name .
+                $template_text .= "<para><a href='$template_data[$i]{'dir'}/$file'>" . $ext_name .
                     " (" . $ext_alias . ")</a><br/>" . $ext_desc . "<br/></para><br/>";
             } else {
-                $text .=  "<a href='$template_data[$i]{'dir'}/${_}'>" . $_ . "</a><br/>";
+                $template_text .=  "<a href='$template_data[$i]{'dir'}/$file'>" . $file . "</a><br/>";
             }
         }
-
-        $template_data[$i]{'text'} = $text;
+        $template_text .= "</div></div>";
     }
 }
 
@@ -247,28 +274,13 @@ Content-type: text/html
 <h2 class='head'>OpenStack Extensions Documentation</h2>  
     This page is for documentation of OpenStack extensions. For OpenStack extensions
         themselves, see <a href='#'>OpenStack Extensions</a> (doesn't exist yet).
-        <h3 class='subhead'>Document List</h3>
-    <div id='oedtable'>
-    <div id='oedfirstcolumn'>
-           $template_data[0]{'text'}
-    </div>
-    <div id='oedsecondcolumn'>
-           $template_data[1]{'text'}
-    </div>
-    <div id='oedthirdcolumn'>
-           $template_data[2]{'text'}
-    </div>
-    <div id='oedfourthcolumn'>
-           $template_data[3]{'text'}
-    </div>
-    </div>
+        $template_text
     </div><div id='submit_extensions' class='span-16'>
-<br/><br/>
-        <h4 class='head'>Submitting a new Extension Document</h3>
+        <h4 class='head'>Submitting a new Extension Document</h4>
         <p>For your document source, you can use our recommended formats (DocBook or ReStructured Text) or whatever you want.  Please submit your HTML output,
             eiher as a single HTML file or a directory, by zipping it up and emailing it to <a href='mailto:extensions\@openstack.org'>extensions\@openstack.org</a>.</p>
 
-        <h4 class='head'>Starting a New Extensions Document</h3>
+        <h4 class='head'>Starting a New Extensions Document</h4>
         <p>Although you can use any format, using our docbook template ensures your document will merge seemlessly into the documentaiton system.
             Click here to download the <a href='openstack-extension-template.zip'>docbook template</a> (zip file).
         </p>
