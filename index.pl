@@ -64,6 +64,7 @@ sub AddTemplateText() {
         my $files_per_column = ceil ($num_files / $num_columns);
         my $next_max  = $files_per_column;
         my $col = 0;
+        $template_text .= "<div class='oedextsection'>";
         $template_text .= "<h3 class='subhead'>$template_data[$i]{'name'}</h3>";
         $template_text .= "<div class='oedtable'>";
         $template_text .= "<div class='$ext_columns[$col]'>";
@@ -84,19 +85,19 @@ sub AddTemplateText() {
                     my $ext_desc  = $ext_meta->findvalue('normalize-space(//os:extension[1]/os:description)');
                     my $ext_alias = $ext_meta->findvalue('//os:extension[1]/@alias');
 
-                    $template_text .= "<p><a href='$template_data[$i]{'dir'}/$file'>" . $ext_name .
-                        " (" . $ext_alias . ")</a><br>" . $ext_desc . "<br></p><br>";
+                    $template_text .= "<div class='oedextension'><div class='oedtitle'><a href='$template_data[$i]{'dir'}/$file'>" . $ext_name .
+                        " (" . $ext_alias . ")</a></div>" . $ext_desc . "</div><br>";
                 };
                 if ($@) {
                     chomp $@;
                     $template_text .= "\n\n<!-- ERROR : $@ -->\n";
-                    $template_text .=  "<a href='$template_data[$i]{'dir'}/$file'>" . $file . "</a><br><br>";
+                    $template_text .=  "<div class='oedextension'><div class='oedtitle'><a href='$template_data[$i]{'dir'}/$file'>" . $file . "</a></div></div>";
                 }
             } else {
-                $template_text .=  "<a href='$template_data[$i]{'dir'}/$file'>" . $file . "</a><br><br>";
+                $template_text .=  "<div class='oedextension'><div class='oedtitle'><a href='$template_data[$i]{'dir'}/$file'>" . $file . "</a></div></div>";
             }
         }
-        $template_text .= "</div></div>";
+        $template_text .= "</div></div></div>";
     }
 }
 
@@ -192,6 +193,14 @@ Content-type: text/html
     .oedfourthcolumn{
         position:absolute;
         left:75%;
+    }
+   .oedextension {
+      margin: 0;
+      padding: .5em;
+    }
+    .oedextsection {
+      margin-bottom: 1.5em;
+      padding-bottom: 1.5em;
     }
     #logo a{background-image:url(images/built-for-openstack.png);height:170px}
     div.searchArea{display:none;position:absolute;top:110px;left:65px;width:630px}
