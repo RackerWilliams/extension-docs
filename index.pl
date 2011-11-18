@@ -2,6 +2,8 @@
 use CGI::Carp 'fatalsToBrowser';
 use File::Spec;
 use POSIX qw(strftime);
+use XML::LibXML;
+use XML::LibXML::XPathContext;
 
 ##
 ##  The template currently only supports 4 sections.  The directories
@@ -44,7 +46,20 @@ sub AddTemplateText() {
 
         $text .= "<p class='tablehead'>$template_data[$i]{'name'}</p>";
         foreach(sort @files) {
-            $text .=  "<a href='$template_data[$i]{'dir'}/${_}'>" . $_ . "</a><br/>";
+            my $ext_meta_file = File::Spec->catfile ($full_dir,$_,"content","ext_query.xml");
+
+            if (-e $ext_meta_file) {
+                my $ext_meta = XML::LibXML::XPathContext->new(XML::LibXML->new->parse_file($ext_meta_file));
+                $ext_meta->registerNs ("os","http://docs.openstack.org/common/api/v1.0");
+                my $ext_name  = $ext_meta->findvalue('//os:extension[1]/@name');
+                my $ext_desc  = $ext_meta->findvalue('normalize-space(//os:extension[1]/os:description)');
+                my $ext_alias = $ext_meta->findvalue('//os:extension[1]/@alias');
+
+                $text .= "<para><a href='$template_data[$i]{'dir'}/${_}' title='$ext_desc'>" . $ext_name .
+                    " (" . $ext_alias . ")</a><br/>" . $ext_desc . "<br/></para><br/>";
+            } else {
+                $text .=  "<a href='$template_data[$i]{'dir'}/${_}'>" . $_ . "</a><br/>";
+            }
         }
 
         $template_data[$i]{'text'} = $text;
