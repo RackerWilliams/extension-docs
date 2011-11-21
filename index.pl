@@ -273,8 +273,8 @@ Content-type: text/html
 <div class='container'>
 <div id='extensions' class='span-16'>
 <h2 class='head'>OpenStack Extensions Documentation</h2>  
-    This page is for documentation of OpenStack extensions. For OpenStack extensions
-        themselves, see <a href='#'>OpenStack Extensions</a> (doesn't exist yet).
+    This page is for documentation of OpenStack extensions. For documentation on the OpenStack extension mechinism 
+    itself, see <a href='apix-intro/'>OpenStack Extensions</a>.
         $template_text
     </div><div id='submit_extensions' class='span-16'>
         <h4 class='head'>Submitting a new Extension Document</h4>
