@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:exsl="http://exslt.org/common" xmlns:ng="http://docbook.org/docbook-ng"><head>
+<meta http-equiv="X-UA-Compatible" content="IE=7"/>
+<title>3.1.3. Extension Metadata</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OpenStack API Extensions"/><link rel="up" href="IdentifyingExtensions.html" title="3.1. Identifying Extensions"/><link rel="prev" href="GET___v1_extensions__alias__IdentifyingExtensions.html" title="3.1.2. Get Extension"/><link rel="next" href="ch03s02.html" title="3.2. What can be extended and how"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
+            //The id for tree cookie
+            var treeCookieId = "treeview-1172";
+            var language = "en";
+            var w = new Object();
+            //Localization
+            txt_filesfound = 'Results';
+            txt_enter_at_least_1_char = "You must enter at least one character.";
+            txt_browser_not_supported = "Your browser is not supported. Use of Mozilla Firefox is recommended.";
+            txt_please_wait = "Please wait. Search in progress...";
+            txt_results_for = "Results for: ";
+        </script><style type="text/css">
+            input {
+            margin-bottom: 5px;
+            margin-top: 2px;
+            }
+
+            .folder {
+            display: block;
+            height: 22px;
+            padding-left: 20px;
+            background: transparent url(../common/jquery/treeview/images/folder.gif) 0 0px no-repeat;
+            }
+            
+        </style><link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/><link rel="stylesheet" type="text/css" href="../common/css/positioning.css"/><link rel="stylesheet" type="text/css" href="../common/css/custom.css"/><link href="../atom.xml" type="application/atom+xml" rel="alternate" title="Document ATOM Feed"/><link rel="canonical" href="http://docs.rackspacecloud.com/openstack-extensions/apix-intro/content/ExtensionMeta.html"/><!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="../common/css/ie.css"/>
+	<![endif]--><link rel="stylesheet" type="text/css" href="../common/jquery/theme-redmond/jquery-ui-1.8.2.custom.css"/><link rel="stylesheet" type="text/css" href="../common/jquery/treeview/jquery.treeview.css"/><script type="text/javascript" src="../common/jquery/jquery-1.4.3.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery-ui-1.8.2.custom.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery.cookie.js"><!----></script><script type="text/javascript" src="../common/jquery/treeview/jquery.treeview.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery.qtip-1.0.0-rc3/jquery.qtip-1.0.0-rc3.min.js"><!--jQuery plugin for glossary popups. --></script><script type="text/javascript" src="search/htmlFileList.js"><!----></script><script type="text/javascript" src="search/htmlFileInfoList.js"><!----></script><script type="text/javascript" src="search/nwSearchFnt.js"><!----></script><script type="text/javascript" src="search/stemmers/en_stemmer.js"><!--//make this scalable to other languages as well.--></script><script type="text/javascript" src="search/index-1.js"><!----></script><script type="text/javascript" src="search/index-2.js"><!----></script><script type="text/javascript" src="search/index-3.js"><!----></script></head><body><div id="header"><a onclick="_gaq.push(['_trackEvent', 'Header', 'logo', 'click', 1]);" target="_blank" href="http://www.openstack.org"><img src="../common/images/openstack-logo.png" alt="OpenStack Documentation" width="157" height="47"/></a><h1>3.1.3. Extension Metadata</h1><div id="navheader" align="right"><!----><table class="navLinks"><tr><td><a id="showHideButton" onclick="showHideToc(); _gaq.push(['_trackEvent', 'Header', 'show/hide', 'click', 1]);" class="pointLeft" title="Hide TOC tree">Sidebar
+                            </a></td><td><a accesskey="p" class="navLinkPrevious" onclick="_gaq.push(['_trackEvent', 'Header', 'prevLink', 'click', 1]);" tabindex="5" href="GET___v1_extensions__alias__IdentifyingExtensions.html">Prev</a>
+				      |
+                                        <a accesskey="u" class="navLinkUp" onclick="_gaq.push(['_trackEvent', 'Header', 'upLink', 'click', 1]);" tabindex="5" href="IdentifyingExtensions.html">Up</a>
+				  |
+                                    <a accesskey="n" class="navLinkNext" onclick="_gaq.push(['_trackEvent', 'Header', 'nextLink', 'click', 1]);" tabindex="5" href="ch03s02.html">Next</a></td></tr></table></div></div><div id="toolbar" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><div id="toolbar-left"><p class="breadcrumbs"><a href="http://docs.openstack.org/">OpenStack Manuals</a><a href="index.html">OpenStack API Extensions</a></p><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" alt="Download a pdf of this document" class="pdficon" href="apix-intro.pdf"><img src="../common/images/pdf.png"/></a>
+       
+      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext">DRAFT -  DRAFT -  DRAFT -  DRAFT -  DRAFT -  DRAFT -  DRAFT -  DRAFT - </div><div class="section"><div xmlns="" class="titlepage"><div><div><h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="ExtensionMeta"/>3.1.3. Extension Metadata</h3></div></div></div><p>
+                The extension queries described above return basic
+                metadata about an API's extensions. Clients can depend
+                on the metadata described in the following example.
+            </p><div class="example"><a id="d6e339"/><p class="title"><strong>Example 3.5. Extension Metadata: XML</strong></p><div class="example-contents"><div class="programlistingco"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;extension xmlns="http://docs.openstack.org/common/api/v1.0"
+           xmlns:atom="http://www.w3.org/2005/Atom"
+  <span xmlns="" class="co" id="query.human-readable.name"><img src="../common/images/callouts/1.png" alt="(1)"/></span>         name="Backup Schedule Extension"
+  <span xmlns="" class="co" id="query.vendor.namespace"><img src="../common/images/callouts/2.png" alt="(2)"/></span>         namespace="http://docs.rackspace.com/servers/api/ext/backup/v1.0"
+  <span xmlns="" class="co" id="query.vendor.alias"><img src="../common/images/callouts/3.png" alt="(3)"/></span>         alias="RAX-BAK"
+  <span xmlns="" class="co" id="query.updated"><img src="../common/images/callouts/4.png" alt="(4)"/></span>         updated="2011-09-12T10:40:00-04:00"&gt;
+    &lt;description&gt;
+  <span xmlns="" class="co" id="query.human-readable.description"><img src="../common/images/callouts/5.png" alt="(5)"/></span>      Allows the schedule of periodic (daily and
+        weekly) images from a server.
+    &lt;/description&gt;
+  <span xmlns="" class="co" id="query.docs"><img src="../common/images/callouts/6.png" alt="(6)"/></span>  &lt;atom:link rel="describedby" type="application/pdf"
+               href="http://docs.rackspacecloud.com/servers/api/ext/rax-backup.pdf"/&gt;
+    &lt;atom:link rel="describedby" type="application/xml"
+               href="http://docs.rackspacecloud.com/servers/api/ext/rax-backup/rax-backup.wadl"/&gt;
+&lt;/extension&gt;
+</pre></div></div></div><br class="example-break"/><div class="example"><a id="d6e350"/><p class="title"><strong>Example 3.6. Extension Metadata: JSON</strong></p><div class="example-contents"><div class="programlistingco"><pre class="programlisting">{
+    "extension": {
+  <span xmlns="" class="co" id="json.query.human-readable.name"><img src="../common/images/callouts/1.png" alt="(1)"/></span>      "name": "Backup Schedule Extension",
+  <span xmlns="" class="co" id="json.query.vendor.namespace"><img src="../common/images/callouts/2.png" alt="(2)"/></span>      "namespace": "http://docs.rackspace.com/servers/api/ext/backup/v1.0",
+  <span xmlns="" class="co" id="json.query.vendor.alias"><img src="../common/images/callouts/3.png" alt="(3)"/></span>      "alias": "RAX-BAK",
+  <span xmlns="" class="co" id="json.query.updated"><img src="../common/images/callouts/4.png" alt="(4)"/></span>      "updated": "2011-09-12T10:40:00-04:00",
+  <span xmlns="" class="co" id="json.query.human-readable.description"><img src="../common/images/callouts/5.png" alt="(5)"/></span>      "description": "Allows the schedule of periodic (daily and weekly) images from a server.",
+  <span xmlns="" class="co" id="json.query.docs"><img src="../common/images/callouts/6.png" alt="(6)"/></span>      "links": [
+            {
+                "rel": "describedby",
+                "type": "application/pdf",
+                "href": "http://docs.rackspacecloud.com/servers/api/ext/rax-backup.pdf"
+            },
+            {
+                "rel": "describedby",
+                "type": "application/xml",
+                "href": "http://docs.rackspacecloud.com/servers/api/ext/rax-backup/rax-backup.wadl"
+            }
+        ]
+    }
+}
+</pre></div></div></div><br class="example-break"/><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><img src="../common/images/callouts/1.png" alt="1" border="0"/></p></td><td valign="top" align="left"><p>
+                        A human readable name assigned to the extension.
+                    </p></td></tr><tr><td width="5%" valign="top" align="left"><p><img src="../common/images/callouts/2.png" alt="2" border="0"/></p></td><td valign="top" align="left"><p>
+                        A namespace that uniquely identifies the
+                        extension.  The namespace should be used when
+                        extending XML media types.
+                    </p></td></tr><tr><td width="5%" valign="top" align="left"><p><img src="../common/images/callouts/3.png" alt="3" border="0"/></p></td><td valign="top" align="left"><p>
+                        A short name that uniquely identifies the
+                        extension.  Extension aliases are prefixed
+                        with a vendor identifier, here
+                        <code class="code">RAX</code>, to prevent clashes between
+                        vendors.  Extension aliases are used when
+                        extending non-XML media types, headers,
+                        parameters, resources, actions, and states.
+                    </p></td></tr><tr><td width="5%" valign="top" align="left"><p><img src="../common/images/callouts/4.png" alt="4" border="0"/></p></td><td valign="top" align="left"><p>
+                        A timestamp indicating when the extension was
+                        last updated. The timestamp can be used to
+                        monitor changes to an extension while it's in
+                        development. 
+                    </p></td></tr><tr><td width="5%" valign="top" align="left"><p><img src="../common/images/callouts/5.png" alt="5" border="0"/></p></td><td valign="top" align="left"><p>
+                        A human readable description of the
+                        extension.
+                    </p></td></tr><tr><td width="5%" valign="top" align="left"><p><img src="../common/images/callouts/6.png" alt="6" border="0"/></p></td><td valign="top" align="left"><p>
+                        A collection of <code class="code">describedby</code> links
+                        that provide further details on the extension.
+                        At least on link  with a media type of
+                        <code class="code">application/pdf</code> is 
+                        required — these PDF links should point to a
+                        detailed human readable specification of the
+                        extension. Other  <code class="code">despriedby</code>
+                        Links are also allowed,  including links to WADLs and XSD
+                        and JSON Schema files.
+                    </p></td></tr></table></div></div><script type="text/javascript" src="../common/main.js"><!----></script><hr/><div class="legal"><a href="index.html">Legal notices</a></div></div><div><div id="leftnavigation" style="padding-top:3px; background-color:white;"><div id="tabs"><ul><li><a href="#treeDiv" tabindex="1"><span class="contentsTab">Contents</span></a></li><li><a href="#searchDiv" tabindex="1"><span class="searchTab">Search</span></a></li></ul><div id="treeDiv"><img src="../common/images/loading.gif" alt="loading table of contents..." id="tocLoading" style="display:block;"/><div id="ulTreeDiv" style="display:none" class="thisisthat"><ul id="tree" class="filetree"><li tabindex="2"><span class="file"><a href="Overview.html">1. Overview</a></span><ul><li tabindex="2"><span class="file"><a href="ch01s01.html">1.1. Intended Audience</a></span></li><li tabindex="2"><span class="file"><a href="ch01s02.html">1.2. Organization of this Document</a></span></li><li tabindex="2"><span class="file"><a href="ch01s03.html">1.3. Document Change History</a></span></li></ul></li><li tabindex="2"><span class="file"><a href="Background.html">2. Background</a></span><ul><li tabindex="2"><span class="file"><a href="ch02s01.html">2.1. What are Extensions?</a></span></li><li tabindex="2"><span class="file"><a href="ch02s02.html">2.2. Relationship to OpenGL</a></span></li><li tabindex="2"><span class="file"><a href="ch02s03.html">2.3. Extensions and Versions</a></span></li><li tabindex="2"><span class="file"><a href="ch02s04.html">2.4. Versioning Extensions</a></span></li><li tabindex="2"><span class="file"><a href="ch02s05.html">2.5. Extensions and Pluggability</a></span></li></ul></li><li tabindex="2"><span class="file"><a href="REST.html">3. Extensions and REST</a></span><ul><li tabindex="2"><span class="file"><a href="IdentifyingExtensions.html">3.1. Identifying Extensions</a></span><ul><li tabindex="2"><span class="file"><a href="GET___v1_extensions_IdentifyingExtensions.html">3.1.1. List Extensions</a></span></li><li tabindex="2"><span class="file"><a href="GET___v1_extensions__alias__IdentifyingExtensions.html">3.1.2. Get Extension</a></span></li><li tabindex="2" id="webhelp-currentid"><span class="file"><a href="ExtensionMeta.html">3.1.3. Extension Metadata</a></span></li></ul></li><li tabindex="2"><span class="file"><a href="ch03s02.html">3.2. What can be extended and how</a></span><ul><li tabindex="2"><span class="file"><a href="ch03s02s01.html">3.2.1. Adding new elements and attributes</a></span></li><li tabindex="2"><span class="file"><a href="NewResources.html">3.2.2. Adding new resources</a></span></li><li tabindex="2"><span class="file"><a href="ch03s02s03.html">3.2.3. Adding new parameters</a></span></li><li tabindex="2"><span class="file"><a href="ch03s02s04.html">3.2.4. Adding new headers</a></span></li><li tabindex="2"><span class="file"><a href="ch03s02s05.html">3.2.5. Adding support for a new HTTP verb</a></span></li><li tabindex="2"><span class="file"><a href="ch03s02s06.html">3.2.6. Adding new media types</a></span></li><li tabindex="2"><span class="file"><a href="ch03s02s07.html">3.2.7. Adding new actions</a></span></li><li tabindex="2"><span class="file"><a href="ch03s02s08.html">3.2.8. Adding new states</a></span></li><li tabindex="2"><span class="file"><a href="ch03s02s09.html">3.2.9. Adding other capabilities</a></span></li></ul></li></ul></li><li tabindex="2"><span class="file"><a href="Promotion.html">4. Extension Governance and Promotion</a></span><ul><li tabindex="2"><span class="file"><a href="ch04s01.html">4.1. Specification Governance and OpenStack Extensions</a></span></li><li tabindex="2"><span class="file"><a href="ch04s02.html">4.2. The Promotion Path</a></span></li><li tabindex="2"><span class="file"><a href="PromatableExtensions.html">4.3. Creating Extensions Likely to Be Promoted Into Core</a></span></li><li tabindex="2"><span class="file"><a href="Registry.html">4.4. The Extension Registry</a></span><ul><li tabindex="2"><span class="file"><a href="ch04s04s01.html">4.4.1. Benefits of a Centralized Registry</a></span></li><li tabindex="2"><span class="file"><a href="ch04s04s02.html">4.4.2. Extension Registration</a></span></li></ul></li></ul></li></ul></div></div><div id="searchDiv"><div id="search"><form onsubmit="Verifie(ditaSearch_Form);return false" name="ditaSearch_Form" class="searchForm"><fieldset class="searchFieldSet"><legend>Search</legend><center><input id="textToSearch" name="textToSearch" type="text" class="searchText"/> &nbsp; <input onclick="Verifie(ditaSearch_Form)" type="button" class="searchButton" value="Go" id="doSearch"/></center></fieldset></form></div><div id="searchResults"><center/></div><p class="searchHighlight"><a href="#" onclick="toggleHighlight()">Search Highlighter (On/Off)</a></p></div></div></div></div><script type="text/javascript" src="../common/jquery/jquery.qtip-1.0.0-rc3/jquery.qtip-1.0.0-rc3.min.js"><!--jQuery plugin for glossary popups. -->
+                   $('a[title]').qtip({ style: { name: 'cream', tip: true } })
+                </script></body></html>
