@@ -282,7 +282,7 @@ Content-type: text/html
             eiher as a single HTML file or a directory, by zipping it up and emailing it to <a href='mailto:extensions\@openstack.org'>extensions\@openstack.org</a>.</p>
 
         <h4 class='head'>Starting a New Extensions Document</h4>
-        <p>Although you can use any format, using our docbook template ensures your document will merge seemlessly into the documentaiton system.
+        <p>Although you can use any format, using our docbook template ensures your document will merge seamlessly into the documentation system.
             Click here to download the <a href='openstack-extension-template.zip'>docbook template</a> (zip file).
         </p>
         <p>You also need to have maven available.</p>
