@@ -100,13 +100,13 @@ function syncToc(){
             //Setting the background for selected node.
             var style = a.getAttribute("style", 2);
             if (style != null && !style.match(/background-color: Background;/)) {
-                a.setAttribute("style", "background-color: #D8D8D8;  " + style);
+                a.setAttribute("style", "background-color: #DEE9E9;  " + style);
                 b.setAttribute("style", "color: black;");
             } else if (style != null) {
-                a.setAttribute("style", "background-color: #D8D8D8;  " + style);
+                a.setAttribute("style", "background-color: #DEE9E9;  " + style);
                 b.setAttribute("style", "color: black;");
             } else {
-                a.setAttribute("style", "background-color: #D8D8D8;  ");
+                a.setAttribute("style", "background-color: #DEE9E9;  ");
                 b.setAttribute("style", "color: black;");
             }
         }

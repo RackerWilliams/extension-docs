@@ -16,7 +16,7 @@ span.off     {  }
 body { font: 12px Verdana, Geneva, sans-serif; }
 p, ul, ol, li { font: 10pt Verdana, Geneva, sans-serif; }
 h1 { font: 15pt Arial, Helvetica, geneva;
-     color: black!important!;
+	color: #cf2f19;
 }
 h2 { font: normal 12pt Arial, Helvetica, geneva;
 	color: black!important;
@@ -25,19 +25,14 @@ h2 { font: normal 12pt Arial, Helvetica, geneva;
 #header {
     position: fixed;
     width: 100%;
-    height: 97px;
+    height: 95px;
     top: 0;
     right: 0;
     bottom: auto;
     left: 0;
     border-bottom: 1px solid #bbc4c5;
     z-index: 2000;
-    background: #282828 url("../images/main_bg_fade.png") top left no-repeat;
-}
-
-#header h1 {
-    color: #fff;
-    margin-left: 310px;
+	background: white url(../images/book_open.png) no-repeat 250px center;
 }
 
 #header h1, p.breadcrumbs {
@@ -46,8 +41,8 @@ h2 { font: normal 12pt Arial, Helvetica, geneva;
 }
 
 #header img {
-    float: left;
-    margin-left: 20px;
+	float: left;
+	margin-left: 20px;
     margin-top: 22px;
 }
 
@@ -63,6 +58,7 @@ h2 { font: normal 12pt Arial, Helvetica, geneva;
     top: 92px;
 }
 
+
 #leftnavigation {
     overflow: auto;
     position: fixed;
@@ -74,7 +70,7 @@ h2 { font: normal 12pt Arial, Helvetica, geneva;
     z-index: 1500;
     border-right:1px solid #bbc4c5;
     padding: 0px;
-    background-color: #f0f0f0!important;
+	background-color: #f2f7f7!important;
 }
 
 #treeDiv {
@@ -118,14 +114,11 @@ h2 { font: normal 12pt Arial, Helvetica, geneva;
 
 #navheader {
     position: fixed;
-    background: #fff;
-    border-radius: 5px 0px 0px 5px;
-    padding-left: 10px;
-    right: 0px;
-    top: 37px;
+    top: 65px;
+    right:4px;
 }
 
-#content h1, #content h2 { color: black; }
+#content h1, #content h2 { color: #cc0000; }
 .navfooter { bottom: 2%; }
 .highlight { background-color: #c5d3c3; }
 .highlightButton{ font-size: 0; }
@@ -279,11 +272,10 @@ a#showHideButton {
 	background: url(../images/sidebar.png) no-repeat left center;
 }
 
-	
 .filetree li span a { color: #777; }
 
 #treediv { -webkit-box-shadow: #CCC 0px 1px 2px 0px inset; }
-
+	
 .legal, .legal *{
  color: #555;
  text-align: center;
@@ -312,6 +304,7 @@ tr th, tr th .internal, tr th .added, tr th .changed
 	text-align: left;
 	}
 
+
 .statustext{
     position:fixed;
     top:105px;
@@ -322,8 +315,8 @@ tr th, tr th .internal, tr th .added, tr th .changed
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     white-space: nowrap;
-    color: red;
-    font-weight: bold;
+    color: red; 
+    font-weight: bold; 
     font-size: 2em;
     margin-top: 30px;
     }
@@ -361,7 +354,6 @@ body #content {
     position: fixed;
     top: 35px;
     left: -15px;
-    color: white!important;
 }
 
 body.sidebar #toolbar{
@@ -374,7 +366,7 @@ body.sidebar #toolbar-left{
 
 div#toolbar-left img {
     vertical-align: text-top;
-}
+    }
 
 
 div.note *, div.caution *, div.important *, div.tip *, div.warning *, div.calloutlist * {
