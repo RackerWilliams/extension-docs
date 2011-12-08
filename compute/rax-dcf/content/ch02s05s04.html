@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
 <title>2.5.4. Changes to 4.3.4 Resize Server - OpenStack Compute Disk Configuration Extension</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OpenStack Compute Disk Configuration Extension"/><link rel="up" href="ch02s05.html" title="2.5.  Changes to the OpenStack Compute API"/><link rel="prev" href="ch02s05s03.html" title="2.5.3. Changes to 4.3.3 Rebuild Server"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-365";
+            var treeCookieId = "treeview-388";
             var language = "en";
             var w = new Object();
             //Localization
@@ -37,11 +37,15 @@
 				      |
                                         <a accesskey="u" class="navLinkUp" onclick="_gaq.push(['_trackEvent', 'Header', 'upLink', 'click', 1]);" tabindex="5" href="ch02s05.html">Up</a></td></tr></table></div></div><div id="toolbar" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><div id="toolbar-left"><p class="breadcrumbs"><a href="http://docs.rackspace.com/api/">Rackspace Manuals</a><a href="index.html">OpenStack Compute Disk Configuration Extension</a></p><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" alt="Download a pdf of this document" class="pdficon" href="rax-dcf.pdf"><img src="../common/images/pdf.png"/></a>
        
-      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext"> </div><div class="section"><div xmlns="" class="titlepage"><div><div><h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="d6e213"/>2.5.4. Changes to 4.3.4 Resize Server</h3></div></div></div><p>
+      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext"> </div><div class="section"><div xmlns="" class="titlepage"><div><div><h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="d6e232"/>2.5.4. Changes to 4.3.4 Resize Server</h3></div></div></div><p>
                   The <span class="property">diskConfig</span> attribute may be
                   set when resizing a server.  This gives the ability
                   to change the value of the attribute when scaling a
                   server up or down.
+              </p><p>
+                  Note that if the <span class="property">diskConfig</span>
+                  attribute is not set during the resize, the original
+                  value of the attribute will be retained.
               </p><div class="example"><a id="xmlserverrsize"/><p class="title"><strong>Example 2.9. Action Resize With DiskConfig: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;resize
     xmlns="http://docs.openstack.org/compute/api/v1.1"

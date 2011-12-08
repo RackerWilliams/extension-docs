@@ -3,7 +3,35 @@
    <link href="http://docs.rackspacecloud.com/openstack-extensions/compute/rax-dcf/atom.xml" rel="self"/>
    <link href="http://docs.rackspacecloud.com/openstack-extensions/compute/rax-dcf/content/index.html"/>
    <id/>
-   <updated>2011-12-08T05:47:52-06:00</updated>
+   <updated>2011-12-08T06:36:44-06:00</updated>
+   <entry>
+      <title>2011-12-08</title>
+      <link href="http://docs.rackspacecloud.com/openstack-extensions/compute/rax-dcf/content/index.html" type="text/html"/>
+      <id>-2011-12-08</id>
+      <updated>2011-12-08</updated>
+      <content type="xhtml">
+         <div xmlns="http://www.w3.org/1999/xhtml">
+                
+            <div class="itemizedlist">
+               <ul class="itemizedlist" compact="compact" type="disc">
+                  <li class="listitem">
+                     <p>
+                            Noted what happened when the diskConfig
+                            attribute is not set on server rebuild and
+                            resize.
+                        </p>
+                  </li>
+                  <li class="listitem">
+                     <p>
+                            Fixed a few minor spelling errors.
+                        </p>
+                  </li>
+               </ul>
+            </div>
+            
+         </div>
+      </content>
+   </entry>
    <entry>
       <title>2011-09-27</title>
       <link href="http://docs.rackspacecloud.com/openstack-extensions/compute/rax-dcf/content/index.html" type="text/html"/>
