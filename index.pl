@@ -211,7 +211,6 @@ Content-type: text/html
         <body class='docshome' id='docshome'>  	
             
             <div class='container'>
-                <p><i>This page temporarily located on rackspace.com.  It will move to the OpenStack site eventually.</i></p>
                 <div id='header'> 
                     <div class='span-5'> 
                         <h1 id='logo'><a href='http://www.openstack.org/'>Open Stack</a></h1> 
