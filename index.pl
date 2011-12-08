@@ -277,27 +277,11 @@ Content-type: text/html
         $template_text
     </div><div id='submit_extensions' class='span-16'>
         <h4 class='head'>Submitting a new Extension Document</h4>
-        <p>For your document source, you can use our recommended formats (DocBook or ReStructured Text) or whatever you want.  Please submit your HTML output,
-            eiher as a single HTML file or a directory, by zipping it up and emailing it to <a href='mailto:extensions\@openstack.org'>extensions\@openstack.org</a>.</p>
+        <p>We accept exension documentaiton in our recommended formats (DocBook or ReStructured Text) or whatever you want.  Please submit your documentation to <a href='mailto:extensions\@openstack.org'>extensions\@openstack.org</a>.  You may also provide us with a direct link to your docs.</p>
 
         <h4 class='head'>Starting a New Extensions Document</h4>
-        <p>Although you can use any format, using our docbook template ensures your document will merge seamlessly into the documentation system.
-            Click here to download the <a href='openstack-extension-template.zip'>docbook template</a> (zip file).
+        <p>Although you can use any format, using our <a href='https://github.com/RackerWilliams/extension-doc-templates/tree/master/docbook'>DocBook template</a> ensures your document will merge seamlessly into the documentation system. There is also an <a href="https://github.com/RackerWilliams/extension-doc-templates/tree/master/rst">RST template</a> available. You can find the <a href="https://github.com/RackerWilliams/extension-doc-templates">templates</a> on GitHub.
         </p>
-        <p>You also need to have maven available.</p>
-        <p>  
-            The zip file contains an entire template project. 
-            To create your project, </p>
-        <ol>
-            <li>Modify the POM file to specify your project's name.</li>
-            <li>Rename <tt>src/main/resources/ext_template.xml</tt> 
-        to a name that fits your project</li>
-            <li>Write your documentation in that file.
-            </li>
-            <li>Test your documentation by, within the project directory, executing:<br>
-               <tt>mvn generate-sources</tt><br>
-            </li>          
-        </ol>
     </div>
     </div>
     </body>
