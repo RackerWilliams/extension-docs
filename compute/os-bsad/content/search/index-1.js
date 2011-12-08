@@ -1,5 +1,6 @@
 var indexerLanguage="en";
 //Auto generated index for searching.
+w["-"]="0,1,2,3,4,5,6,7,8,9";
 w["0"]="0,4,7,8,9";
 w["00"]="0,7";
 w["00426eee-0fa5-11e1-a56e-dbed44d02223"]="9";
@@ -68,7 +69,7 @@ w["api"]="0,4,7,8,9";
 w["applic"]="0";
 w["associ"]="4";
 w["atom"]="0,7";
-w["attach"]="0,2,6,8";
+w["attach"]="0,1,2,3,4,5,6,7,8,9";
 w["attach-volum"]="8";
 w["attachnotallow"]="4,8";
 w["attribut"]="4";

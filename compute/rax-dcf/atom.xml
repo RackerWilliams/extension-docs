@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
-   <title>OpenStack Compute Disk Configuration Extension revision history</title>
+   <title>OpenStack Compute Disk Configuration Extension  revision history</title>
    <link href="http://docs.rackspacecloud.com/openstack-extensions/compute/rax-dcf/atom.xml" rel="self"/>
    <link href="http://docs.rackspacecloud.com/openstack-extensions/compute/rax-dcf/content/index.html"/>
    <id/>
-   <updated>2011-11-17T17:06:59-06:00</updated>
+   <updated>2011-12-08T05:47:52-06:00</updated>
    <entry>
       <title>2011-09-27</title>
       <link href="http://docs.rackspacecloud.com/openstack-extensions/compute/rax-dcf/content/index.html" type="text/html"/>

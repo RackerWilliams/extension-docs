@@ -3,9 +3,9 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:exsl="http://exslt.org/common" xmlns:ng="http://docbook.org/docbook-ng"><head>
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
-<title>2.3.2.2.2. Update Backup Name</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OpenStack Compute Block Storage Extension"/><link rel="up" href="ch02s03s02s02.html" title="2.3.2.2. Backup Opreations"/><link rel="prev" href="POST_createBackup_v1.1__tenantId__OS-BS_backups_.html" title="2.3.2.2.1. Create Backup"/><link rel="next" href="GET_getBackup_v1.1__tenantId__OS-BS_backups__id__.html" title="2.3.2.2.3. Get Backup Details"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
+<title>2.3.2.2.2. Update Backup Name - OpenStack Compute Block Storage Extension</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OpenStack Compute Block Storage Extension"/><link rel="up" href="ch02s03s02s02.html" title="2.3.2.2. Backup Opreations"/><link rel="prev" href="POST_createBackup_v1.1__tenantId__OS-BS_backups_.html" title="2.3.2.2.1. Create Backup"/><link rel="next" href="GET_getBackup_v1.1__tenantId__OS-BS_backups__id__.html" title="2.3.2.2.3. Get Backup Details"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-326";
+            var treeCookieId = "treeview-324";
             var language = "en";
             var w = new Object();
             //Localization
@@ -37,10 +37,9 @@
 				      |
                                         <a accesskey="u" class="navLinkUp" onclick="_gaq.push(['_trackEvent', 'Header', 'upLink', 'click', 1]);" tabindex="5" href="ch02s03s02s02.html">Up</a>
 				  |
-                                    <a accesskey="n" class="navLinkNext" onclick="_gaq.push(['_trackEvent', 'Header', 'nextLink', 'click', 1]);" tabindex="5" href="GET_getBackup_v1.1__tenantId__OS-BS_backups__id__.html">Next</a></td></tr></table></div></div><div id="toolbar" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><div id="toolbar-left"><p class="breadcrumbs"><a href="http://docs.rackspace.com/api/">Rackspace Manuals</a><a href="index.html">OpenStack Compute Block Storage Extension
-   - EXT v1.0</a></p><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" alt="Download a pdf of this document" class="pdficon" href="os-bs.pdf"><img src="../common/images/pdf.png"/></a>
+                                    <a accesskey="n" class="navLinkNext" onclick="_gaq.push(['_trackEvent', 'Header', 'nextLink', 'click', 1]);" tabindex="5" href="GET_getBackup_v1.1__tenantId__OS-BS_backups__id__.html">Next</a></td></tr></table></div></div><div id="toolbar" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><div id="toolbar-left"><p class="breadcrumbs"><a href="http://docs.rackspace.com/api/">Rackspace Manuals</a><a href="index.html">OpenStack Compute Block Storage Extension</a></p><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" alt="Download a pdf of this document" class="pdficon" href="os-bs.pdf"><img src="../common/images/pdf.png"/></a>
        
-      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext"> </div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="PUT_updateBackup_v1.1__tenantId__OS-BS_backups__id__"/>2.3.2.2.2. Update Backup Name</h5></div></div></div><table rules="all" id="d7e2031"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}</code></td><td>
+      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext"> </div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="PUT_updateBackup_v1.1__tenantId__OS-BS_backups__id__"/>2.3.2.2.2. Update Backup Name</h5></div></div></div><table rules="all" id="d7e2030"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}</code></td><td>
                 Update the specified backup's name.
             </td></tr></tbody></table><p>
                     Normal Response Code(s):
@@ -56,7 +55,7 @@
             overLimit (<span class="errorcode">413</span>),
             itemNotFound (<span class="errorcode">404</span>),
             badMediaType (<span class="errorcode">415</span>)
-   </p><table frame="void" id="d7e2061"><tbody><tr>
+   </p><table frame="void" id="d7e2060"><tbody><tr>
                         <td>Status Transition:</td>
                         <td colspan="3">
                            <code class="code">AVAILABLE</code>
@@ -66,7 +65,7 @@
                      </tr></tbody></table><p>
                 The operation updates the backup's name. Only the
                 backup's name is updateable, other fields are ignored.
-            </p><table rules="all" id="d7e2076"><caption>Table 2.18. Update Backup Name Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+            </p><table rules="all" id="d7e2075"><caption>Table 2.18. Update Backup Name Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
                     <p>
                         A unique identifier for the tenant who
                         owns the resource.
@@ -75,17 +74,17 @@
                             <p>
                                 A unique identifier for the backup.
                             </p>
-                        <p/></td></tr></tbody></table><div class="example"><a id="d7e2106"/><p class="title"><strong>Example 2.39. Update Backup Name Request: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+                        <p/></td></tr></tbody></table><div class="example"><a id="d7e2105"/><p class="title"><strong>Example 2.39. Update Backup Name Request: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 
 &lt;backup xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
         name="New backup name"/&gt;
-</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2109"/><p class="title"><strong>Example 2.40. Update Backup Name Request: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2108"/><p class="title"><strong>Example 2.40. Update Backup Name Request: JSON</strong></p><div class="example-contents"><pre class="programlisting">
 {
     "OS-BS:backup" : {
         "name" : "New backup name"
     }
 }
-</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2112"/><p class="title"><strong>Example 2.41. Update Backup Name Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2111"/><p class="title"><strong>Example 2.41. Update Backup Name Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 
 &lt;backup xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
         xmlns:atom="http://www.w3.org/2005/Atom"
@@ -109,7 +108,7 @@
         rel="bookmark"
         href="http://servers.api.openstack.org/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"/&gt;
 &lt;/backup&gt;
-</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2115"/><p class="title"><strong>Example 2.42. Update Backup Name Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2114"/><p class="title"><strong>Example 2.42. Update Backup Name Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">
 {
     "OS-BS:backup" : {
         "name" : "New backup name", 

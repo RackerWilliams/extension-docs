@@ -3,9 +3,9 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:exsl="http://exslt.org/common" xmlns:ng="http://docbook.org/docbook-ng"><head>
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
-<title>2.2. New Faults</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OpenStack Compute Block Storage Attach/Detach Extension"/><link rel="up" href="ch02.html" title="Chapter 2. Summary of Changes"/><link rel="prev" href="ch02s01.html" title="2.1. New Headers"/><link rel="next" href="ch02s03.html" title="2.3. New Resources"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
+<title>2.2. New Faults - OpenStack Compute Block Storage Attach/Detach Extension</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OpenStack Compute Block Storage Attach/Detach Extension"/><link rel="up" href="ch02.html" title="Chapter 2. Summary of Changes"/><link rel="prev" href="ch02s01.html" title="2.1. New Headers"/><link rel="next" href="ch02s03.html" title="2.3. New Resources"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-244";
+            var treeCookieId = "treeview-242";
             var language = "en";
             var w = new Object();
             //Localization
@@ -37,10 +37,9 @@
 				      |
                                         <a accesskey="u" class="navLinkUp" onclick="_gaq.push(['_trackEvent', 'Header', 'upLink', 'click', 1]);" tabindex="5" href="ch02.html">Up</a>
 				  |
-                                    <a accesskey="n" class="navLinkNext" onclick="_gaq.push(['_trackEvent', 'Header', 'nextLink', 'click', 1]);" tabindex="5" href="ch02s03.html">Next</a></td></tr></table></div></div><div id="toolbar" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><div id="toolbar-left"><p class="breadcrumbs"><a href="http://docs.rackspace.com/api/">Rackspace Manuals</a><a href="index.html">OpenStack Compute Block Storage Attach/Detach Extension
-   - EXT v1.0</a></p><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" alt="Download a pdf of this document" class="pdficon" href="os-bsad.pdf"><img src="../common/images/pdf.png"/></a>
+                                    <a accesskey="n" class="navLinkNext" onclick="_gaq.push(['_trackEvent', 'Header', 'nextLink', 'click', 1]);" tabindex="5" href="ch02s03.html">Next</a></td></tr></table></div></div><div id="toolbar" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><div id="toolbar-left"><p class="breadcrumbs"><a href="http://docs.rackspace.com/api/">Rackspace Manuals</a><a href="index.html">OpenStack Compute Block Storage Attach/Detach Extension</a></p><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" alt="Download a pdf of this document" class="pdficon" href="os-bsad.pdf"><img src="../common/images/pdf.png"/></a>
        
-      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext"> </div><div class="section"><div xmlns="" class="titlepage"><div><div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="d7e111"/>2.2. New Faults</h2></div></div></div><table rules="all" id="d7e113"><caption>Table 2.1. Fault Elements and Error Codes</caption><thead><tr>
+      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext"> </div><div class="section"><div xmlns="" class="titlepage"><div><div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="d7e110"/>2.2. New Faults</h2></div></div></div><table rules="all" id="d7e112"><caption>Table 2.1. Fault Elements and Error Codes</caption><thead><tr>
                         <td>Fault Element</td>
                         <td>Associated Error Codes</td>
                         <td>Expected in All Requests?</td>
@@ -56,14 +55,14 @@
                 The faults above extend directly from the base
                 OpenStack Compute API Fault and do not add any new
                 attributes.
-            </p><div class="example"><a id="d7e130"/><p class="title"><strong>Example 2.1. Fault Response, volumeAttached: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;os-bsad:volumeAttached
+            </p><div class="example"><a id="d7e129"/><p class="title"><strong>Example 2.1. Fault Response, volumeAttached: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;os-bsad:volumeAttached
     xmlns:os-bsad="http://docs.openstack.org/servers/api/ext/volume-attach/v1.0"
     xmlns="http://docs.openstack.org/compute/api/v1.1"
     code="409"&gt;
     &lt;message&gt;Fault!&lt;/message&gt;
     &lt;details&gt;Error Details...&lt;/details&gt;
 &lt;/os-bsad:volumeAttached&gt;
-</pre></div></div><br class="example-break"/><div class="example"><a id="d7e133"/><p class="title"><strong>Example 2.2. Fault Response, volumeAttached: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e132"/><p class="title"><strong>Example 2.2. Fault Response, volumeAttached: JSON</strong></p><div class="example-contents"><pre class="programlisting">
 {
     "OS-BSAD:volumeAttached" : {
         "code" : 409, 

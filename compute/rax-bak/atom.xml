@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
-   <title>OpenStack Compute Backup Schedule Extension revision history</title>
+   <title>OpenStack Compute Backup Schedule Extension  revision history</title>
    <link href="http://docs.rackspacecloud.com/openstack-extensions/compute/rax-bak/atom.xml" rel="self"/>
    <link href="http://docs.rackspacecloud.com/openstack-extensions/compute/rax-bak/content/index.html"/>
    <id/>
-   <updated>2011-11-17T17:06:34-06:00</updated>
+   <updated>2011-12-08T05:47:25-06:00</updated>
    <entry>
       <title>2011-09-24</title>
       <link href="http://docs.rackspacecloud.com/openstack-extensions/compute/rax-bak/content/index.html" type="text/html"/>

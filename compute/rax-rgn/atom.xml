@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
-   <title>OpenStack Compute Region Extension revision history</title>
+   <title>OpenStack Compute Region Extension  revision history</title>
    <link href="http://docs.rackspacecloud.com/openstack-extensions/compute/rax-rgn/atom.xml" rel="self"/>
    <link href="http://docs.rackspacecloud.com/openstack-extensions/compute/rax-rgn/content/index.html"/>
    <id/>
-   <updated>2011-11-17T17:07:02-06:00</updated>
+   <updated>2011-12-08T05:47:55-06:00</updated>
    <entry>
       <title>2011-10-20</title>
       <link href="http://docs.rackspacecloud.com/openstack-extensions/compute/rax-rgn/content/index.html" type="text/html"/>

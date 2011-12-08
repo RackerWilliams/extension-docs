@@ -1,5 +1,6 @@
 var indexerLanguage="en";
 //Auto generated index for searching.
+w["-"]="0,1,2,3,4,5,6,7,8";
 w["0"]="0,8";
 w["00"]="0,8";
 w["00z"]="8";

@@ -3,9 +3,9 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:exsl="http://exslt.org/common" xmlns:ng="http://docbook.org/docbook-ng"><head>
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
-<title>2.3.3.1. List Types</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OpenStack Compute Block Storage Extension"/><link rel="up" href="ch02s03s03.html" title="2.3.3. Types"/><link rel="prev" href="ch02s03s03.html" title="2.3.3. Types"/><link rel="next" href="GET_getType_v1.1__tenantId__OS-BS_types__id__.html" title="2.3.3.2. Get Type Details"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
+<title>2.3.3.1. List Types - OpenStack Compute Block Storage Extension</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OpenStack Compute Block Storage Extension"/><link rel="up" href="ch02s03s03.html" title="2.3.3. Types"/><link rel="prev" href="ch02s03s03.html" title="2.3.3. Types"/><link rel="next" href="GET_getType_v1.1__tenantId__OS-BS_types__id__.html" title="2.3.3.2. Get Type Details"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-326";
+            var treeCookieId = "treeview-324";
             var language = "en";
             var w = new Object();
             //Localization
@@ -37,10 +37,9 @@
 				      |
                                         <a accesskey="u" class="navLinkUp" onclick="_gaq.push(['_trackEvent', 'Header', 'upLink', 'click', 1]);" tabindex="5" href="ch02s03s03.html">Up</a>
 				  |
-                                    <a accesskey="n" class="navLinkNext" onclick="_gaq.push(['_trackEvent', 'Header', 'nextLink', 'click', 1]);" tabindex="5" href="GET_getType_v1.1__tenantId__OS-BS_types__id__.html">Next</a></td></tr></table></div></div><div id="toolbar" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><div id="toolbar-left"><p class="breadcrumbs"><a href="http://docs.rackspace.com/api/">Rackspace Manuals</a><a href="index.html">OpenStack Compute Block Storage Extension
-   - EXT v1.0</a></p><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" alt="Download a pdf of this document" class="pdficon" href="os-bs.pdf"><img src="../common/images/pdf.png"/></a>
+                                    <a accesskey="n" class="navLinkNext" onclick="_gaq.push(['_trackEvent', 'Header', 'nextLink', 'click', 1]);" tabindex="5" href="GET_getType_v1.1__tenantId__OS-BS_types__id__.html">Next</a></td></tr></table></div></div><div id="toolbar" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><div id="toolbar-left"><p class="breadcrumbs"><a href="http://docs.rackspace.com/api/">Rackspace Manuals</a><a href="index.html">OpenStack Compute Block Storage Extension</a></p><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" alt="Download a pdf of this document" class="pdficon" href="os-bs.pdf"><img src="../common/images/pdf.png"/></a>
        
-      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext"> </div><div class="section"><div xmlns="" class="titlepage"><div><div><h4 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="GET_listTypes_v1.1__tenantId__OS-BS_types_"/>2.3.3.1. List Types</h4></div></div></div><table rules="all" id="d7e2828"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/types​?name=<em class="replaceable"><code>string</code></em>&amp;​marker=<em class="replaceable"><code>UUID</code></em>&amp;​limit=<em class="replaceable"><code>int</code></em></code></td><td>
+      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext"> </div><div class="section"><div xmlns="" class="titlepage"><div><div><h4 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="GET_listTypes_v1.1__tenantId__OS-BS_types_"/>2.3.3.1. List Types</h4></div></div></div><table rules="all" id="d7e2827"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/types​?name=<em class="replaceable"><code>string</code></em>&amp;​marker=<em class="replaceable"><code>UUID</code></em>&amp;​limit=<em class="replaceable"><code>int</code></em></code></td><td>
                 List all types.
             </td></tr></tbody></table><p>
                     Normal Response Code(s):
@@ -54,12 +53,12 @@
             badRequest (<span class="errorcode">400</span>),
             badMethod (<span class="errorcode">405</span>),
             overLimit (<span class="errorcode">413</span>)
-   </p><table rules="all" id="d7e2860"><caption>Table 2.27. List Types Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">name</code></td><td align="center">query</td><td align="center">String</td><td><p>The <code class="code">name</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">marker</code></td><td align="center">query</td><td align="center">UUID</td><td><p>The <code class="code">marker</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">limit</code></td><td align="center">query</td><td align="center">Int</td><td><p>The <code class="code">limit</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+   </p><table rules="all" id="d7e2859"><caption>Table 2.27. List Types Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">name</code></td><td align="center">query</td><td align="center">String</td><td><p>The <code class="code">name</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">marker</code></td><td align="center">query</td><td align="center">UUID</td><td><p>The <code class="code">marker</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">limit</code></td><td align="center">query</td><td align="center">Int</td><td><p>The <code class="code">limit</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
                     <p>
                         A unique identifier for the tenant who
                         owns the resource.
                     </p>
-                <p/></td></tr></tbody></table><div class="example"><a id="d7e2905"/><p class="title"><strong>Example 2.61. List Types Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+                <p/></td></tr></tbody></table><div class="example"><a id="d7e2904"/><p class="title"><strong>Example 2.61. List Types Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 
 &lt;types xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
        xmlns:atom="http://www.w3.org/2005/Atom"&gt;
@@ -80,7 +79,7 @@
             href="http://servers.api.openstack.org/1234/OS-BS/types/35e1c8d2-e477-11e0-93ed-4f2505dfa32e"/&gt;
     &lt;/type&gt;
 &lt;/types&gt;
-</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2908"/><p class="title"><strong>Example 2.62. List Types Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2907"/><p class="title"><strong>Example 2.62. List Types Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">
 {
     "OS-BS:types" : [ 
         {

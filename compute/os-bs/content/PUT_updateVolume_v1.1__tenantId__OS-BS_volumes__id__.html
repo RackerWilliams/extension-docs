@@ -3,9 +3,9 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:exsl="http://exslt.org/common" xmlns:ng="http://docbook.org/docbook-ng"><head>
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
-<title>2.3.1.2.2. Update Volume Name</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OpenStack Compute Block Storage Extension"/><link rel="up" href="ch02s03s01s02.html" title="2.3.1.2. Volume Opreations"/><link rel="prev" href="POST_createVolume_v1.1__tenantId__OS-BS_volumes_.html" title="2.3.1.2.1. Create Volume"/><link rel="next" href="GET_getVolume_v1.1__tenantId__OS-BS_volumes__id__.html" title="2.3.1.2.3. Get Volume Details"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
+<title>2.3.1.2.2. Update Volume Name - OpenStack Compute Block Storage Extension</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OpenStack Compute Block Storage Extension"/><link rel="up" href="ch02s03s01s02.html" title="2.3.1.2. Volume Opreations"/><link rel="prev" href="POST_createVolume_v1.1__tenantId__OS-BS_volumes_.html" title="2.3.1.2.1. Create Volume"/><link rel="next" href="GET_getVolume_v1.1__tenantId__OS-BS_volumes__id__.html" title="2.3.1.2.3. Get Volume Details"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-326";
+            var treeCookieId = "treeview-324";
             var language = "en";
             var w = new Object();
             //Localization
@@ -37,10 +37,9 @@
 				      |
                                         <a accesskey="u" class="navLinkUp" onclick="_gaq.push(['_trackEvent', 'Header', 'upLink', 'click', 1]);" tabindex="5" href="ch02s03s01s02.html">Up</a>
 				  |
-                                    <a accesskey="n" class="navLinkNext" onclick="_gaq.push(['_trackEvent', 'Header', 'nextLink', 'click', 1]);" tabindex="5" href="GET_getVolume_v1.1__tenantId__OS-BS_volumes__id__.html">Next</a></td></tr></table></div></div><div id="toolbar" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><div id="toolbar-left"><p class="breadcrumbs"><a href="http://docs.rackspace.com/api/">Rackspace Manuals</a><a href="index.html">OpenStack Compute Block Storage Extension
-   - EXT v1.0</a></p><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" alt="Download a pdf of this document" class="pdficon" href="os-bs.pdf"><img src="../common/images/pdf.png"/></a>
+                                    <a accesskey="n" class="navLinkNext" onclick="_gaq.push(['_trackEvent', 'Header', 'nextLink', 'click', 1]);" tabindex="5" href="GET_getVolume_v1.1__tenantId__OS-BS_volumes__id__.html">Next</a></td></tr></table></div></div><div id="toolbar" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><div id="toolbar-left"><p class="breadcrumbs"><a href="http://docs.rackspace.com/api/">Rackspace Manuals</a><a href="index.html">OpenStack Compute Block Storage Extension</a></p><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" alt="Download a pdf of this document" class="pdficon" href="os-bs.pdf"><img src="../common/images/pdf.png"/></a>
        
-      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext"> </div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="PUT_updateVolume_v1.1__tenantId__OS-BS_volumes__id__"/>2.3.1.2.2. Update Volume Name</h5></div></div></div><table rules="all" id="d7e817"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}</code></td><td>
+      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext"> </div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="PUT_updateVolume_v1.1__tenantId__OS-BS_volumes__id__"/>2.3.1.2.2. Update Volume Name</h5></div></div></div><table rules="all" id="d7e816"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}</code></td><td>
                 Update the specified volume's name.
             </td></tr></tbody></table><p>
                     Normal Response Code(s):
@@ -56,7 +55,7 @@
             overLimit (<span class="errorcode">413</span>),
             itemNotFound (<span class="errorcode">404</span>),
             badMediaType (<span class="errorcode">415</span>)
-   </p><table frame="void" id="d7e847"><tbody><tr>
+   </p><table frame="void" id="d7e846"><tbody><tr>
                         <td>Status Transition:</td>
                         <td colspan="3">
                            <code class="code">AVAILABLE</code>
@@ -66,7 +65,7 @@
                      </tr></tbody></table><p>
                 The operation updates the volume's name. Only the
                 volume's name is updateable, other fields are ignored.
-            </p><table rules="all" id="d7e862"><caption>Table 2.5. Update Volume Name Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+            </p><table rules="all" id="d7e861"><caption>Table 2.5. Update Volume Name Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
                     <p>
                         A unique identifier for the tenant who
                         owns the resource.
@@ -75,18 +74,18 @@
                             <p>
                                 A unique identifier for the volume..
                             </p>
-                        <p/></td></tr></tbody></table><div class="example"><a id="d7e892"/><p class="title"><strong>Example 2.9. Update Volume Name Request: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+                        <p/></td></tr></tbody></table><div class="example"><a id="d7e891"/><p class="title"><strong>Example 2.9. Update Volume Name Request: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 
 &lt;volume xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
         name="New Work"/&gt;
 
-</pre></div></div><br class="example-break"/><div class="example"><a id="d7e895"/><p class="title"><strong>Example 2.10. Update Volume Name Request: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e894"/><p class="title"><strong>Example 2.10. Update Volume Name Request: JSON</strong></p><div class="example-contents"><pre class="programlisting">
 {
     "OS-BS:volume" : {
         "name" : "New Work"
     }
 }
-</pre></div></div><br class="example-break"/><div class="example"><a id="d7e898"/><p class="title"><strong>Example 2.11. Update Volume Name Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;volume xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e897"/><p class="title"><strong>Example 2.11. Update Volume Name Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;volume xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
         xmlns:atom="http://www.w3.org/2005/Atom"
         id="15e59938-07d5-11e1-90e3-e3dffe0c5983"
         name="New Work"
@@ -119,7 +118,7 @@
         rel="bookmark"
         href="http://servers.api.openstack.org/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"/&gt;
 &lt;/volume&gt;
-</pre></div></div><br class="example-break"/><div class="example"><a id="d7e901"/><p class="title"><strong>Example 2.12. Update Volume Name Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e900"/><p class="title"><strong>Example 2.12. Update Volume Name Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">
 {
     "OS-BS:volume" : {
         "name" : "New Work", 

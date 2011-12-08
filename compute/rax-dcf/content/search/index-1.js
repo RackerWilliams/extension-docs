@@ -1,5 +1,6 @@
 var indexerLanguage="en";
 //Auto generated index for searching.
+w["-"]="0,1,2,3,4,5,6,7,8,9,10,11";
 w["0"]="0,8,9,10,11";
 w["00"]="0,8";
 w["00z"]="8";
@@ -84,6 +85,5 @@ w["can"]="1,8";
 w["chang"]="0,1,2,7,8,9,10,11";
 w["chapter"]="0,2";
 w["common"]="0";
-w["comput"]="0,2,7,8,9,10,11";
-w["configur"]="0,2";
+w["comput"]="0,1,2,3,4,5,6,7,8,9,10,11";
 

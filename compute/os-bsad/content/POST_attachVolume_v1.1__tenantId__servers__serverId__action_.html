@@ -3,9 +3,9 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:exsl="http://exslt.org/common" xmlns:ng="http://docbook.org/docbook-ng"><head>
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
-<title>2.4.1. Attach a Volume</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OpenStack Compute Block Storage Attach/Detach Extension"/><link rel="up" href="ch02s04.html" title="2.4. New Actions"/><link rel="prev" href="ch02s04.html" title="2.4. New Actions"/><link rel="next" href="POST_detachVolume_v1.1__tenantId__servers__serverId__action_.html" title="2.4.2. Detach a Volume"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
+<title>2.4.1. Attach a Volume - OpenStack Compute Block Storage Attach/Detach Extension</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OpenStack Compute Block Storage Attach/Detach Extension"/><link rel="up" href="ch02s04.html" title="2.4. New Actions"/><link rel="prev" href="ch02s04.html" title="2.4. New Actions"/><link rel="next" href="POST_detachVolume_v1.1__tenantId__servers__serverId__action_.html" title="2.4.2. Detach a Volume"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-244";
+            var treeCookieId = "treeview-242";
             var language = "en";
             var w = new Object();
             //Localization
@@ -37,10 +37,9 @@
 				      |
                                         <a accesskey="u" class="navLinkUp" onclick="_gaq.push(['_trackEvent', 'Header', 'upLink', 'click', 1]);" tabindex="5" href="ch02s04.html">Up</a>
 				  |
-                                    <a accesskey="n" class="navLinkNext" onclick="_gaq.push(['_trackEvent', 'Header', 'nextLink', 'click', 1]);" tabindex="5" href="POST_detachVolume_v1.1__tenantId__servers__serverId__action_.html">Next</a></td></tr></table></div></div><div id="toolbar" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><div id="toolbar-left"><p class="breadcrumbs"><a href="http://docs.rackspace.com/api/">Rackspace Manuals</a><a href="index.html">OpenStack Compute Block Storage Attach/Detach Extension
-   - EXT v1.0</a></p><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" alt="Download a pdf of this document" class="pdficon" href="os-bsad.pdf"><img src="../common/images/pdf.png"/></a>
+                                    <a accesskey="n" class="navLinkNext" onclick="_gaq.push(['_trackEvent', 'Header', 'nextLink', 'click', 1]);" tabindex="5" href="POST_detachVolume_v1.1__tenantId__servers__serverId__action_.html">Next</a></td></tr></table></div></div><div id="toolbar" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><div id="toolbar-left"><p class="breadcrumbs"><a href="http://docs.rackspace.com/api/">Rackspace Manuals</a><a href="index.html">OpenStack Compute Block Storage Attach/Detach Extension</a></p><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" alt="Download a pdf of this document" class="pdficon" href="os-bsad.pdf"><img src="../common/images/pdf.png"/></a>
        
-      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext"> </div><div class="section"><div xmlns="" class="titlepage"><div><div><h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="POST_attachVolume_v1.1__tenantId__servers__serverId__action_"/>2.4.1. Attach a Volume</h3></div></div></div><table rules="all" id="d7e166"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>POST</strong></span></td><td><code class="code">/{tenantId}/servers/{serverId}/action</code></td><td>
+      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext"> </div><div class="section"><div xmlns="" class="titlepage"><div><div><h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="POST_attachVolume_v1.1__tenantId__servers__serverId__action_"/>2.4.1. Attach a Volume</h3></div></div></div><table rules="all" id="d7e165"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>POST</strong></span></td><td><code class="code">/{tenantId}/servers/{serverId}/action</code></td><td>
                 Attach a volume to the specified server.
             </td></tr></tbody></table><p>
                     Normal Response Code(s):
@@ -59,7 +58,7 @@
             buildInProgress (<span class="errorcode">409</span>),
             volumeAttached (<span class="errorcode">409</span>),
             attachNotAllowed (<span class="errorcode">403</span>)
-   </p><table frame="void" id="d7e199"><tbody><tr>
+   </p><table frame="void" id="d7e198"><tbody><tr>
                         <td>Status Transition:</td>
                         <td colspan="3">
                            <code class="code">AVAILABLE</code>
@@ -85,7 +84,7 @@
                 of RS-CBS:attachNotAllowed
                 (<span class="errorcode">403</span>) indicates that the
                 server lacks privileges to attach the volume.
-            </p><table rules="all" id="d7e244"><caption>Table 2.2. Attach a Volume Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+            </p><table rules="all" id="d7e243"><caption>Table 2.2. Attach a Volume Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
                     <p>
                         A unique identifier for the tenant who
                         owns the resource.
@@ -94,12 +93,12 @@
                     <p>
                         A unique identifier for the server.
                     </p>
-                <p/></td></tr></tbody></table><div class="example"><a id="d7e273"/><p class="title"><strong>Example 2.3. Attach a Volume Request: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+                <p/></td></tr></tbody></table><div class="example"><a id="d7e272"/><p class="title"><strong>Example 2.3. Attach a Volume Request: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 
 &lt;attach-volume
     xmlns="http://docs.openstack.org/servers/api/ext/volume-attach/v1.0"
     href="https://cbs.api.rackspacecloud.com/12934/volumes/f346f12e-0fa4-11e1-9b13-8770fd1fda6b"/&gt;
-</pre></div></div><br class="example-break"/><div class="example"><a id="d7e276"/><p class="title"><strong>Example 2.4. Attach a Volume Request: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e275"/><p class="title"><strong>Example 2.4. Attach a Volume Request: JSON</strong></p><div class="example-contents"><pre class="programlisting">
 {
     "OS-BSAD:attach-volume" : {
         "href" : "https://cbs.api.rackspacecloud.com/12934/volumes/f346f12e-0fa4-11e1-9b13-8770fd1fda6b"

@@ -1,5 +1,6 @@
 var indexerLanguage="en";
 //Auto generated index for searching.
+w["-"]="0,1,2,3,4,5,6,7,8,9";
 w["0"]="0,8,9";
 w["00"]="0";
 w["00-04"]="0";
@@ -57,7 +58,7 @@ w["applic"]="0";
 w["atom"]="0";
 w["attribut"]="9";
 w["automat"]="2,5";
-w["backup"]="0,2,5,7,8,9";
+w["backup"]="0,1,2,3,4,5,6,7,8,9";
 w["backup_schedul"]="1,2,5,7,8,9";
 w["backuporresizeinprogress"]="7,9";
 w["backupschedul"]="8,9";
@@ -74,6 +75,6 @@ w["chapter"]="0,2";
 w["code"]="7,8,9";
 w["common"]="0";
 w["complet"]="5";
-w["comput"]="0";
+w["comput"]="0,1,2,3,4,5,6,7,8,9";
 w["computefault"]="7,8,9";
 

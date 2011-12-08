@@ -3,9 +3,9 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:exsl="http://exslt.org/common" xmlns:ng="http://docbook.org/docbook-ng"><head>
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
-<title>2.3.2.3.4. Get Metadata Item</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OpenStack Compute Block Storage Extension"/><link rel="up" href="ch02s03s02s03.html" title="2.3.2.3. Backup Metadata"/><link rel="prev" href="GET_listMetadata_v1.1__tenantId__OS-BS_backups__id__metadata_.html" title="2.3.2.3.3. List Metadata"/><link rel="next" href="PUT_setMetadataItem_v1.1__tenantId__OS-BS_backups__id__metadata__key__.html" title="2.3.2.3.5. Create or Update Metadata Item"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
+<title>2.3.2.3.4. Get Metadata Item - OpenStack Compute Block Storage Extension</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OpenStack Compute Block Storage Extension"/><link rel="up" href="ch02s03s02s03.html" title="2.3.2.3. Backup Metadata"/><link rel="prev" href="GET_listMetadata_v1.1__tenantId__OS-BS_backups__id__metadata_.html" title="2.3.2.3.3. List Metadata"/><link rel="next" href="PUT_setMetadataItem_v1.1__tenantId__OS-BS_backups__id__metadata__key__.html" title="2.3.2.3.5. Create or Update Metadata Item"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-326";
+            var treeCookieId = "treeview-324";
             var language = "en";
             var w = new Object();
             //Localization
@@ -37,10 +37,9 @@
 				      |
                                         <a accesskey="u" class="navLinkUp" onclick="_gaq.push(['_trackEvent', 'Header', 'upLink', 'click', 1]);" tabindex="5" href="ch02s03s02s03.html">Up</a>
 				  |
-                                    <a accesskey="n" class="navLinkNext" onclick="_gaq.push(['_trackEvent', 'Header', 'nextLink', 'click', 1]);" tabindex="5" href="PUT_setMetadataItem_v1.1__tenantId__OS-BS_backups__id__metadata__key__.html">Next</a></td></tr></table></div></div><div id="toolbar" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><div id="toolbar-left"><p class="breadcrumbs"><a href="http://docs.rackspace.com/api/">Rackspace Manuals</a><a href="index.html">OpenStack Compute Block Storage Extension
-   - EXT v1.0</a></p><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" alt="Download a pdf of this document" class="pdficon" href="os-bs.pdf"><img src="../common/images/pdf.png"/></a>
+                                    <a accesskey="n" class="navLinkNext" onclick="_gaq.push(['_trackEvent', 'Header', 'nextLink', 'click', 1]);" tabindex="5" href="PUT_setMetadataItem_v1.1__tenantId__OS-BS_backups__id__metadata__key__.html">Next</a></td></tr></table></div></div><div id="toolbar" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><div id="toolbar-left"><p class="breadcrumbs"><a href="http://docs.rackspace.com/api/">Rackspace Manuals</a><a href="index.html">OpenStack Compute Block Storage Extension</a></p><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" alt="Download a pdf of this document" class="pdficon" href="os-bs.pdf"><img src="../common/images/pdf.png"/></a>
        
-      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext"> </div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="GET_getMetadataItem_v1.1__tenantId__OS-BS_backups__id__metadata__key__"/>2.3.2.3.4. Get Metadata Item</h5></div></div></div><table rules="all" id="d7e2568"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata/{key}</code></td><td>
+      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext"> </div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="GET_getMetadataItem_v1.1__tenantId__OS-BS_backups__id__metadata__key__"/>2.3.2.3.4. Get Metadata Item</h5></div></div></div><table rules="all" id="d7e2567"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata/{key}</code></td><td>
                 Get a metadata item associated with a resource.
             </td></tr></tbody></table><p>
                     Normal Response Code(s):
@@ -57,7 +56,7 @@
             itemNotFound (<span class="errorcode">404</span>)
    </p><p>
                 Retrieves a single metadata item by key.
-            </p><table rules="all" id="d7e2599"><caption>Table 2.24. Get Metadata Item Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+            </p><table rules="all" id="d7e2598"><caption>Table 2.24. Get Metadata Item Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
                     <p>
                         A unique identifier for the tenant who
                         owns the resource.
@@ -70,11 +69,11 @@
                     <p>
                         A string no longer than 255 characters.
                     </p>
-                <p/></td></tr></tbody></table><p>This operation does not require a request body.</p><div class="example"><a id="d7e2637"/><p class="title"><strong>Example 2.55. Get Metadata Item Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+                <p/></td></tr></tbody></table><p>This operation does not require a request body.</p><div class="example"><a id="d7e2636"/><p class="title"><strong>Example 2.55. Get Metadata Item Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;meta
     xmlns="http://docs.openstack.org/compute/api/v1.1"
     key="Label"&gt;Web&lt;/meta&gt;
-</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2640"/><p class="title"><strong>Example 2.56. Get Metadata Item Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">{
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2639"/><p class="title"><strong>Example 2.56. Get Metadata Item Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">{
     "meta" : {
             "Label" : "Web"
         } 

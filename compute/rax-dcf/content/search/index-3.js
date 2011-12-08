@@ -1,9 +1,11 @@
 //Auto generated index for searching.
+w["none"]="0,3,4,5,6";
+w["note"]="9";
 w["notic"]="0,1,2,3,4,5,6,7,8,9,10,11";
 w["now"]="1";
 w["onc"]="10";
 w["one"]="8";
-w["openstack"]="0,2,7,8,9,10,11";
+w["openstack"]="0,1,2,3,4,5,6,7,8,9,10,11";
 w["org"]="0,8,9,10,11";
 w["other"]="10";
 w["overwritten"]="9";
