@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:exsl="http://exslt.org/common" xmlns:ng="http://docbook.org/docbook-ng"><head>
+<meta http-equiv="X-UA-Compatible" content="IE=7"/>
+<title>2.1.2.1. List Endpoints</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OS-KSCATALOG Extension"/><link rel="up" href="Tenant_Operations_OS-KSCATALOG.html" title="2.1.2. Endpoint Operations"/><link rel="prev" href="Tenant_Operations_OS-KSCATALOG.html" title="2.1.2. Endpoint Operations"/><link rel="next" href="POST_addEndpoint_v2.0_tenants__tenantId__OS-KSCATALOG_endpoints_Admin_API_Service_Developer_Operations-d1e1357.html" title="2.1.2.2. Add Endpoint"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
+            //The id for tree cookie
+            var treeCookieId = "treeview-202";
+            var language = "en";
+            var w = new Object();
+            //Localization
+            txt_filesfound = 'Results';
+            txt_enter_at_least_1_char = "You must enter at least one character.";
+            txt_browser_not_supported = "Your browser is not supported. Use of Mozilla Firefox is recommended.";
+            txt_please_wait = "Please wait. Search in progress...";
+            txt_results_for = "Results for: ";
+        </script><style type="text/css">
+            input {
+            margin-bottom: 5px;
+            margin-top: 2px;
+            }
+
+            .folder {
+            display: block;
+            height: 22px;
+            padding-left: 20px;
+            background: transparent url(../common/jquery/treeview/images/folder.gif) 0 0px no-repeat;
+            }
+            
+        </style><link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/><link rel="stylesheet" type="text/css" href="../common/css/positioning.css"/><link rel="stylesheet" type="text/css" href="../common/css/custom.css"/><!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="../common/css/ie.css"/>
+	<![endif]--><link rel="stylesheet" type="text/css" href="../common/jquery/theme-redmond/jquery-ui-1.8.2.custom.css"/><link rel="stylesheet" type="text/css" href="../common/jquery/treeview/jquery.treeview.css"/><script type="text/javascript" src="../common/jquery/jquery-1.4.3.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery-ui-1.8.2.custom.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery.cookie.js"><!----></script><script type="text/javascript" src="../common/jquery/treeview/jquery.treeview.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery.qtip-1.0.0-rc3/jquery.qtip-1.0.0-rc3.min.js"><!--jQuery plugin for glossary popups. --></script><script type="text/javascript" src="search/htmlFileList.js"><!----></script><script type="text/javascript" src="search/htmlFileInfoList.js"><!----></script><script type="text/javascript" src="search/nwSearchFnt.js"><!----></script><script type="text/javascript" src="search/stemmers/en_stemmer.js"><!--//make this scalable to other languages as well.--></script><script type="text/javascript" src="search/index-1.js"><!----></script><script type="text/javascript" src="search/index-2.js"><!----></script><script type="text/javascript" src="search/index-3.js"><!----></script><script type="text/javascript">
+	    var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-17511903-6']);
+	  </script><script type="text/javascript" src="../common/ga.js"><!----></script></head><body><div id="header"><a onclick="_gaq.push(['_trackEvent', 'Header', 'logo', 'click', 1]);" target="_blank" href="http://www.openstack.org"><img src="../common/images/openstack-logo.png" alt="OpenStack Documentation" width="157" height="47"/></a><p class="breadcrumbs"><a href="http://docs.openstack.org/">OpenStack Manuals</a><a href="index.html">OS-KSCATALOG Extension
+   - API v2.0</a></p><h1>2.1.2.1. List Endpoints</h1><div id="navheader" align="right"><!----><table class="navLinks"><tr><td><a id="showHideButton" onclick="showHideToc(); _gaq.push(['_trackEvent', 'Header', 'show/hide', 'click', 1]);" class="pointLeft" title="Hide TOC tree">Sidebar
+                            </a></td><td><a accesskey="p" class="navLinkPrevious" onclick="_gaq.push(['_trackEvent', 'Header', 'prevLink', 'click', 1]);" tabindex="5" href="Tenant_Operations_OS-KSCATALOG.html">Prev</a>
+				      |
+                                        <a accesskey="u" class="navLinkUp" onclick="_gaq.push(['_trackEvent', 'Header', 'upLink', 'click', 1]);" tabindex="5" href="Tenant_Operations_OS-KSCATALOG.html">Up</a>
+				  |
+                                    <a accesskey="n" class="navLinkNext" onclick="_gaq.push(['_trackEvent', 'Header', 'nextLink', 'click', 1]);" tabindex="5" href="POST_addEndpoint_v2.0_tenants__tenantId__OS-KSCATALOG_endpoints_Admin_API_Service_Developer_Operations-d1e1357.html">Next</a></td></tr></table></div></div><div id="content"><div class="statustext">DRAFT -  DRAFT -  DRAFT -  DRAFT -  DRAFT -  DRAFT -  DRAFT -  DRAFT - </div><div class="section" title="2.1.2.1. List Endpoints"><div xmlns="" class="titlepage"><div><div><h4 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="GET_listEndpoints_v2.0_tenants__tenantId__OS-KSCATALOG_endpoints_Admin_API_Service_Developer_Operations-d1e1357"/>2.1.2.1. List Endpoints</h4></div></div></div><table rules="all" id="d347e597"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">v2.0/tenants/{tenantId}/OS-KSCATALOG/endpoints</code></td><td>
+               <p>List Endpoints of a Tenant.</p>
+            
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span>, <span class="returnvalue">203</span></p><p>
+                    Error Response Code(s):
+                    
+					identityFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            badRequest (<span class="errorcode">400</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            itemNotFound (<span class="errorcode">404</span>)
+   </p>
+               <p>List Endpoints of a Tenant.</p>
+            
+            <table rules="all" id="d347e629"><caption>Table 2.6. List Endpoints Request Parameters</caption><col width="20%"/><col width="10%"/><col width="10%"/><col width="60%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">X-Auth-Token</code></td><td align="center">header</td><td align="center">String</td><td><p>Required. </p></td></tr><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td><p/></td></tr></tbody></table><p>This operation does not require a request body.</p><div class="example"><a id="d347e657"/><p class="title"><strong>Example 2.9. List Endpoints Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;endpoints
+    xmlns="http://docs.openstack.org/identity/api/v2.0"&gt;
+  &lt;endpoint
+      id="1" 
+      tenantId="1"
+      type="compute"
+      name="Compute"
+      region="North"
+      publicURL="https://compute.north.public.com/v1"
+      internalURL="https://compute.north.internal.com/v1"
+      adminURL="https://compute.north.internal.com/v1"&gt;
+      &lt;version
+          id="1"
+          info="https://compute.north.public.com/v1/"
+          list="https://compute.north.public.com/"
+      /&gt;
+  &lt;/endpoint&gt;
+  &lt;endpoint
+      id="2" 
+      tenantId="2"
+      type="compute"
+      name="Compute"
+      region="South"
+      publicURL="https://compute.north.public.com/v1"
+      internalURL="https://compute.north.internal.com/v1"
+      adminURL="https://compute.north.internal.com/v1"&gt;
+      &lt;version
+          id="1"
+          info="https://compute.north.public.com/v1/"
+          list="https://compute.north.public.com/"
+      /&gt;
+  &lt;/endpoint&gt;
+  &lt;endpoint
+      id="3" 
+      tenantId="1"
+      type="compute"
+      name="Compute"
+      region="East"
+      publicURL="https://compute.north.public.com/v1"
+      internalURL="https://compute.north.internal.com/v1"
+      adminURL="https://compute.north.internal.com/v1"
+      tenantId="1"
+  /&gt;
+  &lt;endpoint
+      id="4" 
+      tenantId="1"
+      type="compute"
+      name="Compute"
+      region="West"
+      publicURL="https://compute.north.public.com/v1"
+      internalURL="https://compute.north.internal.com/v1"
+      adminURL="https://compute.north.internal.com/v1"&gt;
+      &lt;version
+          id="1"
+          info="https://compute.north.public.com/v1/"
+          list="https://compute.north.public.com/"
+      /&gt;
+  &lt;/endpoint&gt;
+  &lt;endpoint
+      id="5" 
+      tenantId="1"
+      type="compute"
+      name="Compute"
+      region="Global"
+      publicURL="https://compute.north.public.com/v1"
+      internalURL="https://compute.north.internal.com/v1"
+      adminURL="https://compute.north.internal.com/v1"&gt;
+      &lt;version
+          id="1"
+          info="https://compute.north.public.com/v1/"
+          list="https://compute.north.public.com/"
+      /&gt;
+  &lt;/endpoint&gt;
+&lt;/endpoints&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d347e660"/><p class="title"><strong>Example 2.10. List Endpoints Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">{
+  "endpoints": [
+    {
+      "id": 1,
+      "tenantId": "1",
+      "region": "North",
+      "type": "compute",
+      "publicURL": "https://compute.north.public.com/v1",
+      "internalURL": "https://compute.north.internal.com/v1",
+      "adminURL": "https://compute.north.internal.com/v1",
+      "versionId": "1",
+      "versionInfo": "https://compute.north.public.com/v1/",
+      "versionList": "https://compute.north.public.com/"
+    },
+    {
+      "id": 2,
+      "tenantId": "1",
+      "region": "South",
+      "type": "compute",
+      "publicURL": "https://compute.north.public.com/v1",
+      "internalURL": "https://compute.north.internal.com/v1",
+      "adminURL": "https://compute.north.internal.com/v1",
+      "versionId": "1",
+      "versionInfo": "https://compute.north.public.com/v1/",
+      "versionList": "https://compute.north.public.com/"
+    },
+    {
+      "id": 3,
+      "tenantId": "1",
+      "region": "East",
+      "type": "compute",
+      "publicURL": "https://compute.north.public.com/v1",
+      "internalURL": "https://compute.north.internal.com/v1",
+      "adminURL": "https://compute.north.internal.com/v1",
+      "versionId": "1",
+      "versionInfo": "https://compute.north.public.com/v1/",
+      "versionList": "https://compute.north.public.com/"
+    },
+    {
+      "id": 4,
+      "tenantId": "1",
+      "region": "West",
+      "type": "compute",
+      "publicURL": "https://compute.north.public.com/v1",
+      "internalURL": "https://compute.north.internal.com/v1",
+      "adminURL": "https://compute.north.internal.com/v1",
+      "versionId": "1",
+      "versionInfo": "https://compute.north.public.com/v1/",
+      "versionList": "https://compute.north.public.com/"
+    },
+    {
+      "id": 5,
+      "tenantId": "1",
+      "region": "Global",
+      "type": "compute",
+      "publicURL": "https://compute.north.public.com/v1",
+      "internalURL": "https://compute.north.internal.com/v1",
+      "adminURL": "https://compute.north.internal.com/v1",
+      "versionId": "1",
+      "versionInfo": "https://compute.north.public.com/v1/",
+      "versionList": "https://compute.north.public.com/"
+    }
+  ],
+  "endpoints_links": []
+}
+</pre></div></div><br class="example-break"/></div><script type="text/javascript" src="../common/main.js"><!----></script><hr/><div id="disqus_thread"><script type="text/javascript">
+	      var disqus_shortname = 'os-identitydevguide';
+	        
+	      var disqus_identifier = 'Keystone-Developer-GuideGET_listEndpoints_v2.0_tenants__tenantId__OS-KSCATALOG_endpoints_Admin_API_Service_Developer_Operations-d1e1357';
+	        </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><script type="text/javascript" src="../common/comments.js"><!----></script></div><hr/><div class="legal"><a href="index.html">Legal notices</a></div></div><div><div id="leftnavigation" style="padding-top:3px; background-color:white;"><div id="tabs"><ul><li><a href="#treeDiv" tabindex="1"><span class="contentsTab">Contents</span></a></li><li><a href="#searchDiv" tabindex="1"><span class="searchTab">Search</span></a></li></ul><div id="treeDiv"><img src="../common/images/loading.gif" alt="loading table of contents..." id="tocLoading" style="display:block;"/><div id="ulTreeDiv" style="display:none" class="thisisthat"><ul id="tree" class="filetree"><li tabindex="2"><span class="file"><a href="chapter-0000.html">1. About This Extension</a></span><ul><li tabindex="2"><span class="file"><a href="Doc-Change-0001.html">1.1. Document Change History</a></span></li></ul></li><li tabindex="2"><span class="file"><a href="api_operations.html">2. Extension Operations</a></span><ul><li tabindex="2"><span class="file"><a href="Admin_API_Service_Developer_Operations-d1e1357.html">2.1. OS-KSCATALOG Admin Extension</a></span><ul><li tabindex="2"><span class="file"><a href="Endpoint_Template_Operations_OS-KSCATALOG.html">2.1.1. Endpoint Template Operations</a></span><ul><li tabindex="2"><span class="file"><a href="GET_listEndpointTemplates_v2.0_OS-KSCATALOG_endpointTemplates_Admin_API_Service_Developer_Operations-d1e1357.html">2.1.1.1. List Endpoint Templates</a></span></li><li tabindex="2"><span class="file"><a href="POST_addEndpointTemplate_v2.0_OS-KSCATALOG_endpointTemplates_Admin_API_Service_Developer_Operations-d1e1357.html">2.1.1.2. Add Endpoint Template</a></span></li><li tabindex="2"><span class="file"><a href="GET_getEndpointTemplate_v2.0_OS-KSCATALOG_endpointTemplates__endpointTemplateId__Admin_API_Service_Developer_Operations-d1e1357.html">2.1.1.3. Get Endpoint Template</a></span></li><li tabindex="2"><span class="file"><a href="DELETE_deleteEndpointTemplate_v2.0_OS-KSCATALOG_endpointTemplates__endpointTemplateId__Admin_API_Service_Developer_Operations-d1e1357.html">2.1.1.4. Delete Endpoint Template.</a></span></li></ul></li><li tabindex="2"><span class="file"><a href="Tenant_Operations_OS-KSCATALOG.html">2.1.2. Endpoint Operations</a></span><ul><li tabindex="2" id="webhelp-currentid"><span class="file"><a href="GET_listEndpoints_v2.0_tenants__tenantId__OS-KSCATALOG_endpoints_Admin_API_Service_Developer_Operations-d1e1357.html">2.1.2.1. List Endpoints</a></span></li><li tabindex="2"><span class="file"><a href="POST_addEndpoint_v2.0_tenants__tenantId__OS-KSCATALOG_endpoints_Admin_API_Service_Developer_Operations-d1e1357.html">2.1.2.2. Add Endpoint</a></span></li><li tabindex="2"><span class="file"><a href="GET_getEndpoint_v2.0_tenants__tenantId__OS-KSCATALOG_endpoints__endpointId__Admin_API_Service_Developer_Operations-d1e1357.html">2.1.2.3. Get Endpoint</a></span></li><li tabindex="2"><span class="file"><a href="DELETE_deleteEndpoint_v2.0_tenants__tenantId__OS-KSCATALOG_endpoints__endpointId__Admin_API_Service_Developer_Operations-d1e1357.html">2.1.2.4. Delete Endpoint.</a></span></li></ul></li></ul></li></ul></li></ul></div></div><div id="searchDiv"><div id="search"><form onsubmit="Verifie(ditaSearch_Form);return false" name="ditaSearch_Form" class="searchForm"><fieldset class="searchFieldSet"><legend>Search</legend><center><input id="textToSearch" name="textToSearch" type="text" class="searchText"/> &nbsp; <input onclick="Verifie(ditaSearch_Form)" type="button" class="searchButton" value="Go" id="doSearch"/></center></fieldset></form></div><div id="searchResults"><center/></div><p class="searchHighlight"><a href="#" onclick="toggleHighlight()">Search Highlighter (On/Off)</a></p></div></div></div></div><script type="text/javascript" src="../common/jquery/jquery.qtip-1.0.0-rc3/jquery.qtip-1.0.0-rc3.min.js"><!--jQuery plugin for glossary popups. -->
+                   $('a[title]').qtip({ style: { name: 'cream', tip: true } })
+                </script></body></html>

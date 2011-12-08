@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:exsl="http://exslt.org/common" xmlns:ng="http://docbook.org/docbook-ng"><head>
+<meta http-equiv="X-UA-Compatible" content="IE=7"/>
+<title>2.5.1.2. Authenticate</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Rackspace Keystone Group Extension(Service Operations)"/><link rel="up" href="RackExt-0001.html" title="2.5.1.  Rackspace extensions to Keystone v2.0 API enabling groups."/><link rel="prev" href="New-Elements-details-0002.html" title="2.5.1.1. New Elements"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
+            //The id for tree cookie
+            var treeCookieId = "treeview-262";
+            var language = "en";
+            var w = new Object();
+            //Localization
+            txt_filesfound = 'Results';
+            txt_enter_at_least_1_char = "You must enter at least one character.";
+            txt_browser_not_supported = "Your browser is not supported. Use of Mozilla Firefox is recommended.";
+            txt_please_wait = "Please wait. Search in progress...";
+            txt_results_for = "Results for: ";
+        </script><style type="text/css">
+            input {
+            margin-bottom: 5px;
+            margin-top: 2px;
+            }
+
+            .folder {
+            display: block;
+            height: 22px;
+            padding-left: 20px;
+            background: transparent url(../common/jquery/treeview/images/folder.gif) 0 0px no-repeat;
+            }
+            
+        </style><link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/><link rel="stylesheet" type="text/css" href="../common/css/positioning.css"/><link rel="stylesheet" type="text/css" href="../common/css/custom.css"/><!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="../common/css/ie.css"/>
+	<![endif]--><link rel="stylesheet" type="text/css" href="../common/jquery/theme-redmond/jquery-ui-1.8.2.custom.css"/><link rel="stylesheet" type="text/css" href="../common/jquery/treeview/jquery.treeview.css"/><script type="text/javascript" src="../common/jquery/jquery-1.4.3.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery-ui-1.8.2.custom.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery.cookie.js"><!----></script><script type="text/javascript" src="../common/jquery/treeview/jquery.treeview.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery.qtip-1.0.0-rc3/jquery.qtip-1.0.0-rc3.min.js"><!--jQuery plugin for glossary popups. --></script><script type="text/javascript" src="search/htmlFileList.js"><!----></script><script type="text/javascript" src="search/htmlFileInfoList.js"><!----></script><script type="text/javascript" src="search/nwSearchFnt.js"><!----></script><script type="text/javascript" src="search/stemmers/en_stemmer.js"><!--//make this scalable to other languages as well.--></script><script type="text/javascript" src="search/index-1.js"><!----></script><script type="text/javascript" src="search/index-2.js"><!----></script><script type="text/javascript" src="search/index-3.js"><!----></script><script type="text/javascript">
+	    var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-17511903-6']);
+	  </script><script type="text/javascript" src="../common/ga.js"><!----></script></head><body><div id="header"><a onclick="_gaq.push(['_trackEvent', 'Header', 'logo', 'click', 1]);" target="_blank" href="http://www.openstack.org"><img src="../common/images/openstack-logo.png" alt="OpenStack Documentation" width="157" height="47"/></a><p class="breadcrumbs"><a href="http://docs.openstack.org/">OpenStack Manuals</a><a href="index.html">Rackspace Keystone Group Extension(Service Operations)
+   - EXT v1.0</a></p><h1>2.5.1.2. Authenticate</h1><div id="navheader" align="right"><!----><table class="navLinks"><tr><td><a id="showHideButton" onclick="showHideToc(); _gaq.push(['_trackEvent', 'Header', 'show/hide', 'click', 1]);" class="pointLeft" title="Hide TOC tree">Sidebar
+                            </a></td><td><a accesskey="p" class="navLinkPrevious" onclick="_gaq.push(['_trackEvent', 'Header', 'prevLink', 'click', 1]);" tabindex="5" href="New-Elements-details-0002.html">Prev</a>
+				      |
+                                        <a accesskey="u" class="navLinkUp" onclick="_gaq.push(['_trackEvent', 'Header', 'upLink', 'click', 1]);" tabindex="5" href="RackExt-0001.html">Up</a></td></tr></table></div></div><div id="content"><div class="statustext">DRAFT -  DRAFT -  DRAFT -  DRAFT -  DRAFT -  DRAFT -  DRAFT -  DRAFT - </div><div class="section" title="2.5.1.2. Authenticate"><div xmlns="" class="titlepage"><div><div><h4 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="Authenticate-d1e1166"/>2.5.1.2. Authenticate</h4></div></div></div><p>This extension allows authentication calls to also return information about groups.
+                      The usage of an existing call to authenticate, where it returns groups is illustrated below 
+                  </p><table rules="all" id="d150e109"><thead><tr>
+        <td>Verb</td>
+        <td>URI</td>
+        <td colspan="4">Description</td>
+        </tr></thead><tbody><tr>
+                              <td> <span class="command"><strong>POST</strong></span> </td>
+                              <td>/tokens</td>
+                              <td colspan="4">Authenticate to generate a token.</td>
+                          </tr></tbody></table><p>Normal Response Code(s):<span class="returnvalue">200</span>, <span class="returnvalue">203</span></p><p>Error Response Code(s): unauthorized (<span class="errorcode">401</span>), userDisabled
+                      (<span class="errorcode">403</span>), badRequest (<span class="errorcode">400</span>), identityFault
+                      (<span class="errorcode">500</span>), serviceUnavailable(<span class="errorcode">503</span>)</p><p>
+                      This call will return a token if successful. Each ReST request against other services (or other
+                      calls on Keystone such as the GET /tenants call)
+                      requires the inclusion of a specific authorization token HTTP x-header, defined as X-Auth-Token.
+                      Clients obtain
+                      this token, along with the URL to other service APIs, by first authenticating against the
+                      Keystone Service and supplying valid credentials.
+                  </p><p>
+                      Client authentication is provided via a ReST interface using the POST method,
+                      with v2.0/tokens supplied as the path. A payload of credentials must be included
+                      in the body.
+                  </p><p>
+                      The Keystone Service is a ReSTful web service. It is the entry point to all service APIs.
+                      To access the Keystone Service, you must know URL of the Keystone service.
+                  </p><div class="example"><a id="d150e133"/><p class="title"><strong>Example 2.3. XML Auth Request using passwordCredentials</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;auth xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://docs.openstack.org/identity/api/v2.0"
+ tenantName="customer-x"&gt;
+  &lt;passwordCredentials username="test_user" password="test"/&gt;
+&lt;/auth&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d150e136"/><p class="title"><strong>Example 2.4. JSON Auth Request using passwordCredentials</strong></p><div class="example-contents"><pre class="programlisting">{
+  "auth": {
+    "passwordCredentials": {
+      "username": "test_user",
+      "password": "mypass"
+    },
+    "tenantName": "customer-x"
+  }
+}
+</pre></div></div><br class="example-break"/><div class="example"><a id="d150e139"/><p class="title"><strong>Example 2.5. XML Auth Response that contains Groups</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;access xmlns="http://docs.openstack.org/identity/api/v2.0"&gt;
+	&lt;token expires="2010-11-01T03:32:15-05:00"
+           id="ab48a9efdfedb23ty3494"/&gt;
+    &lt;serviceCatalog&gt;
+        &lt;service type="compute" name="Computers in the Cloud"&gt;
+			&lt;endpoint region="North" tenantId="1"
+				publicURL="https://north.compute.public.com/v2.0/1234"
+				internalURL="https://north.compute.internal.com/v2.0/1234"&gt;
+				&lt;version id="2.0"
+					info="https://north.compute.public.com/v2.0/"
+					list="https://north.compute.public.com/"/&gt;
+			&lt;/endpoint&gt;
+            &lt;endpoint
+                    region="South"
+                    tenantId="3456"
+                    publicURL="https://south.compute.public.com/v2.0/3456"
+                    internalURL="https://south.compute.internal.com/v2.0/3456"&gt;
+										&lt;version
+											id="2.0"
+											info="https://south.compute.public.com/v2.0/"
+											list="https://south.compute.public.com/" /&gt;
+						&lt;/endpoint&gt;
+        &lt;/service&gt;
+        &lt;service type="object-store" name="HTTP Object Store"&gt;
+            &lt;endpoint
+                    region="North"
+                    tenantId="1234"
+                    publicURL="https://north.object-store.public.com/v1/1234"
+                    internalURL="https://north.object-store.internal.com/v1/1234"&gt;
+							&lt;version
+											id="1"
+											info="https://north.object-store.public.com/v1/"
+											list="https://north.object-store.public.com/" /&gt;
+						&lt;/endpoint&gt;
+            &lt;endpoint
+                    region="South"
+                    tenantId="3456"
+                    publicURL="https://south.object-store.public.com/v2.0/3456"
+                    internalURL="https://south.object-store.internal.com/v2.0/3456"&gt;
+										&lt;version
+											id="2.0"
+											info="https://south.object-store.public.com/v1/"
+											list="https://south.object-store.public.com/" /&gt;
+						&lt;/endpoint&gt;
+        &lt;/service&gt;
+        &lt;service type="dns" name="DNS-as-a-Service"&gt;
+            &lt;endpoint
+                    publicURL="https://dns.public.com/v2.0/blah-blah"&gt;
+								&lt;version
+											id="2.0"
+											info="https://dns.public.com/v2.0/"
+											list="https://dns.public.com/" /&gt;
+						&lt;/endpoint&gt;
+        &lt;/service&gt;
+    &lt;/serviceCatalog&gt;
+    &lt;user xmlns="http://docs.openstack.org/identity/api/v2.0"
+      id="123" username="jqsmith"&gt;
+	&lt;roles xmlns="http://docs.openstack.org/identity/api/v2.0"&gt;
+	  &lt;role id="123" name="Admin" tenantId="1234" description="All Access" /&gt;
+	  &lt;role id="234" name="object-store:admin" tenantId="1"/&gt;
+	  
+	&lt;/roles&gt;
+	&lt;groups xmlns="http://docs.rackspace.com/identity/api/ext/RAX-KSGRP/v1.0"&gt;
+	    &lt;group id="test_global_group_add"&gt;
+			&lt;description&gt;A Description of the group&lt;/description&gt;
+	    &lt;/group&gt;
+	&lt;/groups&gt;	
+    &lt;/user&gt;
+&lt;/auth&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d150e142"/><p class="title"><strong>Example 2.6. JSON Auth Response that contains Groups</strong></p><div class="example-contents"><pre class="programlisting">{
+  "access": {
+    "token": {
+      "id": "asdasdasd-adsasdads-asdasdasd-adsadsasd",
+      "expires": "2010-11-01T03:32:15-05:00"
+    },
+    "user": {
+      "id": "123",
+      "name": "testName",
+      "roles": [
+        {
+          "id": "234",
+          "name": "compute:admin"
+        },
+        {
+          "id": "235",
+          "name": "object-store:admin",
+          "tenantId": "1"
+        }
+      ],
+      "roles_links": [],
+      "RAX-KSGRP:groups": [
+        {
+          "id": "test_global_group_add",
+          "description": "A description ..."
+        }
+      ],
+      "RAX-KSGRP:groups_links": []
+    },
+    "serviceCatalog": [
+      {
+        "name": "Cloud Servers",
+        "type": "compute",
+        "endpoints": [
+          {
+            "publicURL": "https://compute.north.host/v1/1234",
+            "internalURL": "https://compute.north.host/v1/1234",
+            "region": "North",
+            "tenantId": "1234",
+            "versionId": "1.0",
+            "versionInfo": "https://compute.north.host/v1.0/",
+            "versionList": "https://compute.north.host/"
+          },
+          {
+            "publicURL": "https://compute.north.host/v1.1/3456",
+            "internalURL": "https://compute.north.host/v1.1/3456",
+            "region": "North",
+            "tenantId": "3456",
+            "versionId": "1.1",
+            "versionInfo": "https://compute.north.host/v1.1/",
+            "versionList": "https://compute.north.host/"
+          }
+        ],
+        "endpoints_links": []
+      },
+      {
+        "name": "Cloud Files",
+        "type": "object-store",
+        "endpoints": [
+          {
+            "publicURL": "https://compute.north.host/v1/blah-blah",
+            "internalURL": "https://compute.north.host/v1/blah-blah",
+            "region": "South",
+            "tenantId": "1234",
+            "versionId": "1.0",
+            "versionInfo": "uri",
+            "versionList": "uri"
+          },
+          {
+            "publicURL": "https://compute.north.host/v1.1/blah-blah",
+            "internalURL": "https://compute.north.host/v1.1/blah-blah",
+            "region": "South",
+            "tenantId": "1234",
+            "versionId": "1.1",
+            "versionInfo": "https://compute.north.host/v1.1/",
+            "versionList": "https://compute.north.host/"
+          }
+        ],
+        "endpoints_links": [
+          {
+            "rel": "next",
+            "href": "https://identity.north.host/v2.0/endpoints?marker=2"
+          }
+        ]
+      }
+    ],
+    "serviceCatalog_links": [
+      {
+        "rel": "next",
+        "href": "https://identity.host/v2.0/endpoints?session=2hfh8Ar&amp;marker=2"
+      }
+    ]
+  }
+}
+</pre></div></div><br class="example-break"/></div><script type="text/javascript" src="../common/main.js"><!----></script><hr/><div id="disqus_thread"><script type="text/javascript">
+	      var disqus_shortname = 'os-identitydevguide';
+	        
+	      var disqus_identifier = 'book-0001Authenticate-d1e1166';
+	        </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><script type="text/javascript" src="../common/comments.js"><!----></script></div><hr/><div class="legal"><a href="index.html">Legal notices</a></div></div><div><div id="leftnavigation" style="padding-top:3px; background-color:white;"><div id="tabs"><ul><li><a href="#treeDiv" tabindex="1"><span class="contentsTab">Contents</span></a></li><li><a href="#searchDiv" tabindex="1"><span class="searchTab">Search</span></a></li></ul><div id="treeDiv"><img src="../common/images/loading.gif" alt="loading table of contents..." id="tocLoading" style="display:block;"/><div id="ulTreeDiv" style="display:none" class="thisisthat"><ul id="tree" class="filetree"><li tabindex="2"><span class="file"><a href="chapter-0000.html">1. About This Extension</a></span><ul><li tabindex="2"><span class="file"><a href="Doc-Change-0001.html">1.1. Document Change History</a></span></li></ul></li><li tabindex="2"><span class="file"><a href="chapter-0001.html">2. Summary of Changes</a></span><ul><li tabindex="2"><span class="file"><a href="NewHeaders-0001.html">2.1. New Headers</a></span></li><li tabindex="2"><span class="file"><a href="NewFaults0001.html">2.2. New Faults</a></span></li><li tabindex="2"><span class="file"><a href="NewResources-0001.html">2.3. New Resources</a></span></li><li tabindex="2"><span class="file"><a href="NewActions0001.html">2.4. New Actions</a></span></li><li tabindex="2"><span class="file"><a href="NewElement0001.html">2.5. New Elements</a></span><ul><li tabindex="2"><span class="file"><a href="RackExt-0001.html">2.5.1. 
+                  Rackspace extensions to Keystone v2.0 API enabling groups. 
+              </a></span><ul><li tabindex="2"><span class="file"><a href="New-Elements-details-0002.html">2.5.1.1. New Elements</a></span></li><li tabindex="2" id="webhelp-currentid"><span class="file"><a href="Authenticate-d1e1166.html">2.5.1.2. Authenticate</a></span></li></ul></li></ul></li></ul></li></ul></div></div><div id="searchDiv"><div id="search"><form onsubmit="Verifie(ditaSearch_Form);return false" name="ditaSearch_Form" class="searchForm"><fieldset class="searchFieldSet"><legend>Search</legend><center><input id="textToSearch" name="textToSearch" type="text" class="searchText"/> &nbsp; <input onclick="Verifie(ditaSearch_Form)" type="button" class="searchButton" value="Go" id="doSearch"/></center></fieldset></form></div><div id="searchResults"><center/></div><p class="searchHighlight"><a href="#" onclick="toggleHighlight()">Search Highlighter (On/Off)</a></p></div></div></div></div><script type="text/javascript" src="../common/jquery/jquery.qtip-1.0.0-rc3/jquery.qtip-1.0.0-rc3.min.js"><!--jQuery plugin for glossary popups. -->
+                   $('a[title]').qtip({ style: { name: 'cream', tip: true } })
+                </script></body></html>

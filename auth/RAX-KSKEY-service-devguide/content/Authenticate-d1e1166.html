@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:exsl="http://exslt.org/common" xmlns:ng="http://docbook.org/docbook-ng"><head>
+<meta http-equiv="X-UA-Compatible" content="IE=7"/>
+<title>2.5.1.1. Authenticate</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Rackspace API Key Authentication Extension (Service Operations)"/><link rel="up" href="RackExt-0001.html" title="2.5.1.  Rackspace extensions to Keystone v2.0 API enabling API Key authentication."/><link rel="prev" href="RackExt-0001.html" title="2.5.1.  Rackspace extensions to Keystone v2.0 API enabling API Key authentication."/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
+            //The id for tree cookie
+            var treeCookieId = "treeview-253";
+            var language = "en";
+            var w = new Object();
+            //Localization
+            txt_filesfound = 'Results';
+            txt_enter_at_least_1_char = "You must enter at least one character.";
+            txt_browser_not_supported = "Your browser is not supported. Use of Mozilla Firefox is recommended.";
+            txt_please_wait = "Please wait. Search in progress...";
+            txt_results_for = "Results for: ";
+        </script><style type="text/css">
+            input {
+            margin-bottom: 5px;
+            margin-top: 2px;
+            }
+
+            .folder {
+            display: block;
+            height: 22px;
+            padding-left: 20px;
+            background: transparent url(../common/jquery/treeview/images/folder.gif) 0 0px no-repeat;
+            }
+            
+        </style><link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/><link rel="stylesheet" type="text/css" href="../common/css/positioning.css"/><link rel="stylesheet" type="text/css" href="../common/css/custom.css"/><!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="../common/css/ie.css"/>
+	<![endif]--><link rel="stylesheet" type="text/css" href="../common/jquery/theme-redmond/jquery-ui-1.8.2.custom.css"/><link rel="stylesheet" type="text/css" href="../common/jquery/treeview/jquery.treeview.css"/><script type="text/javascript" src="../common/jquery/jquery-1.4.3.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery-ui-1.8.2.custom.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery.cookie.js"><!----></script><script type="text/javascript" src="../common/jquery/treeview/jquery.treeview.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery.qtip-1.0.0-rc3/jquery.qtip-1.0.0-rc3.min.js"><!--jQuery plugin for glossary popups. --></script><script type="text/javascript" src="search/htmlFileList.js"><!----></script><script type="text/javascript" src="search/htmlFileInfoList.js"><!----></script><script type="text/javascript" src="search/nwSearchFnt.js"><!----></script><script type="text/javascript" src="search/stemmers/en_stemmer.js"><!--//make this scalable to other languages as well.--></script><script type="text/javascript" src="search/index-1.js"><!----></script><script type="text/javascript" src="search/index-2.js"><!----></script><script type="text/javascript" src="search/index-3.js"><!----></script><script type="text/javascript">
+	    var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-17511903-6']);
+	  </script><script type="text/javascript" src="../common/ga.js"><!----></script></head><body><div id="header"><a onclick="_gaq.push(['_trackEvent', 'Header', 'logo', 'click', 1]);" target="_blank" href="http://www.openstack.org"><img src="../common/images/openstack-logo.png" alt="OpenStack Documentation" width="157" height="47"/></a><p class="breadcrumbs"><a href="http://docs.openstack.org/">OpenStack Manuals</a><a href="index.html">Rackspace API Key Authentication Extension (Service Operations)
+   - EXT v1.0</a></p><h1>2.5.1.1. Authenticate</h1><div id="navheader" align="right"><!----><table class="navLinks"><tr><td><a id="showHideButton" onclick="showHideToc(); _gaq.push(['_trackEvent', 'Header', 'show/hide', 'click', 1]);" class="pointLeft" title="Hide TOC tree">Sidebar
+                            </a></td><td><a accesskey="p" class="navLinkPrevious" onclick="_gaq.push(['_trackEvent', 'Header', 'prevLink', 'click', 1]);" tabindex="5" href="RackExt-0001.html">Prev</a>
+				      |
+                                        <a accesskey="u" class="navLinkUp" onclick="_gaq.push(['_trackEvent', 'Header', 'upLink', 'click', 1]);" tabindex="5" href="RackExt-0001.html">Up</a></td></tr></table></div></div><div id="content"><div class="statustext">DRAFT -  DRAFT -  DRAFT -  DRAFT -  DRAFT -  DRAFT -  DRAFT -  DRAFT - </div><div class="section" title="2.5.1.1. Authenticate"><div xmlns="" class="titlepage"><div><div><h4 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="Authenticate-d1e1166"/>2.5.1.1. Authenticate</h4></div></div></div><p>This extension allows authentication calls to accept new type of credentials <em class="parameter"><code>apikeyCredentials</code></em>.
+                      These are additional type of credentials defined to support rackspace style authentication.
+                      The usage of <em class="parameter"><code>apikeyCredentials</code></em> on a existing call to authenticate is illustrated below 
+                  </p><table rules="all" id="d6e102"><thead><tr>
+        <td>Verb</td>
+        <td>URI</td>
+        <td colspan="4">Description</td>
+        </tr></thead><tbody><tr>
+                              <td> <span class="command"><strong>POST</strong></span> </td>
+                              <td>/tokens</td>
+                              <td colspan="4">Authenticate to generate a token.</td>
+                          </tr></tbody></table><p>Normal Response Code(s):<span class="returnvalue">200</span>, <span class="returnvalue">203</span></p><p>Error Response Code(s): unauthorized (<span class="errorcode">401</span>), userDisabled
+                      (<span class="errorcode">403</span>), badRequest (<span class="errorcode">400</span>), identityFault
+                      (<span class="errorcode">500</span>), serviceUnavailable(<span class="errorcode">503</span>)</p><p>
+                      This call will return a token if successful. 
+                      Clients obtain
+                      this token, along with the URL to other service APIs, by first authenticating against the
+                      Keystone Service and supplying valid credentials.
+                      This extension provides support for Rackspace Style API Key credentials. 
+                  </p><p>
+                      Client authentication is provided via a ReST interface using the POST method,
+                      with v2.0/tokens supplied as the path. A payload of credentials must be included
+                      in the body.
+                  </p><p>
+                      The Keystone Service is a ReSTful web service. It is the entry point to all service APIs.
+                      To access the Keystone Service, you must know URL of the Keystone service.
+                  </p><div class="example"><a id="d6e126"/><p class="title"><strong>Example 2.1. XML Auth Request using apikeyCredentials</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;auth  xmlns="http://docs.openstack.org/identity/api/v2.0"&gt;
+  &lt;apiKeyCredentials
+    xmlns="http://docs.rackspace.com/identity/api/ext/RAX-KSKEY/v1.0"
+    username="testuser"
+    apiKey="aaaaa-bbbbb-ccccc-12345678"/&gt;
+&lt;/auth&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d6e129"/><p class="title"><strong>Example 2.2. JSON Auth Request using apikeyCredentials</strong></p><div class="example-contents"><pre class="programlisting">{
+  "auth": {
+    "RAX-KSKEY:apiKeyCredentials": {
+      "username": "test_user",
+      "apiKey": "aaaaa-bbbbb-ccccc-12345678"
+    },
+    "tenantId": "1234"
+  }
+}
+</pre></div></div><br class="example-break"/><div class="example"><a id="d6e132"/><p class="title"><strong>Example 2.3. XML Auth Response</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;access xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://docs.openstack.org/identity/api/v2.0"&gt;
+	&lt;token id="ab48a9efdfedb23ty3494" expires="2010-11-01T03:32:15-05:00"&gt;
+		&lt;tenant id="t1000" name="My Project" /&gt;
+	&lt;/token&gt;
+	&lt;user id="u123" name="jqsmith"&gt;
+		&lt;roles&gt;
+			&lt;role id="100" name="compute:admin"/&gt;
+			&lt;role id="101" name="object-store:admin" tenantId="t1000"/&gt;
+		&lt;/roles&gt;
+	&lt;/user&gt;
+	&lt;serviceCatalog&gt;
+		&lt;service type="compute" name="Cloud Servers"&gt;
+			&lt;endpoint
+        tenantId="t1000"
+				region="North"
+				publicURL="https://compute.north.host.com/v1/t1000"
+				internalURL="https://compute.north.host.internal/v1/t1000"&gt;
+				&lt;version
+				id="1"
+				info="https://compute.north.host.com/v1/"
+				list="https://compute.north.host.com/"
+				/&gt;
+			&lt;/endpoint&gt;
+			&lt;endpoint
+        tenantId="t1000"
+				region="North"
+				publicURL="https://compute.north.host.com/v1.1/t1000"
+				internalURL="https://compute.north.host.internal/v1.1/t1000"&gt;
+				&lt;version
+				id="1.1"
+				info="https://compute.north.host.com/v1.1/"
+				list="https://compute.north.host.com/" /&gt;
+			&lt;/endpoint&gt;
+		&lt;/service&gt;
+		&lt;service type="object-store" name="Cloud Files"&gt;
+			&lt;endpoint
+        tenantId="t1000"
+				region="North"
+				publicURL="https://storage.north.host.com/v1/t1000"
+				internalURL="https://storage.north.host.internal/v1/t1000"&gt;
+				&lt;version
+				id="1"
+				info="https://storage.north.host.com/v1/"
+				list="https://storage.north.host.com/" /&gt;
+			&lt;/endpoint&gt;
+			&lt;endpoint
+        tenantId="t1000"
+				region="South"
+				publicURL="https://storage.south.host.com/v1/t1000"
+				internalURL="https://storage.south.host.internal/v1/t1000"&gt;
+				&lt;version
+				id="1"
+				info="https://storage.south.host.com/v1/"
+				list="https://storage.south.host.com/" /&gt;
+			&lt;/endpoint&gt;
+		&lt;/service&gt;
+		&lt;service type="dnsextension:dns" name="DNS-as-a-Service"&gt;
+			&lt;endpoint
+        tenantId="t1000"
+				publicURL="https://dns.host.com/v2.0/t1000"&gt;
+				&lt;version
+				id="2.0"
+				info="https://dns.host.com/v2.0/"
+				list="https://dns.host.com/" /&gt;
+			&lt;/endpoint&gt;
+		&lt;/service&gt;
+	&lt;/serviceCatalog&gt;
+&lt;/access&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d6e135"/><p class="title"><strong>Example 2.4. JSON Auth Response</strong></p><div class="example-contents"><pre class="programlisting">{
+  "access": {
+    "token": {
+      "id": "ab48a9efdfedb23ty3494",
+      "expires": "2010-11-01T03:32:15-05:00",
+      "tenant": {
+        "id": "t1000",
+        "name": "My Project"
+      }
+    },
+    "user": {
+      "id": "u123",
+      "name": "jqsmith",
+      "roles": [
+        {
+          "id": "100",
+          "name": "compute:admin"
+        },
+        {
+          "id": "101",
+          "name": "object-store:admin",
+          "tenantId": "t1000"
+        }
+      ],
+      "roles_links": []
+    },
+    "serviceCatalog": [
+      {
+        "name": "Cloud Servers",
+        "type": "compute",
+        "endpoints": [
+          {
+            "tenantId": "t1000",
+            "publicURL": "https://compute.north.host.com/v1/t1000",
+            "internalURL": "https://compute.north.internal/v1/t1000",
+            "region": "North",
+            "versionId": "1",
+            "versionInfo": "https://compute.north.host.com/v1/",
+            "versionList": "https://compute.north.host.com/"
+          },
+          {
+            "tenantId": "t1000",
+            "publicURL": "https://compute.north.host.com/v1.1/t1000",
+            "internalURL": "https://compute.north.internal/v1.1/t1000",
+            "region": "North",
+            "versionId": "1.1",
+            "versionInfo": "https://compute.north.host.com/v1.1/",
+            "versionList": "https://compute.north.host.com/"
+          }
+        ],
+        "endpoints_links": []
+      },
+      {
+        "name": "Cloud Files",
+        "type": "object-store",
+        "endpoints": [
+          {
+            "tenantId": "t1000",
+            "publicURL": "https://storage.north.host.com/v1/t1000",
+            "internalURL": "https://storage.north.internal/v1/t1000",
+            "region": "North",
+            "versionId": "1",
+            "versionInfo": "https://storage.north.host.com/v1/",
+            "versionList": "https://storage.north.host.com/"
+          },
+          {
+            "tenantId": "t1000",
+            "publicURL": "https://storage.south.host.com/v1/t1000",
+            "internalURL": "https://storage.south.internal/v1/t1000",
+            "region": "South",
+            "versionId": "1",
+            "versionInfo": "https://storage.south.host.com/v1/",
+            "versionList": "https://storage.south.host.com/"
+          }
+        ]
+      },
+      {
+        "name": "DNS-as-a-Service",
+        "type": "dnsextension:dns",
+        "endpoints": [
+          {
+            "tenantId": "t1000",
+            "publicURL": "https://dns.host.com/v2.0/t1000",
+            "versionId": "2.0",
+            "versionInfo": "https://dns.host.com/v2.0/",
+            "versionList": "https://dns.host.com/"
+          }
+        ]
+      }
+    ]
+  }
+}
+</pre></div></div><br class="example-break"/></div><script type="text/javascript" src="../common/main.js"><!----></script><hr/><div id="disqus_thread"><script type="text/javascript">
+	      var disqus_shortname = 'os-identitydevguide';
+	        
+	      var disqus_identifier = 'book-0001Authenticate-d1e1166';
+	        </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><script type="text/javascript" src="../common/comments.js"><!----></script></div><hr/><div class="legal"><a href="index.html">Legal notices</a></div></div><div><div id="leftnavigation" style="padding-top:3px; background-color:white;"><div id="tabs"><ul><li><a href="#treeDiv" tabindex="1"><span class="contentsTab">Contents</span></a></li><li><a href="#searchDiv" tabindex="1"><span class="searchTab">Search</span></a></li></ul><div id="treeDiv"><img src="../common/images/loading.gif" alt="loading table of contents..." id="tocLoading" style="display:block;"/><div id="ulTreeDiv" style="display:none" class="thisisthat"><ul id="tree" class="filetree"><li tabindex="2"><span class="file"><a href="chapter-0000.html">1. About This Extension</a></span><ul><li tabindex="2"><span class="file"><a href="Doc-Change-0001.html">1.1. Document Change History</a></span></li></ul></li><li tabindex="2"><span class="file"><a href="chapter-0001.html">2. Summary of Changes</a></span><ul><li tabindex="2"><span class="file"><a href="NewHeaders-0001.html">2.1. New Headers</a></span></li><li tabindex="2"><span class="file"><a href="NewFaults0001.html">2.2. New Faults</a></span></li><li tabindex="2"><span class="file"><a href="NewResources-0001.html">2.3. New Resources</a></span></li><li tabindex="2"><span class="file"><a href="NewActions0001.html">2.4. New Actions</a></span></li><li tabindex="2"><span class="file"><a href="NewElement0001.html">2.5. New Element</a></span><ul><li tabindex="2"><span class="file"><a href="RackExt-0001.html">2.5.1. 
+                  Rackspace extensions to Keystone v2.0 API enabling API Key authentication. 
+              </a></span><ul><li tabindex="2" id="webhelp-currentid"><span class="file"><a href="Authenticate-d1e1166.html">2.5.1.1. Authenticate</a></span></li></ul></li></ul></li></ul></li></ul></div></div><div id="searchDiv"><div id="search"><form onsubmit="Verifie(ditaSearch_Form);return false" name="ditaSearch_Form" class="searchForm"><fieldset class="searchFieldSet"><legend>Search</legend><center><input id="textToSearch" name="textToSearch" type="text" class="searchText"/> &nbsp; <input onclick="Verifie(ditaSearch_Form)" type="button" class="searchButton" value="Go" id="doSearch"/></center></fieldset></form></div><div id="searchResults"><center/></div><p class="searchHighlight"><a href="#" onclick="toggleHighlight()">Search Highlighter (On/Off)</a></p></div></div></div></div><script type="text/javascript" src="../common/jquery/jquery.qtip-1.0.0-rc3/jquery.qtip-1.0.0-rc3.min.js"><!--jQuery plugin for glossary popups. -->
+                   $('a[title]').qtip({ style: { name: 'cream', tip: true } })
+                </script></body></html>

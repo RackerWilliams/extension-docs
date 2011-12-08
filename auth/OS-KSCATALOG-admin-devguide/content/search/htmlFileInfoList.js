@@ -1,0 +1,15 @@
+fil = new Array();
+fil["0"]= "Admin_API_Service_Developer_Operations-d1e1357.html@@@2.1. OS-KSCATALOG Admin Extension@@@null";
+fil["1"]= "api_operations.html@@@Chapter 2. Extension Operations@@@null";
+fil["2"]= "chapter-0000.html@@@Chapter 1. About This Extension@@@null";
+fil["3"]= "DELETE_deleteEndpoint_v2.0_tenants__tenantId__OS-KSCATALOG_endpoints__endpointId__Admin_API_Service_Developer_Operations-d1e1357.html@@@2.1.2.4. Delete Endpoint.@@@null";
+fil["4"]= "DELETE_deleteEndpointTemplate_v2.0_OS-KSCATALOG_endpointTemplates__endpointTemplateId__Admin_API_Service_Developer_Operations-d1e1357.html@@@2.1.1.4. Delete Endpoint Template.@@@null";
+fil["5"]= "Doc-Change-0001.html@@@1.1. Document Change History@@@null";
+fil["6"]= "Endpoint_Template_Operations_OS-KSCATALOG.html@@@2.1.1. Endpoint Template Operations@@@null";
+fil["7"]= "GET_getEndpoint_v2.0_tenants__tenantId__OS-KSCATALOG_endpoints__endpointId__Admin_API_Service_Developer_Operations-d1e1357.html@@@2.1.2.3. Get Endpoint@@@null";
+fil["8"]= "GET_getEndpointTemplate_v2.0_OS-KSCATALOG_endpointTemplates__endpointTemplateId__Admin_API_Service_Developer_Operations-d1e1357.html@@@2.1.1.3. Get Endpoint Template@@@null";
+fil["9"]= "GET_listEndpoints_v2.0_tenants__tenantId__OS-KSCATALOG_endpoints_Admin_API_Service_Developer_Operations-d1e1357.html@@@2.1.2.1. List Endpoints@@@null";
+fil["10"]= "GET_listEndpointTemplates_v2.0_OS-KSCATALOG_endpointTemplates_Admin_API_Service_Developer_Operations-d1e1357.html@@@2.1.1.1. List Endpoint Templates@@@null";
+fil["11"]= "POST_addEndpoint_v2.0_tenants__tenantId__OS-KSCATALOG_endpoints_Admin_API_Service_Developer_Operations-d1e1357.html@@@2.1.2.2. Add Endpoint@@@null";
+fil["12"]= "POST_addEndpointTemplate_v2.0_OS-KSCATALOG_endpointTemplates_Admin_API_Service_Developer_Operations-d1e1357.html@@@2.1.1.2. Add Endpoint Template@@@null";
+fil["13"]= "Tenant_Operations_OS-KSCATALOG.html@@@2.1.2. Endpoint Operations@@@null";
