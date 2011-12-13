@@ -1,0 +1,5 @@
+* Extension Document Todos
+** TODO All links should point directly to /content/ to avoid redirects.
+** TODO Chunking should occurr at the chapter level.
+** TODO Publish XSDs and WADLs for each of the extensions.
+** TODO Remove OS-BS extension??
