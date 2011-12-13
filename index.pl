@@ -85,16 +85,16 @@ sub AddTemplateText() {
                     my $ext_desc  = $ext_meta->findvalue('normalize-space(//os:extension[1]/os:description)');
                     my $ext_alias = $ext_meta->findvalue('//os:extension[1]/@alias');
 
-                    $template_text .= "<div class='oedextension'><div class='oedtitle'><a href='$template_data[$i]{'dir'}/$file'>" . $ext_name .
+                    $template_text .= "<div class='oedextension'><div class='oedtitle'><a href='$template_data[$i]{'dir'}/$file/content'>" . $ext_name .
                         " (" . $ext_alias . ")</a></div>" . $ext_desc . "</div><br>";
                 };
                 if ($@) {
                     chomp $@;
                     $template_text .= "\n\n<!-- ERROR : $@ -->\n";
-                    $template_text .=  "<div class='oedextension'><div class='oedtitle'><a href='$template_data[$i]{'dir'}/$file'>" . $file . "</a></div></div>";
+                    $template_text .=  "<div class='oedextension'><div class='oedtitle'><a href='$template_data[$i]{'dir'}/$file/content'>" . $file . "</a></div></div>";
                 }
             } else {
-                $template_text .=  "<div class='oedextension'><div class='oedtitle'><a href='$template_data[$i]{'dir'}/$file'>" . $file . "</a></div></div>";
+                $template_text .=  "<div class='oedextension'><div class='oedtitle'><a href='$template_data[$i]{'dir'}/$file/content'>" . $file . "</a></div></div>";
             }
         }
         $template_text .= "</div></div></div>";
