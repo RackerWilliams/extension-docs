@@ -3,7 +3,7 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:exsl="http://exslt.org/common" xmlns:ng="http://docbook.org/docbook-ng"><head>
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
-<title>Chapter 2. Summary of Changes - OpenStack Compute Block Storage Extension</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OpenStack Compute Block Storage Extension"/><link rel="up" href="index.html" title="OpenStack Compute Block Storage Extension"/><link rel="prev" href="ch01s01.html" title="1.1. Document Change History"/><link rel="next" href="ch02s01.html" title="2.1. New Headers"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
+<title>Chapter 2. Summary of Changes - OpenStack Compute Block Storage Extension</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OpenStack Compute Block Storage Extension"/><link rel="up" href="index.html" title="OpenStack Compute Block Storage Extension"/><link rel="prev" href="ch01.html" title="Chapter 1. About This Extension"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
             var treeCookieId = "treeview-324";
             var language = "en";
@@ -30,17 +30,2100 @@
         </style><link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/><link rel="stylesheet" type="text/css" href="../common/css/positioning.css"/><link rel="stylesheet" type="text/css" href="../common/css/custom.css"/><link href="../atom.xml" type="application/atom+xml" rel="alternate" title="Document ATOM Feed"/><link rel="canonical" href="http://docs.rackspacecloud.com/openstack-extensions/compute/os-bs/content/ch02.html"/><!--[if IE]>
 	<link rel="stylesheet" type="text/css" href="../common/css/ie.css"/>
 	<![endif]--><link rel="stylesheet" type="text/css" href="../common/jquery/theme-redmond/jquery-ui-1.8.2.custom.css"/><link rel="stylesheet" type="text/css" href="../common/jquery/treeview/jquery.treeview.css"/><script type="text/javascript" src="../common/jquery/jquery-1.4.3.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery-ui-1.8.2.custom.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery.cookie.js"><!----></script><script type="text/javascript" src="../common/jquery/treeview/jquery.treeview.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery.qtip-1.0.0-rc3/jquery.qtip-1.0.0-rc3.min.js"><!--jQuery plugin for glossary popups. --></script><script type="text/javascript" src="search/htmlFileList.js"><!----></script><script type="text/javascript" src="search/htmlFileInfoList.js"><!----></script><script type="text/javascript" src="search/nwSearchFnt.js"><!----></script><script type="text/javascript" src="search/stemmers/en_stemmer.js"><!--//make this scalable to other languages as well.--></script><script type="text/javascript" src="search/index-1.js"><!----></script><script type="text/javascript" src="search/index-2.js"><!----></script><script type="text/javascript" src="search/index-3.js"><!----></script></head><body><div id="header"><a onclick="_gaq.push(['_trackEvent', 'Header', 'logo', 'click', 1]);" target="_blank" href="http://www.openstack.org"><img src="../common/images/openstack-logo.png" alt="OpenStack Documentation" width="157" height="47"/></a><h1>Chapter 2. Summary of Changes</h1><div id="navheader" align="right"><!----><table class="navLinks"><tr><td><a id="showHideButton" onclick="showHideToc(); _gaq.push(['_trackEvent', 'Header', 'show/hide', 'click', 1]);" class="pointLeft" title="Hide TOC tree">Sidebar
-                            </a></td><td><a accesskey="p" class="navLinkPrevious" onclick="_gaq.push(['_trackEvent', 'Header', 'prevLink', 'click', 1]);" tabindex="5" href="ch01s01.html">Prev</a> 
-				  |
-                                    <a accesskey="n" class="navLinkNext" onclick="_gaq.push(['_trackEvent', 'Header', 'nextLink', 'click', 1]);" tabindex="5" href="ch02s01.html">Next</a></td></tr></table></div></div><div id="toolbar" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><div id="toolbar-left"><p class="breadcrumbs"><a href="http://docs.openstack.org/">OpenStack Manuals</a><a href="index.html">OpenStack Compute Block Storage Extension</a></p><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" alt="Download a pdf of this document" class="pdficon" href="os-bs.pdf"><img src="../common/images/pdf.png"/></a>
+                            </a></td><td><a accesskey="p" class="navLinkPrevious" onclick="_gaq.push(['_trackEvent', 'Header', 'prevLink', 'click', 1]);" tabindex="5" href="ch01.html">Prev</a> </td></tr></table></div></div><div id="toolbar" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><div id="toolbar-left"><p class="breadcrumbs"><a href="http://docs.openstack.org/">OpenStack Manuals</a><a href="index.html">OpenStack Compute Block Storage Extension</a></p><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" alt="Download a pdf of this document" class="pdficon" href="os-bs.pdf"><img src="../common/images/pdf.png"/></a>
        
-      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext"> </div><div class="chapter"><div xmlns="" class="titlepage"><div><div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="d7e109"/>Chapter 2. Summary of Changes</h2></div></div></div><div class="toc"><p><strong>Contents</strong></p><dl><dt><span class="section"><a href="ch02s01.html">2.1. New Headers</a></span></dt><dt><span class="section"><a href="ch02s02.html">2.2. New Faults</a></span></dt><dt><span class="section"><a href="ch02s03.html">2.3. New Resources</a></span></dt><dd><dl><dt><span class="section"><a href="ch02s03s01.html">2.3.1. Volumes</a></span></dt><dt><span class="section"><a href="ch02s03s02.html">2.3.2. Backups</a></span></dt><dt><span class="section"><a href="ch02s03s03.html">2.3.3. Types</a></span></dt></dl></dd><dt><span class="section"><a href="ch02s04.html">2.4. New Actions</a></span></dt><dt><span class="section"><a href="ch02s05.html">2.5. 
+      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext"> </div><div class="chapter"><div xmlns="" class="titlepage"><div><div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="d7e109"/>Chapter 2. Summary of Changes</h2></div></div></div><div class="toc"><p><strong>Contents</strong></p><dl><dt><span class="section"><a href="ch02.html#d7e112">2.1. New Headers</a></span></dt><dt><span class="section"><a href="ch02.html#d7e115">2.2. New Faults</a></span></dt><dt><span class="section"><a href="ch02.html#d7e118">2.3. New Resources</a></span></dt><dd><dl><dt><span class="section"><a href="ch02.html#d7e338">2.3.1. Volumes</a></span></dt><dt><span class="section"><a href="ch02.html#d7e1584">2.3.2. Backups</a></span></dt><dt><span class="section"><a href="ch02.html#d7e2798">2.3.3. Types</a></span></dt></dl></dd><dt><span class="section"><a href="ch02.html#d7e2978">2.4. New Actions</a></span></dt><dt><span class="section"><a href="ch02.html#d7e2981">2.5. 
                 Changes to the OpenStack Compute API
             </a></span></dt></dl></div><p>
             The extensions adds block storage capabilites to the compute
             API.  It introduces volumes, backups, and types as top level
             entites that allow the management of block storage.
-        </p></div><script type="text/javascript" src="../common/main.js"><!----></script><hr/><div class="legal"><a href="index.html">Legal notices</a></div></div><div><div id="leftnavigation" style="padding-top:3px; background-color:white;"><div id="tabs"><ul><li><a href="#treeDiv" tabindex="1"><span class="contentsTab">Contents</span></a></li><li><a href="#searchDiv" tabindex="1"><span class="searchTab">Search</span></a></li></ul><div id="treeDiv"><img src="../common/images/loading.gif" alt="loading table of contents..." id="tocLoading" style="display:block;"/><div id="ulTreeDiv" style="display:none" class="thisisthat"><ul id="tree" class="filetree"><li tabindex="2"><span class="file"><a href="ch01.html">1. About This Extension</a></span><ul><li tabindex="2"><span class="file"><a href="ch01s01.html">1.1. Document Change History</a></span></li></ul></li><li tabindex="2" id="webhelp-currentid"><span class="file"><a href="ch02.html">2. Summary of Changes</a></span><ul><li tabindex="2"><span class="file"><a href="ch02s01.html">2.1. New Headers</a></span></li><li tabindex="2"><span class="file"><a href="ch02s02.html">2.2. New Faults</a></span></li><li tabindex="2"><span class="file"><a href="ch02s03.html">2.3. New Resources</a></span><ul><li tabindex="2"><span class="file"><a href="ch02s03s01.html">2.3.1. Volumes</a></span><ul><li tabindex="2"><span class="file"><a href="ch02s03s01s01.html">2.3.1.1. Volume Lists</a></span><ul><li tabindex="2"><span class="file"><a href="GET_listVolumes_v1.1__tenantId__OS-BS_volumes_.html">2.3.1.1.1. List Volumes</a></span></li><li tabindex="2"><span class="file"><a href="GET_listDetailVolumes_v1.1__tenantId__OS-BS_volumes_detail_.html">2.3.1.1.2. Detailed List Volumes</a></span></li></ul></li><li tabindex="2"><span class="file"><a href="ch02s03s01s02.html">2.3.1.2. Volume Opreations</a></span><ul><li tabindex="2"><span class="file"><a href="POST_createVolume_v1.1__tenantId__OS-BS_volumes_.html">2.3.1.2.1. Create Volume</a></span></li><li tabindex="2"><span class="file"><a href="PUT_updateVolume_v1.1__tenantId__OS-BS_volumes__id__.html">2.3.1.2.2. Update Volume Name</a></span></li><li tabindex="2"><span class="file"><a href="GET_getVolume_v1.1__tenantId__OS-BS_volumes__id__.html">2.3.1.2.3. Get Volume Details</a></span></li><li tabindex="2"><span class="file"><a href="DELETE_deleteVolume_v1.1__tenantId__OS-BS_volumes__id__.html">2.3.1.2.4. Delete Volume</a></span></li></ul></li><li tabindex="2"><span class="file"><a href="ch02s03s01s03.html">2.3.1.3. Volume Metadata</a></span><ul><li tabindex="2"><span class="file"><a href="PUT_setMetadata_v1.1__tenantId__OS-BS_volumes__id__metadata_.html">2.3.1.3.1. Create or Replace Metadata</a></span></li><li tabindex="2"><span class="file"><a href="POST_updateMetadata_v1.1__tenantId__OS-BS_volumes__id__metadata_.html">2.3.1.3.2. Update Metadata</a></span></li><li tabindex="2"><span class="file"><a href="GET_listMetadata_v1.1__tenantId__OS-BS_volumes__id__metadata_.html">2.3.1.3.3. List Metadata</a></span></li><li tabindex="2"><span class="file"><a href="GET_getMetadataItem_v1.1__tenantId__OS-BS_volumes__id__metadata__key__.html">2.3.1.3.4. Get Metadata Item</a></span></li><li tabindex="2"><span class="file"><a href="PUT_setMetadataItem_v1.1__tenantId__OS-BS_volumes__id__metadata__key__.html">2.3.1.3.5. Create or Update Metadata Item</a></span></li><li tabindex="2"><span class="file"><a href="DELETE_deleteMetadataItem_v1.1__tenantId__OS-BS_volumes__id__metadata__key__.html">2.3.1.3.6. Delete Metadata Item</a></span></li></ul></li></ul></li><li tabindex="2"><span class="file"><a href="ch02s03s02.html">2.3.2. Backups</a></span><ul><li tabindex="2"><span class="file"><a href="ch02s03s02s01.html">2.3.2.1. Backup Lists</a></span><ul><li tabindex="2"><span class="file"><a href="GET_listBackups_v1.1__tenantId__OS-BS_backups_.html">2.3.2.1.1. List Backups</a></span></li><li tabindex="2"><span class="file"><a href="GET_listDetailBackups_v1.1__tenantId__OS-BS_backups_detail_.html">2.3.2.1.2. Detailed List Backups</a></span></li></ul></li><li tabindex="2"><span class="file"><a href="ch02s03s02s02.html">2.3.2.2. Backup Opreations</a></span><ul><li tabindex="2"><span class="file"><a href="POST_createBackup_v1.1__tenantId__OS-BS_backups_.html">2.3.2.2.1. Create Backup</a></span></li><li tabindex="2"><span class="file"><a href="PUT_updateBackup_v1.1__tenantId__OS-BS_backups__id__.html">2.3.2.2.2. Update Backup Name</a></span></li><li tabindex="2"><span class="file"><a href="GET_getBackup_v1.1__tenantId__OS-BS_backups__id__.html">2.3.2.2.3. Get Backup Details</a></span></li><li tabindex="2"><span class="file"><a href="DELETE_deleteBackup_v1.1__tenantId__OS-BS_backups__id__.html">2.3.2.2.4. Delete Backup</a></span></li></ul></li><li tabindex="2"><span class="file"><a href="ch02s03s02s03.html">2.3.2.3. Backup Metadata</a></span><ul><li tabindex="2"><span class="file"><a href="PUT_setMetadata_v1.1__tenantId__OS-BS_backups__id__metadata_.html">2.3.2.3.1. Create or Replace Metadata</a></span></li><li tabindex="2"><span class="file"><a href="POST_updateMetadata_v1.1__tenantId__OS-BS_backups__id__metadata_.html">2.3.2.3.2. Update Metadata</a></span></li><li tabindex="2"><span class="file"><a href="GET_listMetadata_v1.1__tenantId__OS-BS_backups__id__metadata_.html">2.3.2.3.3. List Metadata</a></span></li><li tabindex="2"><span class="file"><a href="GET_getMetadataItem_v1.1__tenantId__OS-BS_backups__id__metadata__key__.html">2.3.2.3.4. Get Metadata Item</a></span></li><li tabindex="2"><span class="file"><a href="PUT_setMetadataItem_v1.1__tenantId__OS-BS_backups__id__metadata__key__.html">2.3.2.3.5. Create or Update Metadata Item</a></span></li><li tabindex="2"><span class="file"><a href="DELETE_deleteMetadataItem_v1.1__tenantId__OS-BS_backups__id__metadata__key__.html">2.3.2.3.6. Delete Metadata Item</a></span></li></ul></li></ul></li><li tabindex="2"><span class="file"><a href="ch02s03s03.html">2.3.3. Types</a></span><ul><li tabindex="2"><span class="file"><a href="GET_listTypes_v1.1__tenantId__OS-BS_types_.html">2.3.3.1. List Types</a></span></li><li tabindex="2"><span class="file"><a href="GET_getType_v1.1__tenantId__OS-BS_types__id__.html">2.3.3.2. Get Type Details</a></span></li></ul></li></ul></li><li tabindex="2"><span class="file"><a href="ch02s04.html">2.4. New Actions</a></span></li><li tabindex="2"><span class="file"><a href="ch02s05.html">2.5. 
+        </p><div class="section"><div xmlns="" class="titlepage"><div><div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="d7e112"/>2.1. New Headers</h2></div></div></div><p>None.</p></div><div class="section"><div xmlns="" class="titlepage"><div><div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="d7e115"/>2.2. New Faults</h2></div></div></div><p>None.</p></div><div class="section"><div xmlns="" class="titlepage"><div><div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="d7e118"/>2.3. New Resources</h2></div></div></div><div class="toc"><dl><dt><span class="section"><a href="ch02.html#d7e338">2.3.1. Volumes</a></span></dt><dt><span class="section"><a href="ch02.html#d7e1584">2.3.2. Backups</a></span></dt><dt><span class="section"><a href="ch02.html#d7e2798">2.3.3. Types</a></span></dt></dl></div><p>
+                The following new resources are created.
+            </p><table rules="all" id="d7e121"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><th colspan="3" align="center">Volume Lists</th></tr>
+                            <tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes​?changes-since=<em class="replaceable"><code>dateTime</code></em>&amp;​type=<em class="replaceable"><code>UUID</code></em>&amp;​backup=<em class="replaceable"><code>UUID</code></em>&amp;​name=<em class="replaceable"><code>string</code></em>&amp;​marker=<em class="replaceable"><code>UUID</code></em>&amp;​limit=<em class="replaceable"><code>int</code></em>&amp;​size=<em class="replaceable"><code>unsignedInt</code></em>&amp;​status=<em class="replaceable"><code>ExtensibleVolumeStatus</code></em></code></td><td>
+                List all volumes (IDs, names, links).
+            </td></tr>
+                        <tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/detail​?changes-since=<em class="replaceable"><code>dateTime</code></em>&amp;​type=<em class="replaceable"><code>UUID</code></em>&amp;​backup=<em class="replaceable"><code>UUID</code></em>&amp;​name=<em class="replaceable"><code>string</code></em>&amp;​marker=<em class="replaceable"><code>UUID</code></em>&amp;​limit=<em class="replaceable"><code>int</code></em>&amp;​size=<em class="replaceable"><code>unsignedInt</code></em>&amp;​status=<em class="replaceable"><code>ExtensibleVolumeStatus</code></em></code></td><td>
+                List all volumes (all details).
+            </td></tr><tr><th colspan="3" align="center">Volume Opreations</th></tr>
+                            <tr><td><span class="command"><strong>POST</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes</code></td><td>
+                Creates a new volume.
+            </td></tr>
+                        
+                            <tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}</code></td><td>
+                Update the specified volume's name.
+            </td></tr>
+                            <tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}</code></td><td>
+                List details of the specified volume.
+            </td></tr>
+                            <tr><td><span class="command"><strong>DELETE</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}</code></td><td>
+                Delete the volume.
+            </td></tr>
+                        <tr><th colspan="3" align="center">Volume Metadata</th></tr><tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}/metadata</code></td><td>
+                Set metadata.
+            </td></tr><tr><td><span class="command"><strong>POST</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}/metadata</code></td><td>
+                Update metadata items.
+            </td></tr><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}/metadata</code></td><td>
+               <p>
+                List metadata associated with the resource.
+            </p>
+            </td></tr><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}/metadata/{key}</code></td><td>
+                Get a metadata item associated with a resource.
+            </td></tr><tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}/metadata/{key}</code></td><td>
+                Set metadata item.
+            </td></tr><tr><td><span class="command"><strong>DELETE</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}/metadata/{key}</code></td><td>
+               <p>
+                Delete a metadata item.
+            </p>
+            </td></tr><tr><th colspan="3" align="center">Backup Lists</th></tr>
+                            <tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups​?changes-since=<em class="replaceable"><code>dateTime</code></em>&amp;​volume=<em class="replaceable"><code>UUID</code></em>&amp;​name=<em class="replaceable"><code>string</code></em>&amp;​marker=<em class="replaceable"><code>UUID</code></em>&amp;​limit=<em class="replaceable"><code>int</code></em>&amp;​size=<em class="replaceable"><code>unsignedInt</code></em>&amp;​status=<em class="replaceable"><code>ExtensibleBackupStatus</code></em></code></td><td>
+                List all backups (IDs, names, links).
+            </td></tr>
+                        <tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/detail​?changes-since=<em class="replaceable"><code>dateTime</code></em>&amp;​volume=<em class="replaceable"><code>UUID</code></em>&amp;​name=<em class="replaceable"><code>string</code></em>&amp;​marker=<em class="replaceable"><code>UUID</code></em>&amp;​limit=<em class="replaceable"><code>int</code></em>&amp;​size=<em class="replaceable"><code>unsignedInt</code></em>&amp;​status=<em class="replaceable"><code>ExtensibleBackupStatus</code></em></code></td><td>
+                List all backups (all details).
+            </td></tr><tr><th colspan="3" align="center">Backup Opreations</th></tr>
+                            <tr><td><span class="command"><strong>POST</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups</code></td><td>
+                Creates a new backup.
+            </td></tr>
+                        
+                            <tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}</code></td><td>
+                Update the specified backup's name.
+            </td></tr>
+                            <tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}</code></td><td>
+                List details of the specified backup.
+            </td></tr>
+                            <tr><td><span class="command"><strong>DELETE</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}</code></td><td>
+                Delete the backup.
+            </td></tr>
+                        <tr><th colspan="3" align="center">Backup Metadata</th></tr><tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata</code></td><td>
+                Set metadata.
+            </td></tr><tr><td><span class="command"><strong>POST</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata</code></td><td>
+                Update metadata items.
+            </td></tr><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata</code></td><td>
+               <p>
+                List metadata associated with the resource.
+            </p>
+            </td></tr><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata/{key}</code></td><td>
+                Get a metadata item associated with a resource.
+            </td></tr><tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata/{key}</code></td><td>
+                Set metadata item.
+            </td></tr><tr><td><span class="command"><strong>DELETE</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata/{key}</code></td><td>
+               <p>
+                Delete a metadata item.
+            </p>
+            </td></tr><tr><th colspan="3" align="center">Types</th></tr>
+                        <tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/types​?name=<em class="replaceable"><code>string</code></em>&amp;​marker=<em class="replaceable"><code>UUID</code></em>&amp;​limit=<em class="replaceable"><code>int</code></em></code></td><td>
+                List all types.
+            </td></tr>
+                    <tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/types/{id}</code></td><td>
+                List details of the specified type.
+            </td></tr></tbody></table><div class="section"><div xmlns="" class="titlepage"><div><div><h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="d7e338"/>2.3.1. Volumes</h3></div></div></div><div class="toc"><dl><dt><span class="section"><a href="ch02.html#d7e340">2.3.1.1. Volume Lists</a></span></dt><dt><span class="section"><a href="ch02.html#d7e653">2.3.1.2. Volume Opreations</a></span></dt><dt><span class="section"><a href="ch02.html#d7e1077">2.3.1.3. Volume Metadata</a></span></dt></dl></div><div class="section"><div xmlns="" class="titlepage"><div><div><h4 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="d7e340"/>2.3.1.1. Volume Lists</h4></div></div></div><div class="toc"><dl><dt><span class="section"><a href="ch02.html#GET_listVolumes_v1.1__tenantId__OS-BS_volumes_">2.3.1.1.1. List Volumes</a></span></dt><dt><span class="section"><a href="ch02.html#GET_listDetailVolumes_v1.1__tenantId__OS-BS_volumes_detail_">2.3.1.1.2. Detailed List Volumes</a></span></dt></dl></div><p>
+                        This operations provide a list of volumes associated
+                        with a particular tenant. Volumes contain a status
+                        attribute that can be used as an indication of the
+                        current volume state.  Volumes with an
+                        <code class="code">AVAILABLE</code> status are available for
+                        use.  A volume with an <code class="code">ATTACHED</code> is
+                        currently attached to a server.  Other possible values
+                        for the status attribute include:
+                        <code class="code">CREATING</code>,
+                        <code class="code">ATTACHING</code>,
+                        <code class="code">DETACHING</code>,
+                        <code class="code">DELETING</code>,
+                        <code class="code">DELETED</code>,
+                        <code class="code">UNKNOWN</code>, and
+                        <code class="code">ERROR</code>.
+                    </p><p>
+                        The list of volumes may be filtered by type, backup,
+                        name, and status via the respective query parameters.
+                        When retrieving a list of volumes via the
+                        changes-since parameter, the list will contain volumes
+                        that have been deleted since the changes-since time
+                        (see Section 3.5, in the OpenStack Compute Dev Guide
+                        for a description of Changes-Since).
+                    </p><table rules="all" id="d7e353"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody>
+                            <tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes​?changes-since=<em class="replaceable"><code>dateTime</code></em>&amp;​type=<em class="replaceable"><code>UUID</code></em>&amp;​backup=<em class="replaceable"><code>UUID</code></em>&amp;​name=<em class="replaceable"><code>string</code></em>&amp;​marker=<em class="replaceable"><code>UUID</code></em>&amp;​limit=<em class="replaceable"><code>int</code></em>&amp;​size=<em class="replaceable"><code>unsignedInt</code></em>&amp;​status=<em class="replaceable"><code>ExtensibleVolumeStatus</code></em></code></td><td>
+                List all volumes (IDs, names, links).
+            </td></tr>
+                        <tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/detail​?changes-since=<em class="replaceable"><code>dateTime</code></em>&amp;​type=<em class="replaceable"><code>UUID</code></em>&amp;​backup=<em class="replaceable"><code>UUID</code></em>&amp;​name=<em class="replaceable"><code>string</code></em>&amp;​marker=<em class="replaceable"><code>UUID</code></em>&amp;​limit=<em class="replaceable"><code>int</code></em>&amp;​size=<em class="replaceable"><code>unsignedInt</code></em>&amp;​status=<em class="replaceable"><code>ExtensibleVolumeStatus</code></em></code></td><td>
+                List all volumes (all details).
+            </td></tr></tbody></table><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="GET_listVolumes_v1.1__tenantId__OS-BS_volumes_"/>2.3.1.1.1. List Volumes</h5></div></div></div><table rules="all" id="d7e393"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes​?changes-since=<em class="replaceable"><code>dateTime</code></em>&amp;​type=<em class="replaceable"><code>UUID</code></em>&amp;​backup=<em class="replaceable"><code>UUID</code></em>&amp;​name=<em class="replaceable"><code>string</code></em>&amp;​marker=<em class="replaceable"><code>UUID</code></em>&amp;​limit=<em class="replaceable"><code>int</code></em>&amp;​size=<em class="replaceable"><code>unsignedInt</code></em>&amp;​status=<em class="replaceable"><code>ExtensibleVolumeStatus</code></em></code></td><td>
+                List all volumes (IDs, names, links).
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span>, <span class="returnvalue">203</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>)
+   </p><p>
+                A list of volumes. Each volume contains IDs, names, and
+                links -- other attributes are omitted.
+            </p><table rules="all" id="d7e431"><caption>Table 2.1. List Volumes Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">changes-since</code></td><td align="center">query</td><td align="center">DateTime</td><td><p>The <code class="code">changes-since</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">type</code></td><td align="center">query</td><td align="center">UUID</td><td><p>The <code class="code">type</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">backup</code></td><td align="center">query</td><td align="center">UUID</td><td><p>The <code class="code">backup</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">name</code></td><td align="center">query</td><td align="center">String</td><td><p>The <code class="code">name</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">marker</code></td><td align="center">query</td><td align="center">UUID</td><td><p>The <code class="code">marker</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">limit</code></td><td align="center">query</td><td align="center">Int</td><td><p>The <code class="code">limit</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">size</code></td><td align="center">query</td><td align="center">UnsignedInt</td><td><p>The <code class="code">size</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">status</code></td><td align="center">query</td><td align="center">ExtensibleVolumeStatus</td><td><p>The <code class="code">status</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr></tbody></table><div class="example"><a id="d7e516"/><p class="title"><strong>Example 2.1. List Volumes Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;volumes xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
+         xmlns:atom="http://www.w3.org/2005/Atom"&gt;
+    &lt;volume id="15e59938-07d5-11e1-90e3-e3dffe0c5983"
+            name="Work"&gt;
+        &lt;atom:link
+            rel="self"
+            href="http://servers.api.openstack.org/v1.1/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"/&gt;
+        &lt;atom:link
+            rel="bookmark"
+            href="http://servers.api.openstack.org/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"/&gt;
+    &lt;/volume&gt;
+    &lt;volume id="4512308a-0808-11e1-bff3-83d5d70a461f"
+            name="Home"&gt;
+        &lt;atom:link
+            rel="self"
+            href="http://servers.api.openstack.org/v1.1/1234/OS-BS/volumes/4512308a-0808-11e1-bff3-83d5d70a461f"/&gt;
+        &lt;atom:link
+            rel="bookmark"
+            href="http://servers.api.openstack.org/1234/OS-BS/volumes/4512308a-0808-11e1-bff3-83d5d70a461f"/&gt;
+    &lt;/volume&gt;
+&lt;/volumes&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e519"/><p class="title"><strong>Example 2.2. List Volumes Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BS:volumes" : [ 
+        {
+            "name" : "Work", 
+            "id" : "15e59938-07d5-11e1-90e3-e3dffe0c5983", 
+            "links" : [ 
+                {
+                    "rel" : "self", 
+                    "href" : "http://servers.api.openstack.org/v1.1/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"
+                }, 
+                {
+                    "rel" : "bookmark", 
+                    "href" : "http://servers.api.openstack.org/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"
+                }
+             ]
+        }, 
+        {
+            "name" : "Home", 
+            "id" : "4512308a-0808-11e1-bff3-83d5d70a461f", 
+            "links" : [ 
+                {
+                    "rel" : "self", 
+                    "href" : "http://servers.api.openstack.org/v1.1/1234/OS-BS/volumes/4512308a-0808-11e1-bff3-83d5d70a461f"
+                }, 
+                {
+                    "rel" : "bookmark", 
+                    "href" : "http://servers.api.openstack.org/1234/OS-BS/volumes/4512308a-0808-11e1-bff3-83d5d70a461f"
+                }
+             ]
+        }
+     ]
+}
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="GET_listDetailVolumes_v1.1__tenantId__OS-BS_volumes_detail_"/>2.3.1.1.2. Detailed List Volumes</h5></div></div></div><table rules="all" id="d7e524"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/detail​?changes-since=<em class="replaceable"><code>dateTime</code></em>&amp;​type=<em class="replaceable"><code>UUID</code></em>&amp;​backup=<em class="replaceable"><code>UUID</code></em>&amp;​name=<em class="replaceable"><code>string</code></em>&amp;​marker=<em class="replaceable"><code>UUID</code></em>&amp;​limit=<em class="replaceable"><code>int</code></em>&amp;​size=<em class="replaceable"><code>unsignedInt</code></em>&amp;​status=<em class="replaceable"><code>ExtensibleVolumeStatus</code></em></code></td><td>
+                List all volumes (all details).
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span>, <span class="returnvalue">203</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>)
+   </p><p>
+                A detailed volume list.
+            </p><table rules="all" id="d7e562"><caption>Table 2.2. Detailed List Volumes Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">changes-since</code></td><td align="center">query</td><td align="center">DateTime</td><td><p>The <code class="code">changes-since</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">type</code></td><td align="center">query</td><td align="center">UUID</td><td><p>The <code class="code">type</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">backup</code></td><td align="center">query</td><td align="center">UUID</td><td><p>The <code class="code">backup</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">name</code></td><td align="center">query</td><td align="center">String</td><td><p>The <code class="code">name</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">marker</code></td><td align="center">query</td><td align="center">UUID</td><td><p>The <code class="code">marker</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">limit</code></td><td align="center">query</td><td align="center">Int</td><td><p>The <code class="code">limit</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">size</code></td><td align="center">query</td><td align="center">UnsignedInt</td><td><p>The <code class="code">size</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">status</code></td><td align="center">query</td><td align="center">ExtensibleVolumeStatus</td><td><p>The <code class="code">status</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr></tbody></table><div class="example"><a id="d7e647"/><p class="title"><strong>Example 2.3. Detailed List Volumes Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;volumes xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
+         xmlns:atom="http://www.w3.org/2005/Atom"&gt;
+    &lt;volume id="15e59938-07d5-11e1-90e3-e3dffe0c5983"
+            name="Work"
+            typeId="35e1c8d2-e477-11e0-93ed-4f2505dfa32e"
+            created="2011-09-09T00:00:00Z"
+            attached="2011-11-11T00:00:00Z"
+            tenantId="27765"
+            userId="joeuser"
+            size="1024"
+            status="ATTACHED"&gt;
+        &lt;attachments&gt;
+            &lt;server id="52415800-8b69-11e0-9b19-734f6af67565"&gt;
+                &lt;atom:link
+                    rel="self"
+                    href="http://servers.api.openstack.org/v1.1/1234/servers/52415800-8b69-11e0-9b19-734f6af67565"/&gt;
+                &lt;atom:link
+                    rel="bookmark"
+                    href="http://servers.api.openstack.org/1234/servers/52415800-8b69-11e0-9b19-734f6af67565"/&gt;
+            &lt;/server&gt;
+        &lt;/attachments&gt;
+        &lt;metadata&gt;
+            &lt;meta key="Type"&gt;Work Directory&lt;/meta&gt;
+            &lt;meta key="Owner"&gt;Joe User&lt;/meta&gt;
+        &lt;/metadata&gt;
+        &lt;atom:link
+            rel="self"
+            href="http://servers.api.openstack.org/v1.1/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"/&gt;
+        &lt;atom:link
+            rel="bookmark"
+        href="http://servers.api.openstack.org/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"/&gt;
+    &lt;/volume&gt;
+    &lt;volume id="4512308a-0808-11e1-bff3-83d5d70a461f"
+            name="Home"
+            typeId="35e1c8d2-e477-11e0-93ed-4f2505dfa32e"
+            created="2011-09-15T00:00:00Z"
+            tenantId="27765"
+            userId="joeuser"
+            size="1024"
+            status="ATTACHING"&gt;
+        &lt;attachments&gt;
+            &lt;server id="52415800-8b69-11e0-9b19-734f6af67565"&gt;
+                &lt;atom:link
+                    rel="self"
+                    href="http://servers.api.openstack.org/v1.1/1234/servers/52415800-8b69-11e0-9b19-734f6af67565"/&gt;
+                &lt;atom:link
+                    rel="bookmark"
+                    href="http://servers.api.openstack.org/1234/servers/52415800-8b69-11e0-9b19-734f6af67565"/&gt;
+            &lt;/server&gt;
+        &lt;/attachments&gt;
+        &lt;metadata&gt;
+            &lt;meta key="Type"&gt;Home Directory&lt;/meta&gt;
+            &lt;meta key="Owner"&gt;Joe User&lt;/meta&gt;
+        &lt;/metadata&gt;
+        &lt;atom:link
+            rel="self"
+            href="http://servers.api.openstack.org/v1.1/1234/OS-BS/volumes/4512308a-0808-11e1-bff3-83d5d70a461f"/&gt;
+        &lt;atom:link
+            rel="bookmark"
+            href="http://servers.api.openstack.org/1234/OS-BS/volumes/4512308a-0808-11e1-bff3-83d5d70a461f"/&gt;
+    &lt;/volume&gt;
+&lt;/volumes&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e650"/><p class="title"><strong>Example 2.4. Detailed List Volumes Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BS:volumes" : [ 
+        {
+            "name" : "Work", 
+            "id" : "15e59938-07d5-11e1-90e3-e3dffe0c5983", 
+            "typeId" : "35e1c8d2-e477-11e0-93ed-4f2505dfa32e", 
+            "created" : "2011-09-09T00:00:00Z", 
+            "attached" : "2011-11-11T00:00:00Z", 
+            "tenantId" : "27765", 
+            "userId" : "joeuser", 
+            "size" : 1024, 
+            "status" : "ATTACHED", 
+            "attachments" : [ 
+                {
+                    "id" : "52415800-8b69-11e0-9b19-734f6af67565", 
+                    "links" : [ 
+                        {
+                            "rel" : "self", 
+                            "href" : "http://servers.api.openstack.org/v1.1/1234/servers/52415800-8b69-11e0-9b19-734f6af67565"
+                        }, 
+                        {
+                            "rel" : "bookmark", 
+                            "href" : "http://servers.api.openstack.org/1234/servers/52415800-8b69-11e0-9b19-734f6af67565"
+                        }
+                     ]
+                }
+             ], 
+            "metadata" : {
+                "Type" : "Work Directory", 
+                "Owner" : "Joe User"
+            }, 
+            "links" : [ 
+                {
+                    "rel" : "self", 
+                    "href" : "http://servers.api.openstack.org/v1.1/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"
+                }, 
+                {
+                    "rel" : "bookmark", 
+                    "href" : "http://servers.api.openstack.org/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"
+                }
+             ]
+        }, 
+        {
+            "name" : "Home", 
+            "id" : "4512308a-0808-11e1-bff3-83d5d70a461f", 
+            "typeId" : "35e1c8d2-e477-11e0-93ed-4f2505dfa32e", 
+            "created" : "2011-09-15T00:00:00Z", 
+            "tenantId" : "27765", 
+            "userId" : "joeuser", 
+            "size" : 1024, 
+            "status" : "ATTACHING", 
+            "attachments" : [ 
+                {
+                    "id" : "52415800-8b69-11e0-9b19-734f6af67565", 
+                    "links" : [ 
+                        {
+                            "rel" : "self", 
+                            "href" : "http://servers.api.openstack.org/v1.1/1234/servers/52415800-8b69-11e0-9b19-734f6af67565"
+                        }, 
+                        {
+                            "rel" : "bookmark", 
+                            "href" : "http://servers.api.openstack.org/1234/servers/52415800-8b69-11e0-9b19-734f6af67565"
+                        }
+                     ]
+                }
+             ], 
+            "metadata" : {
+                "Type" : "Home Directory", 
+                "Owner" : "Joe User"
+            }, 
+            "links" : [ 
+                {
+                    "rel" : "self", 
+                    "href" : "http://servers.api.openstack.org/v1.1/1234/OS-BS/volumes/4512308a-0808-11e1-bff3-83d5d70a461f"
+                }, 
+                {
+                    "rel" : "bookmark", 
+                    "href" : "http://servers.api.openstack.org/1234/OS-BS/volumes/4512308a-0808-11e1-bff3-83d5d70a461f"
+                }
+             ]
+        }
+     ]
+}
+</pre></div></div><br class="example-break"/></div></div><div class="section"><div xmlns="" class="titlepage"><div><div><h4 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="d7e653"/>2.3.1.2. Volume Opreations</h4></div></div></div><div class="toc"><dl><dt><span class="section"><a href="ch02.html#POST_createVolume_v1.1__tenantId__OS-BS_volumes_">2.3.1.2.1. Create Volume</a></span></dt><dt><span class="section"><a href="ch02.html#PUT_updateVolume_v1.1__tenantId__OS-BS_volumes__id__">2.3.1.2.2. Update Volume Name</a></span></dt><dt><span class="section"><a href="ch02.html#GET_getVolume_v1.1__tenantId__OS-BS_volumes__id__">2.3.1.2.3. Get Volume Details</a></span></dt><dt><span class="section"><a href="ch02.html#DELETE_deleteVolume_v1.1__tenantId__OS-BS_volumes__id__">2.3.1.2.4. Delete Volume</a></span></dt></dl></div><table rules="all" id="d7e655"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody>
+                            <tr><td><span class="command"><strong>POST</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes</code></td><td>
+                Creates a new volume.
+            </td></tr>
+                        
+                            <tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}</code></td><td>
+                Update the specified volume's name.
+            </td></tr>
+                            <tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}</code></td><td>
+                List details of the specified volume.
+            </td></tr>
+                            <tr><td><span class="command"><strong>DELETE</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}</code></td><td>
+                Delete the volume.
+            </td></tr>
+                        </tbody></table><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="POST_createVolume_v1.1__tenantId__OS-BS_volumes_"/>2.3.1.2.1. Create Volume</h5></div></div></div><table rules="all" id="d7e691"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>POST</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes</code></td><td>
+                Creates a new volume.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">202</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>),
+            badMediaType (<span class="errorcode">415</span>)
+   </p><table frame="void" id="d7e721"><tbody><tr>
+                        <td>Status Transition:</td>
+                        <td colspan="3">
+                           <code class="code">CREATING</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">AVAILABLE</code>
+                        </td>
+                     </tr><tr>
+                        <td/>
+                        <td colspan="3">
+                           <code class="code">CREATING</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">ERROR</code>
+                 (on error)</td>
+                     </tr></tbody></table><p>
+                The operation creates a new volume.  The
+                <code class="code">size</code> attribute is optional when
+                creating a volume from a backup by supplying the
+                <code class="code">backupId</code>.  If a
+                <code class="code">name</code> is not supplied a random name
+                may be generated by the system. The progress of the
+                request can be checked by performing subsequent <span class="command"><strong>GET</strong></span>s
+                on the URL returened via the
+                <code class="code">Location</code> header and avialable via
+                the <code class="code">self</code> link in the
+                representation. The representation also contains a
+                <code class="code">progress</code> attribute which indicates
+                percent completion.
+            </p><p>
+                Custom volume metadata can also be supplied at create
+                time.  The maximum size of the metadata key and value
+                is 255 bytes each.  The maximum number of key-value
+                pairs that can be supplied per volume is determined by
+                the compute provider and may be queried via the
+                OS-BS:maxVolumeMeta absolute limit.
+            </p><table rules="all" id="d7e756"><caption>Table 2.3. Create Volume Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr></tbody></table><div class="example"><a id="d7e778"/><p class="title"><strong>Example 2.5. Create Volume Request: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;volume xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
+        name="Work"
+        typeId="35e1c8d2-e477-11e0-93ed-4f2505dfa32e"
+        size="1024"&gt;
+    &lt;metadata&gt;
+        &lt;meta key="Type"&gt;Work&lt;/meta&gt;
+    &lt;/metadata&gt;
+&lt;/volume&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e781"/><p class="title"><strong>Example 2.6. Create Volume Request: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BS:volume" : {
+        "name" : "Work", 
+        "typeId" : "35e1c8d2-e477-11e0-93ed-4f2505dfa32e", 
+        "size" : 1024, 
+        "metadata" : {
+            "Type" : "Work"
+        }
+    }
+}
+</pre></div></div><br class="example-break"/><table rules="all" id="d7e784"><caption>Table 2.4. Create Volume Response Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">Location</code></td><td align="center">header</td><td align="center">AnyURI</td><td>
+                    <p>
+                        The full URL to the newly created volume is
+                        returned via the <code class="code">Loctaton</code>
+                        header.  This URL is also available via the
+                        <code class="code">self</code> link in the volume
+                        representation.
+                    </p>
+                  <p>The <code class="code">Location</code> header  should always be supplied. </p></td></tr></tbody></table><div class="example"><a id="d7e808"/><p class="title"><strong>Example 2.7. Create Volume Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;volume xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
+        xmlns:atom="http://www.w3.org/2005/Atom"
+        id="15e59938-07d5-11e1-90e3-e3dffe0c5983"
+        name="Work"
+        typeId="35e1c8d2-e477-11e0-93ed-4f2505dfa32e"
+        created="2011-09-09T00:00:00Z"
+        tenantId="27765"
+        userId="joeuser"
+        size="1024"
+        progress="0"
+        status="CREATING"&gt;
+    &lt;metadata&gt;
+        &lt;meta key="Type"&gt;Work&lt;/meta&gt;
+    &lt;/metadata&gt;
+    &lt;atom:link
+        rel="self"
+        href="http://servers.api.openstack.org/v1.1/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"/&gt;
+    &lt;atom:link
+        rel="bookmark"
+        href="http://servers.api.openstack.org/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"/&gt;
+&lt;/volume&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e811"/><p class="title"><strong>Example 2.8. Create Volume Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BS:volume" : {
+        "name" : "Work", 
+        "id" : "15e59938-07d5-11e1-90e3-e3dffe0c5983", 
+        "typeId" : "35e1c8d2-e477-11e0-93ed-4f2505dfa32e", 
+        "created" : "2011-09-09T00:00:00Z", 
+        "tenantId" : "27765", 
+        "userId" : "joeuser", 
+        "progress" : 0, 
+        "size" : 1024, 
+        "status" : "CREATING", 
+        "metadata" : {
+            "Type" : "Work"
+        }, 
+        "links" : [ 
+            {
+                "rel" : "self", 
+                "href" : "http://servers.api.openstack.org/v1.1/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"
+            }, 
+            {
+                "rel" : "bookmark", 
+                "href" : "http://servers.api.openstack.org/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"
+            }
+         ]
+    }
+}
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="PUT_updateVolume_v1.1__tenantId__OS-BS_volumes__id__"/>2.3.1.2.2. Update Volume Name</h5></div></div></div><table rules="all" id="d7e816"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}</code></td><td>
+                Update the specified volume's name.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>),
+            badMediaType (<span class="errorcode">415</span>)
+   </p><table frame="void" id="d7e846"><tbody><tr>
+                        <td>Status Transition:</td>
+                        <td colspan="3">
+                           <code class="code">AVAILABLE</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">AVAILABLE</code>
+                        </td>
+                     </tr></tbody></table><p>
+                The operation updates the volume's name. Only the
+                volume's name is updateable, other fields are ignored.
+            </p><table rules="all" id="d7e861"><caption>Table 2.5. Update Volume Name Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the volume..
+                            </p>
+                        <p/></td></tr></tbody></table><div class="example"><a id="d7e891"/><p class="title"><strong>Example 2.9. Update Volume Name Request: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;volume xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
+        name="New Work"/&gt;
+
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e894"/><p class="title"><strong>Example 2.10. Update Volume Name Request: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BS:volume" : {
+        "name" : "New Work"
+    }
+}
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e897"/><p class="title"><strong>Example 2.11. Update Volume Name Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;volume xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
+        xmlns:atom="http://www.w3.org/2005/Atom"
+        id="15e59938-07d5-11e1-90e3-e3dffe0c5983"
+        name="New Work"
+        typeId="35e1c8d2-e477-11e0-93ed-4f2505dfa32e"
+        updated="2011-11-15T00:00:00Z"
+        created="2011-09-09T00:00:00Z"
+        attached="2011-11-11T00:00:00Z"
+        tenantId="27765"
+        userId="joeuser"
+        size="1024"
+        status="ATTACHED"&gt;
+    &lt;attachments&gt;
+        &lt;server id="52415800-8b69-11e0-9b19-734f6af67565"&gt;
+            &lt;atom:link
+                rel="self"
+                href="http://servers.api.openstack.org/v1.1/1234/servers/52415800-8b69-11e0-9b19-734f6af67565"/&gt;
+            &lt;atom:link
+                rel="bookmark"
+                href="http://servers.api.openstack.org/1234/servers/52415800-8b69-11e0-9b19-734f6af67565"/&gt;
+        &lt;/server&gt;
+    &lt;/attachments&gt;
+    &lt;metadata&gt;
+        &lt;meta key="Type"&gt;Work Directory&lt;/meta&gt;
+        &lt;meta key="Owner"&gt;Joe User&lt;/meta&gt;
+    &lt;/metadata&gt;
+    &lt;atom:link
+        rel="self"
+        href="http://servers.api.openstack.org/v1.1/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"/&gt;
+    &lt;atom:link
+        rel="bookmark"
+        href="http://servers.api.openstack.org/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"/&gt;
+&lt;/volume&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e900"/><p class="title"><strong>Example 2.12. Update Volume Name Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BS:volume" : {
+        "name" : "New Work", 
+        "id" : "15e59938-07d5-11e1-90e3-e3dffe0c5983", 
+        "typeId" : "35e1c8d2-e477-11e0-93ed-4f2505dfa32e", 
+        "updated" : "2011-11-15T00:00:00Z", 
+        "created" : "2011-09-09T00:00:00Z", 
+        "attached" : "2011-11-11T00:00:00Z", 
+        "tenantId" : "27765", 
+        "userId" : "joeuser", 
+        "size" : 1024, 
+        "status" : "ATTACHED", 
+        "attachments" : [ 
+            {
+                "id" : "52415800-8b69-11e0-9b19-734f6af67565", 
+                "links" : [ 
+                    {
+                        "rel" : "self", 
+                        "href" : "http://servers.api.openstack.org/v1.1/1234/servers/52415800-8b69-11e0-9b19-734f6af67565"
+                    }, 
+                    {
+                        "rel" : "bookmark", 
+                        "href" : "http://servers.api.openstack.org/1234/servers/52415800-8b69-11e0-9b19-734f6af67565"
+                    }
+                 ]
+            }
+         ], 
+        "metadata" : {
+            "Type" : "Work Directory", 
+            "Owner" : "Joe User"
+        }, 
+        "links" : [ 
+            {
+                "rel" : "self", 
+                "href" : "http://servers.api.openstack.org/v1.1/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"
+            }, 
+            {
+                "rel" : "bookmark", 
+                "href" : "http://servers.api.openstack.org/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"
+            }
+         ]
+    }
+}
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="GET_getVolume_v1.1__tenantId__OS-BS_volumes__id__"/>2.3.1.2.3. Get Volume Details</h5></div></div></div><table rules="all" id="d7e905"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}</code></td><td>
+                List details of the specified volume.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span>, <span class="returnvalue">203</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>)
+   </p><table rules="all" id="d7e935"><caption>Table 2.6. Get Volume Details Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the volume..
+                            </p>
+                        <p/></td></tr></tbody></table><p>This operation does not require a request body.</p><div class="example"><a id="d7e965"/><p class="title"><strong>Example 2.13. Get Volume Details Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;volume xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
+        xmlns:atom="http://www.w3.org/2005/Atom"
+        id="15e59938-07d5-11e1-90e3-e3dffe0c5983"
+        name="Work"
+        typeId="35e1c8d2-e477-11e0-93ed-4f2505dfa32e"
+        created="2011-09-09T00:00:00Z"
+        attached="2011-11-11T00:00:00Z"
+        tenantId="27765"
+        userId="joeuser"
+        size="1024"
+        status="ATTACHED"&gt;
+    &lt;attachments&gt;
+        &lt;server id="52415800-8b69-11e0-9b19-734f6af67565"&gt;
+            &lt;atom:link
+                rel="self"
+                href="http://servers.api.openstack.org/v1.1/1234/servers/52415800-8b69-11e0-9b19-734f6af67565"/&gt;
+            &lt;atom:link
+                rel="bookmark"
+                href="http://servers.api.openstack.org/1234/servers/52415800-8b69-11e0-9b19-734f6af67565"/&gt;
+        &lt;/server&gt;
+    &lt;/attachments&gt;
+    &lt;metadata&gt;
+        &lt;meta key="Type"&gt;Work Directory&lt;/meta&gt;
+        &lt;meta key="Owner"&gt;Joe User&lt;/meta&gt;
+    &lt;/metadata&gt;
+    &lt;atom:link
+        rel="self"
+        href="http://servers.api.openstack.org/v1.1/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"/&gt;
+    &lt;atom:link
+        rel="bookmark"
+        href="http://servers.api.openstack.org/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"/&gt;
+&lt;/volume&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e968"/><p class="title"><strong>Example 2.14. Get Volume Details Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BS:volume" : {
+        "name" : "Work", 
+        "id" : "15e59938-07d5-11e1-90e3-e3dffe0c5983", 
+        "typeId" : "35e1c8d2-e477-11e0-93ed-4f2505dfa32e", 
+        "created" : "2011-09-09T00:00:00Z", 
+        "attached" : "2011-11-11T00:00:00Z", 
+        "tenantId" : "27765", 
+        "userId" : "joeuser", 
+        "size" : 1024, 
+        "status" : "ATTACHED", 
+        "attachments" : [ 
+            {
+                "id" : "52415800-8b69-11e0-9b19-734f6af67565", 
+                "links" : [ 
+                    {
+                        "rel" : "self", 
+                        "href" : "http://servers.api.openstack.org/v1.1/1234/servers/52415800-8b69-11e0-9b19-734f6af67565"
+                    }, 
+                    {
+                        "rel" : "bookmark", 
+                        "href" : "http://servers.api.openstack.org/1234/servers/52415800-8b69-11e0-9b19-734f6af67565"
+                    }
+                 ]
+            }
+         ], 
+        "metadata" : {
+            "Type" : "Work Directory", 
+            "Owner" : "Joe User"
+        }, 
+        "links" : [ 
+            {
+                "rel" : "self", 
+                "href" : "http://servers.api.openstack.org/v1.1/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"
+            }, 
+            {
+                "rel" : "bookmark", 
+                "href" : "http://servers.api.openstack.org/1234/OS-BS/volumes/15e59938-07d5-11e1-90e3-e3dffe0c5983"
+            }
+         ]
+    }
+}
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="DELETE_deleteVolume_v1.1__tenantId__OS-BS_volumes__id__"/>2.3.1.2.4. Delete Volume</h5></div></div></div><table rules="all" id="d7e973"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>DELETE</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}</code></td><td>
+                Delete the volume.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">204</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>)
+   </p><table frame="void" id="d7e1002"><tbody><tr>
+                        <td>Status Transition:</td>
+                        <td colspan="3">
+                           <code class="code">AVAILABLE</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">DELETING</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">DELETED</code>
+                        </td>
+                     </tr><tr>
+                        <td/>
+                        <td colspan="3">
+                           <code class="code">AVAILABLE</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">DELETING</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">ERROR</code>
+                 (on error)</td>
+                     </tr></tbody></table><p>
+                Deletes the volume.  The volume must be unattached and
+                <code class="code">AVAILABLE</code> on in
+                <code class="code">ERROR</code> before it can be deleted.
+            </p><table rules="all" id="d7e1047"><caption>Table 2.7. Delete Volume Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the volume..
+                            </p>
+                        <p/></td></tr></tbody></table><p>This operation does not require a request body and does not return a response body.</p></div></div><div class="section"><div xmlns="" class="titlepage"><div><div><h4 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="d7e1077"/>2.3.1.3. Volume Metadata</h4></div></div></div><div class="toc"><dl><dt><span class="section"><a href="ch02.html#PUT_setMetadata_v1.1__tenantId__OS-BS_volumes__id__metadata_">2.3.1.3.1. Create or Replace Metadata</a></span></dt><dt><span class="section"><a href="ch02.html#POST_updateMetadata_v1.1__tenantId__OS-BS_volumes__id__metadata_">2.3.1.3.2. Update Metadata</a></span></dt><dt><span class="section"><a href="ch02.html#GET_listMetadata_v1.1__tenantId__OS-BS_volumes__id__metadata_">2.3.1.3.3. List Metadata</a></span></dt><dt><span class="section"><a href="ch02.html#GET_getMetadataItem_v1.1__tenantId__OS-BS_volumes__id__metadata__key__">2.3.1.3.4. Get Metadata Item</a></span></dt><dt><span class="section"><a href="ch02.html#PUT_setMetadataItem_v1.1__tenantId__OS-BS_volumes__id__metadata__key__">2.3.1.3.5. Create or Update Metadata Item</a></span></dt><dt><span class="section"><a href="ch02.html#DELETE_deleteMetadataItem_v1.1__tenantId__OS-BS_volumes__id__metadata__key__">2.3.1.3.6. Delete Metadata Item</a></span></dt></dl></div><p>
+                        The following operations allow access to
+                        volume metadata.
+                    </p><table rules="all" id="d7e1080"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}/metadata</code></td><td>
+                Set metadata.
+            </td></tr><tr><td><span class="command"><strong>POST</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}/metadata</code></td><td>
+                Update metadata items.
+            </td></tr><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}/metadata</code></td><td>
+               <p>
+                List metadata associated with the resource.
+            </p>
+            </td></tr><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}/metadata/{key}</code></td><td>
+                Get a metadata item associated with a resource.
+            </td></tr><tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}/metadata/{key}</code></td><td>
+                Set metadata item.
+            </td></tr><tr><td><span class="command"><strong>DELETE</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}/metadata/{key}</code></td><td>
+               <p>
+                Delete a metadata item.
+            </p>
+            </td></tr></tbody></table><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="PUT_setMetadata_v1.1__tenantId__OS-BS_volumes__id__metadata_"/>2.3.1.3.1. Create or Replace Metadata</h5></div></div></div><table rules="all" id="d7e1130"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}/metadata</code></td><td>
+                Set metadata.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>),
+            badMediaType (<span class="errorcode">415</span>),
+            buildInProgress (<span class="errorcode">409</span>)
+   </p><p>
+                Sets metadata for the resource. The metadata items set
+                on the resource will be exactly those specified on the
+                requests. Existing metadata items are replaced with
+                the ones provided in the request. Metadata items, set
+                previously, but not sepcifed in the request will
+                be removed.
+            </p><p>
+                An overLimit (<span class="errorcode">413</span>) fault
+                may be thrown if the maximum number of metadata items
+                is exceeded.
+            </p><table rules="all" id="d7e1164"><caption>Table 2.8. Create or Replace Metadata Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the volume..
+                            </p>
+                        <p/></td></tr></tbody></table><div class="example"><a id="d7e1193"/><p class="title"><strong>Example 2.15. Create or Replace Metadata Request: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;metadata xmlns="http://docs.openstack.org/compute/api/v1.1"&gt;
+    &lt;meta key="Label"&gt;Web&lt;/meta&gt;
+    &lt;meta key="Version"&gt;2.1&lt;/meta&gt;
+&lt;/metadata&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e1196"/><p class="title"><strong>Example 2.16. Create or Replace Metadata Request: JSON</strong></p><div class="example-contents"><pre class="programlisting">{
+    "metadata" :  {
+            "Label" : "Web",
+            "Version" : "2.1"
+        }
+}
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e1199"/><p class="title"><strong>Example 2.17. Create or Replace Metadata Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;metadata xmlns="http://docs.openstack.org/compute/api/v1.1"&gt;
+    &lt;meta key="Label"&gt;Web&lt;/meta&gt;
+    &lt;meta key="Version"&gt;2.1&lt;/meta&gt;
+&lt;/metadata&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e1202"/><p class="title"><strong>Example 2.18. Create or Replace Metadata Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;metadata xmlns="http://docs.openstack.org/compute/api/v1.1"&gt;
+    &lt;meta key="Label"&gt;Web&lt;/meta&gt;
+    &lt;meta key="Version"&gt;2.1&lt;/meta&gt;
+&lt;/metadata&gt;
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="POST_updateMetadata_v1.1__tenantId__OS-BS_volumes__id__metadata_"/>2.3.1.3.2. Update Metadata</h5></div></div></div><table rules="all" id="d7e1207"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>POST</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}/metadata</code></td><td>
+                Update metadata items.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>),
+            badMediaType (<span class="errorcode">415</span>),
+            buildInProgress (<span class="errorcode">409</span>)
+   </p><p>
+                Updates resource metadata. Updates will replace
+                existing metadata items with the same key. Items
+                not explicitly mentioned in the request will not be
+                modified. An overLimit (<span class="errorcode">413</span>)
+                fault may be thrown if the operation causes the
+                maximum number of metadata items to be exceeded.
+            </p><table rules="all" id="d7e1240"><caption>Table 2.9. Update Metadata Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the volume..
+                            </p>
+                        <p/></td></tr></tbody></table><div class="example"><a id="d7e1269"/><p class="title"><strong>Example 2.19. Update Metadata Request: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;metadata xmlns="http://docs.openstack.org/compute/api/v1.1"&gt;
+    &lt;meta key="Label"&gt;Web2&lt;/meta&gt;
+&lt;/metadata&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e1272"/><p class="title"><strong>Example 2.20. Update Metadata Request: JSON</strong></p><div class="example-contents"><pre class="programlisting">{
+    "metadata" : {
+            "Label" : "Web2"
+        }
+}
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e1275"/><p class="title"><strong>Example 2.21. Update Metadata Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;metadata xmlns="http://docs.openstack.org/compute/api/v1.1"&gt;
+    &lt;meta key="Label"&gt;Web2&lt;/meta&gt;
+    &lt;meta key="Version"&gt;2.1&lt;/meta&gt;
+&lt;/metadata&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e1278"/><p class="title"><strong>Example 2.22. Update Metadata Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">{
+    "metadata" : {
+            "Label" : "Web2",
+            "Version" : "2.1"
+        }
+}
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="GET_listMetadata_v1.1__tenantId__OS-BS_volumes__id__metadata_"/>2.3.1.3.3. List Metadata</h5></div></div></div><table rules="all" id="d7e1283"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}/metadata</code></td><td>
+               <p>
+                List metadata associated with the resource.
+            </p>
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span>, <span class="returnvalue">203</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>)
+   </p>
+               <p>
+                List metadata associated with the resource.
+            </p>
+            <table rules="all" id="d7e1315"><caption>Table 2.10. List Metadata Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the volume..
+                            </p>
+                        <p/></td></tr></tbody></table><p>This operation does not require a request body.</p><div class="example"><a id="d7e1345"/><p class="title"><strong>Example 2.23. List Metadata Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;metadata xmlns="http://docs.openstack.org/compute/api/v1.1"&gt;
+    &lt;meta key="Label"&gt;Web&lt;/meta&gt;
+    &lt;meta key="Version"&gt;2.1&lt;/meta&gt;
+&lt;/metadata&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e1348"/><p class="title"><strong>Example 2.24. List Metadata Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">{
+    "metadata" :  {
+            "Label" : "Web",
+            "Version" : "2.1"
+        }
+}
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="GET_getMetadataItem_v1.1__tenantId__OS-BS_volumes__id__metadata__key__"/>2.3.1.3.4. Get Metadata Item</h5></div></div></div><table rules="all" id="d7e1353"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}/metadata/{key}</code></td><td>
+                Get a metadata item associated with a resource.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span>, <span class="returnvalue">203</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>)
+   </p><p>
+                Retrieves a single metadata item by key.
+            </p><table rules="all" id="d7e1384"><caption>Table 2.11. Get Metadata Item Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the volume..
+                            </p>
+                        <p/></td></tr><tr><td align="center"><code class="code">key</code></td><td align="center">template</td><td align="center">MetadataKey</td><td>
+                    <p>
+                        A string no longer than 255 characters.
+                    </p>
+                <p/></td></tr></tbody></table><p>This operation does not require a request body.</p><div class="example"><a id="d7e1422"/><p class="title"><strong>Example 2.25. Get Metadata Item Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;meta
+    xmlns="http://docs.openstack.org/compute/api/v1.1"
+    key="Label"&gt;Web&lt;/meta&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e1425"/><p class="title"><strong>Example 2.26. Get Metadata Item Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">{
+    "meta" : {
+            "Label" : "Web"
+        } 
+}
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="PUT_setMetadataItem_v1.1__tenantId__OS-BS_volumes__id__metadata__key__"/>2.3.1.3.5. Create or Update Metadata Item</h5></div></div></div><table rules="all" id="d7e1430"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}/metadata/{key}</code></td><td>
+                Set metadata item.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>),
+            badMediaType (<span class="errorcode">415</span>),
+            buildInProgress (<span class="errorcode">409</span>)
+   </p><p>
+                Sets a metadata item by its key.  An overLimit
+                (<span class="errorcode">413</span>) fault may be thrown if
+                the operation causes the maximum number of metadata
+                items to be exceeded.
+            </p><table rules="all" id="d7e1463"><caption>Table 2.12. Create or Update Metadata Item Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the volume..
+                            </p>
+                        <p/></td></tr><tr><td align="center"><code class="code">key</code></td><td align="center">template</td><td align="center">MetadataKey</td><td>
+                    <p>
+                        A string no longer than 255 characters.
+                    </p>
+                <p/></td></tr></tbody></table><div class="example"><a id="d7e1500"/><p class="title"><strong>Example 2.27. Create or Update Metadata Item Request: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;meta
+    xmlns="http://docs.openstack.org/compute/api/v1.1"
+    key="Label"&gt;Web&lt;/meta&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e1503"/><p class="title"><strong>Example 2.28. Create or Update Metadata Item Request: JSON</strong></p><div class="example-contents"><pre class="programlisting">{
+    "meta" : {
+            "Label" : "Web"
+        } 
+}
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e1506"/><p class="title"><strong>Example 2.29. Create or Update Metadata Item Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;meta
+    xmlns="http://docs.openstack.org/compute/api/v1.1"
+    key="Label"&gt;Web&lt;/meta&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e1509"/><p class="title"><strong>Example 2.30. Create or Update Metadata Item Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">{
+    "meta" : {
+            "Label" : "Web"
+        } 
+}
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="DELETE_deleteMetadataItem_v1.1__tenantId__OS-BS_volumes__id__metadata__key__"/>2.3.1.3.6. Delete Metadata Item</h5></div></div></div><table rules="all" id="d7e1514"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>DELETE</strong></span></td><td><code class="code">/{tenantId}/OS-BS/volumes/{id}/metadata/{key}</code></td><td>
+               <p>
+                Delete a metadata item.
+            </p>
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">204</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>),
+            buildInProgress (<span class="errorcode">409</span>)
+   </p>
+               <p>
+                Delete a metadata item.
+            </p>
+            <table rules="all" id="d7e1546"><caption>Table 2.13. Delete Metadata Item Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the volume..
+                            </p>
+                        <p/></td></tr><tr><td align="center"><code class="code">key</code></td><td align="center">template</td><td align="center">MetadataKey</td><td>
+                    <p>
+                        A string no longer than 255 characters.
+                    </p>
+                <p/></td></tr></tbody></table><p>This operation does not require a request body and does not return a response body.</p></div></div></div><div class="section"><div xmlns="" class="titlepage"><div><div><h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="d7e1584"/>2.3.2. Backups</h3></div></div></div><div class="toc"><dl><dt><span class="section"><a href="ch02.html#d7e1586">2.3.2.1. Backup Lists</a></span></dt><dt><span class="section"><a href="ch02.html#d7e1868">2.3.2.2. Backup Opreations</a></span></dt><dt><span class="section"><a href="ch02.html#d7e2291">2.3.2.3. Backup Metadata</a></span></dt></dl></div><div class="section"><div xmlns="" class="titlepage"><div><div><h4 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="d7e1586"/>2.3.2.1. Backup Lists</h4></div></div></div><div class="toc"><dl><dt><span class="section"><a href="ch02.html#GET_listBackups_v1.1__tenantId__OS-BS_backups_">2.3.2.1.1. List Backups</a></span></dt><dt><span class="section"><a href="ch02.html#GET_listDetailBackups_v1.1__tenantId__OS-BS_backups_detail_">2.3.2.1.2. Detailed List Backups</a></span></dt></dl></div><table rules="all" id="d7e1588"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody>
+                            <tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups​?changes-since=<em class="replaceable"><code>dateTime</code></em>&amp;​volume=<em class="replaceable"><code>UUID</code></em>&amp;​name=<em class="replaceable"><code>string</code></em>&amp;​marker=<em class="replaceable"><code>UUID</code></em>&amp;​limit=<em class="replaceable"><code>int</code></em>&amp;​size=<em class="replaceable"><code>unsignedInt</code></em>&amp;​status=<em class="replaceable"><code>ExtensibleBackupStatus</code></em></code></td><td>
+                List all backups (IDs, names, links).
+            </td></tr>
+                        <tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/detail​?changes-since=<em class="replaceable"><code>dateTime</code></em>&amp;​volume=<em class="replaceable"><code>UUID</code></em>&amp;​name=<em class="replaceable"><code>string</code></em>&amp;​marker=<em class="replaceable"><code>UUID</code></em>&amp;​limit=<em class="replaceable"><code>int</code></em>&amp;​size=<em class="replaceable"><code>unsignedInt</code></em>&amp;​status=<em class="replaceable"><code>ExtensibleBackupStatus</code></em></code></td><td>
+                List all backups (all details).
+            </td></tr></tbody></table><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="GET_listBackups_v1.1__tenantId__OS-BS_backups_"/>2.3.2.1.1. List Backups</h5></div></div></div><table rules="all" id="d7e1626"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups​?changes-since=<em class="replaceable"><code>dateTime</code></em>&amp;​volume=<em class="replaceable"><code>UUID</code></em>&amp;​name=<em class="replaceable"><code>string</code></em>&amp;​marker=<em class="replaceable"><code>UUID</code></em>&amp;​limit=<em class="replaceable"><code>int</code></em>&amp;​size=<em class="replaceable"><code>unsignedInt</code></em>&amp;​status=<em class="replaceable"><code>ExtensibleBackupStatus</code></em></code></td><td>
+                List all backups (IDs, names, links).
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span>, <span class="returnvalue">203</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>)
+   </p><p>
+                A list of backups. Each backup contains IDs, names, and
+                links -- other attributes are omitted.
+            </p><table rules="all" id="d7e1663"><caption>Table 2.14. List Backups Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">changes-since</code></td><td align="center">query</td><td align="center">DateTime</td><td><p>The <code class="code">changes-since</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">volume</code></td><td align="center">query</td><td align="center">UUID</td><td><p>The <code class="code">volume</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">name</code></td><td align="center">query</td><td align="center">String</td><td><p>The <code class="code">name</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">marker</code></td><td align="center">query</td><td align="center">UUID</td><td><p>The <code class="code">marker</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">limit</code></td><td align="center">query</td><td align="center">Int</td><td><p>The <code class="code">limit</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">size</code></td><td align="center">query</td><td align="center">UnsignedInt</td><td><p>The <code class="code">size</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">status</code></td><td align="center">query</td><td align="center">ExtensibleBackupStatus</td><td><p>The <code class="code">status</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr></tbody></table><div class="example"><a id="d7e1740"/><p class="title"><strong>Example 2.31. List Backups Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;backups xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
+         xmlns:atom="http://www.w3.org/2005/Atom"&gt;
+    &lt;backup id="f9822734-07d4-11e1-a16e-2396601839a1"
+            name="My Backup"&gt;
+        &lt;atom:link
+            rel="self"
+            href="http://servers.api.openstack.org/v1.1/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"/&gt;
+        &lt;atom:link
+            rel="bookmark"
+            href="http://servers.api.openstack.org/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"/&gt;
+    &lt;/backup&gt;
+    &lt;backup id="ab7cbf2c-07e8-11e1-98d5-9b76347df0b3"
+            name="Original"&gt;
+        &lt;atom:link
+            rel="self"
+            href="http://servers.api.openstack.org/v1.1/1234/OS-BS/backups/ab7cbf2c-07e8-11e1-98d5-9b76347df0b3"/&gt;
+        &lt;atom:link
+            rel="bookmark"
+            href="http://servers.api.openstack.org/1234/OS-BS/backups/ab7cbf2c-07e8-11e1-98d5-9b76347df0b3"/&gt;
+    &lt;/backup&gt;
+&lt;/backups&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e1743"/><p class="title"><strong>Example 2.32. List Backups Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BS:backups" : [ 
+        {
+            "name" : "My Backup", 
+            "id" : "f9822734-07d4-11e1-a16e-2396601839a1", 
+            "links" : [ 
+                {
+                    "rel" : "self", 
+                    "href" : "http://servers.api.openstack.org/v1.1/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"
+                }, 
+                {
+                    "rel" : "bookmark", 
+                    "href" : "http://servers.api.openstack.org/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"
+                }
+             ]
+        }, 
+        {
+            "name" : "Original", 
+            "id" : "ab7cbf2c-07e8-11e1-98d5-9b76347df0b3", 
+            "links" : [ 
+                {
+                    "rel" : "self", 
+                    "href" : "http://servers.api.openstack.org/v1.1/1234/OS-BS/backups/ab7cbf2c-07e8-11e1-98d5-9b76347df0b3"
+                }, 
+                {
+                    "rel" : "bookmark", 
+                    "href" : "http://servers.api.openstack.org/1234/OS-BS/backups/ab7cbf2c-07e8-11e1-98d5-9b76347df0b3"
+                }
+             ]
+        }
+     ]
+}
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="GET_listDetailBackups_v1.1__tenantId__OS-BS_backups_detail_"/>2.3.2.1.2. Detailed List Backups</h5></div></div></div><table rules="all" id="d7e1748"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/detail​?changes-since=<em class="replaceable"><code>dateTime</code></em>&amp;​volume=<em class="replaceable"><code>UUID</code></em>&amp;​name=<em class="replaceable"><code>string</code></em>&amp;​marker=<em class="replaceable"><code>UUID</code></em>&amp;​limit=<em class="replaceable"><code>int</code></em>&amp;​size=<em class="replaceable"><code>unsignedInt</code></em>&amp;​status=<em class="replaceable"><code>ExtensibleBackupStatus</code></em></code></td><td>
+                List all backups (all details).
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span>, <span class="returnvalue">203</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>)
+   </p><p>
+                A detailed backup list.
+            </p><table rules="all" id="d7e1785"><caption>Table 2.15. Detailed List Backups Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">changes-since</code></td><td align="center">query</td><td align="center">DateTime</td><td><p>The <code class="code">changes-since</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">volume</code></td><td align="center">query</td><td align="center">UUID</td><td><p>The <code class="code">volume</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">name</code></td><td align="center">query</td><td align="center">String</td><td><p>The <code class="code">name</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">marker</code></td><td align="center">query</td><td align="center">UUID</td><td><p>The <code class="code">marker</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">limit</code></td><td align="center">query</td><td align="center">Int</td><td><p>The <code class="code">limit</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">size</code></td><td align="center">query</td><td align="center">UnsignedInt</td><td><p>The <code class="code">size</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">status</code></td><td align="center">query</td><td align="center">ExtensibleBackupStatus</td><td><p>The <code class="code">status</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr></tbody></table><div class="example"><a id="d7e1862"/><p class="title"><strong>Example 2.33. Detailed List Backups Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;backups xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
+         xmlns:atom="http://www.w3.org/2005/Atom"&gt;
+    &lt;backup id="f9822734-07d4-11e1-a16e-2396601839a1"
+            name="My Backup"
+            volumeId="15e59938-07d5-11e1-90e3-e3dffe0c5983"
+            created="2011-09-09T00:00:00Z"
+            tenantId="27765"
+            userId="joeuser"
+            size="1024"
+            status="AVAILABLE"&gt;
+        &lt;metadata&gt;
+            &lt;meta key="BackupType"&gt;Yearly&lt;/meta&gt;
+            &lt;meta key="ImageVersion"&gt;2.1&lt;/meta&gt;
+        &lt;/metadata&gt;
+        &lt;atom:link
+            rel="self"
+            href="http://servers.api.openstack.org/v1.1/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"/&gt;
+        &lt;atom:link
+            rel="bookmark"
+            href="http://servers.api.openstack.org/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"/&gt;
+    &lt;/backup&gt;
+    &lt;backup id="ab7cbf2c-07e8-11e1-98d5-9b76347df0b3"
+            name="Original"
+            volumeId="c04898cc-07e8-11e1-94ef-3f8bfa4fdaa6"
+            created="2011-08-17T00:00:00Z"
+            tenantId="27765"
+            userId="joeuser"
+            size="1024"
+            progress="55"
+            status="SAVING"&gt;
+        &lt;atom:link
+            rel="self"
+            href="http://servers.api.openstack.org/v1.1/1234/OS-BS/backups/ab7cbf2c-07e8-11e1-98d5-9b76347df0b3"/&gt;
+        &lt;atom:link
+            rel="bookmark"
+            href="http://servers.api.openstack.org/1234/OS-BS/backups/ab7cbf2c-07e8-11e1-98d5-9b76347df0b3"/&gt;
+    &lt;/backup&gt;
+&lt;/backups&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e1865"/><p class="title"><strong>Example 2.34. Detailed List Backups Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BS:backups" : [ 
+        {
+            "name" : "My Backup", 
+            "id" : "f9822734-07d4-11e1-a16e-2396601839a1", 
+            "volumeId" : "15e59938-07d5-11e1-90e3-e3dffe0c5983", 
+            "created" : "2011-09-09T00:00:00Z", 
+            "tenantId" : "27765", 
+            "userId" : "joeuser", 
+            "size" : 1024, 
+            "status" : "AVAILABLE", 
+            "metadata" : {
+                "BackupType" : "Yearly", 
+                "ImageVersion" : "2.1"
+            }, 
+            "links" : [ 
+                {
+                    "rel" : "self", 
+                    "href" : "http://servers.api.openstack.org/v1.1/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"
+                }, 
+                {
+                    "rel" : "bookmark", 
+                    "href" : "http://servers.api.openstack.org/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"
+                }
+             ]
+        }, 
+        {
+            "name" : "Original", 
+            "id" : "ab7cbf2c-07e8-11e1-98d5-9b76347df0b3", 
+            "volumeId" : "c04898cc-07e8-11e1-94ef-3f8bfa4fdaa6", 
+            "created" : "2011-08-17T00:00:00Z", 
+            "tenantId" : "27765", 
+            "userId" : "joeuser", 
+            "progress" : 55, 
+            "size" : 1024, 
+            "status" : "SAVING", 
+            "links" : [ 
+                {
+                    "rel" : "self", 
+                    "href" : "http://servers.api.openstack.org/v1.1/1234/OS-BS/backups/ab7cbf2c-07e8-11e1-98d5-9b76347df0b3"
+                }, 
+                {
+                    "rel" : "bookmark", 
+                    "href" : "http://servers.api.openstack.org/1234/OS-BS/backups/ab7cbf2c-07e8-11e1-98d5-9b76347df0b3"
+                }
+             ]
+        }
+     ]
+}
+</pre></div></div><br class="example-break"/></div></div><div class="section"><div xmlns="" class="titlepage"><div><div><h4 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="d7e1868"/>2.3.2.2. Backup Opreations</h4></div></div></div><div class="toc"><dl><dt><span class="section"><a href="ch02.html#POST_createBackup_v1.1__tenantId__OS-BS_backups_">2.3.2.2.1. Create Backup</a></span></dt><dt><span class="section"><a href="ch02.html#PUT_updateBackup_v1.1__tenantId__OS-BS_backups__id__">2.3.2.2.2. Update Backup Name</a></span></dt><dt><span class="section"><a href="ch02.html#GET_getBackup_v1.1__tenantId__OS-BS_backups__id__">2.3.2.2.3. Get Backup Details</a></span></dt><dt><span class="section"><a href="ch02.html#DELETE_deleteBackup_v1.1__tenantId__OS-BS_backups__id__">2.3.2.2.4. Delete Backup</a></span></dt></dl></div><table rules="all" id="d7e1870"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody>
+                            <tr><td><span class="command"><strong>POST</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups</code></td><td>
+                Creates a new backup.
+            </td></tr>
+                        
+                            <tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}</code></td><td>
+                Update the specified backup's name.
+            </td></tr>
+                            <tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}</code></td><td>
+                List details of the specified backup.
+            </td></tr>
+                            <tr><td><span class="command"><strong>DELETE</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}</code></td><td>
+                Delete the backup.
+            </td></tr>
+                        </tbody></table><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="POST_createBackup_v1.1__tenantId__OS-BS_backups_"/>2.3.2.2.1. Create Backup</h5></div></div></div><table rules="all" id="d7e1906"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>POST</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups</code></td><td>
+                Creates a new backup.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">202</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>),
+            badMediaType (<span class="errorcode">415</span>)
+   </p><table frame="void" id="d7e1936"><tbody><tr>
+                        <td>Status Transition:</td>
+                        <td colspan="3">
+                           <code class="code">SAVING</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">AVAILABLE</code>
+                        </td>
+                     </tr><tr>
+                        <td/>
+                        <td colspan="3">
+                           <code class="code">SAVING</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">ERROR</code>
+                 (on error)</td>
+                     </tr></tbody></table><p>
+                The operation asynchronously creates a backup of an
+                existing volume. The <code class="code">volumeId</code> of
+                the volume to backup is required. If a
+                <code class="code">name</code> is not supplied a random name
+                may be generated by the system.  The progress of the
+                request can be checked by performing subsequent <span class="command"><strong>GET</strong></span>s
+                on the URL returened via the
+                <code class="code">Location</code> header and avialable via
+                the <code class="code">self</code> link in the
+                representation. The representation also contains a
+                <code class="code">progress</code> attribute which indicates
+                percent completion.
+            </p><p>
+                Custom volume metadata can be supplied at create time.
+                The maximum size of the metadata key and value is 255
+                bytes each.  The maximum number of key-value pairs
+                that can be supplied per volume is determined by the
+                compute provider and may be queried via the
+                OS-BS:maxBackupMeta absolute limit.
+            </p><table rules="all" id="d7e1970"><caption>Table 2.16. Create Backup Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr></tbody></table><div class="example"><a id="d7e1992"/><p class="title"><strong>Example 2.35. Create Backup Request: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;backup xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
+        name="My Backup"
+        volumeId="15e59938-07d5-11e1-90e3-e3dffe0c5983"&gt;
+    &lt;metadata&gt;
+        &lt;meta key="BackupType"&gt;Yearly&lt;/meta&gt;
+        &lt;meta key="ImageVersion"&gt;2.1&lt;/meta&gt;
+    &lt;/metadata&gt;
+&lt;/backup&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e1995"/><p class="title"><strong>Example 2.36. Create Backup Request: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BS:backup" : {
+        "name" : "My Backup", 
+        "volumeId" : "15e59938-07d5-11e1-90e3-e3dffe0c5983", 
+        "metadata" : {
+            "BackupType" : "Yearly", 
+            "ImageVersion" : "2.1"
+        }
+    }
+}
+</pre></div></div><br class="example-break"/><table rules="all" id="d7e1998"><caption>Table 2.17. Create Backup Response Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">Location</code></td><td align="center">header</td><td align="center">AnyURI</td><td>
+                    <p>
+                        The full URL to the newly created backup is
+                        returned via the <code class="code">Loctaton</code>
+                        header.  This URL is also available via the
+                        <code class="code">self</code> link in the backup
+                        representation.
+                    </p>
+                  <p>The <code class="code">Location</code> header  should always be supplied. </p></td></tr></tbody></table><div class="example"><a id="d7e2022"/><p class="title"><strong>Example 2.37. Create Backup Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;backup xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
+        xmlns:atom="http://www.w3.org/2005/Atom"
+        id="f9822734-07d4-11e1-a16e-2396601839a1"
+        name="My Backup"
+        volumeId="15e59938-07d5-11e1-90e3-e3dffe0c5983"
+        created="2011-09-09T00:00:00Z"
+        tenantId="27765"
+        userId="joeuser"
+        size="1024"
+        progress="0"
+        status="SAVING"&gt;
+    &lt;metadata&gt;
+        &lt;meta key="BackupType"&gt;Yearly&lt;/meta&gt;
+        &lt;meta key="ImageVersion"&gt;2.1&lt;/meta&gt;
+    &lt;/metadata&gt;
+    &lt;atom:link
+        rel="self"
+        href="http://servers.api.openstack.org/v1.1/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"/&gt;
+    &lt;atom:link
+        rel="bookmark"
+        href="http://servers.api.openstack.org/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"/&gt;
+&lt;/backup&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2025"/><p class="title"><strong>Example 2.38. Create Backup Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BS:backup" : {
+        "name" : "My Backup", 
+        "id" : "f9822734-07d4-11e1-a16e-2396601839a1", 
+        "volumeId" : "15e59938-07d5-11e1-90e3-e3dffe0c5983", 
+        "created" : "2011-09-09T00:00:00Z", 
+        "tenantId" : "27765", 
+        "userId" : "joeuser", 
+        "progress" : 0, 
+        "size" : 1024, 
+        "status" : "SAVING", 
+        "metadata" : {
+            "BackupType" : "Yearly", 
+            "ImageVersion" : "2.1"
+        }, 
+        "links" : [ 
+            {
+                "rel" : "self", 
+                "href" : "http://servers.api.openstack.org/v1.1/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"
+            }, 
+            {
+                "rel" : "bookmark", 
+                "href" : "http://servers.api.openstack.org/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"
+            }
+         ]
+    }
+}
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="PUT_updateBackup_v1.1__tenantId__OS-BS_backups__id__"/>2.3.2.2.2. Update Backup Name</h5></div></div></div><table rules="all" id="d7e2030"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}</code></td><td>
+                Update the specified backup's name.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>),
+            badMediaType (<span class="errorcode">415</span>)
+   </p><table frame="void" id="d7e2060"><tbody><tr>
+                        <td>Status Transition:</td>
+                        <td colspan="3">
+                           <code class="code">AVAILABLE</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">AVAILABLE</code>
+                        </td>
+                     </tr></tbody></table><p>
+                The operation updates the backup's name. Only the
+                backup's name is updateable, other fields are ignored.
+            </p><table rules="all" id="d7e2075"><caption>Table 2.18. Update Backup Name Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the backup.
+                            </p>
+                        <p/></td></tr></tbody></table><div class="example"><a id="d7e2105"/><p class="title"><strong>Example 2.39. Update Backup Name Request: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;backup xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
+        name="New backup name"/&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2108"/><p class="title"><strong>Example 2.40. Update Backup Name Request: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BS:backup" : {
+        "name" : "New backup name"
+    }
+}
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2111"/><p class="title"><strong>Example 2.41. Update Backup Name Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;backup xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
+        xmlns:atom="http://www.w3.org/2005/Atom"
+        id="f9822734-07d4-11e1-a16e-2396601839a1"
+        name="New backup name"
+        volumeId="15e59938-07d5-11e1-90e3-e3dffe0c5983"
+        created="2011-09-09T00:00:00Z"
+        updated="2011-12-12T00:00:00Z"
+        tenantId="27765"
+        userId="joeuser"
+        size="1024"
+        status="AVAILABLE"&gt;
+    &lt;metadata&gt;
+        &lt;meta key="BackupType"&gt;Yearly&lt;/meta&gt;
+        &lt;meta key="ImageVersion"&gt;2.1&lt;/meta&gt;
+    &lt;/metadata&gt;
+    &lt;atom:link
+        rel="self"
+        href="http://servers.api.openstack.org/v1.1/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"/&gt;
+    &lt;atom:link
+        rel="bookmark"
+        href="http://servers.api.openstack.org/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"/&gt;
+&lt;/backup&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2114"/><p class="title"><strong>Example 2.42. Update Backup Name Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BS:backup" : {
+        "name" : "New backup name", 
+        "id" : "f9822734-07d4-11e1-a16e-2396601839a1", 
+        "volumeId" : "15e59938-07d5-11e1-90e3-e3dffe0c5983", 
+        "updated" : "2011-12-12T00:00:00Z", 
+        "created" : "2011-09-09T00:00:00Z", 
+        "tenantId" : "27765", 
+        "userId" : "joeuser", 
+        "size" : 1024, 
+        "status" : "AVAILABLE", 
+        "metadata" : {
+            "BackupType" : "Yearly", 
+            "ImageVersion" : "2.1"
+        }, 
+        "links" : [ 
+            {
+                "rel" : "self", 
+                "href" : "http://servers.api.openstack.org/v1.1/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"
+            }, 
+            {
+                "rel" : "bookmark", 
+                "href" : "http://servers.api.openstack.org/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"
+            }
+         ]
+    }
+}
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="GET_getBackup_v1.1__tenantId__OS-BS_backups__id__"/>2.3.2.2.3. Get Backup Details</h5></div></div></div><table rules="all" id="d7e2119"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}</code></td><td>
+                List details of the specified backup.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span>, <span class="returnvalue">203</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>)
+   </p><table rules="all" id="d7e2149"><caption>Table 2.19. Get Backup Details Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the backup.
+                            </p>
+                        <p/></td></tr></tbody></table><p>This operation does not require a request body.</p><div class="example"><a id="d7e2179"/><p class="title"><strong>Example 2.43. Get Backup Details Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;backup xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
+        xmlns:atom="http://www.w3.org/2005/Atom"
+        id="f9822734-07d4-11e1-a16e-2396601839a1"
+        name="My Backup"
+        volumeId="15e59938-07d5-11e1-90e3-e3dffe0c5983"
+        created="2011-09-09T00:00:00Z"
+        tenantId="27765"
+        userId="joeuser"
+        size="1024"
+        status="AVAILABLE"&gt;
+    &lt;metadata&gt;
+        &lt;meta key="BackupType"&gt;Yearly&lt;/meta&gt;
+        &lt;meta key="ImageVersion"&gt;2.1&lt;/meta&gt;
+    &lt;/metadata&gt;
+    &lt;atom:link
+        rel="self"
+        href="http://servers.api.openstack.org/v1.1/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"/&gt;
+    &lt;atom:link
+        rel="bookmark"
+        href="http://servers.api.openstack.org/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"/&gt;
+&lt;/backup&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2182"/><p class="title"><strong>Example 2.44. Get Backup Details Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BS:backup" : {
+        "name" : "My Backup", 
+        "id" : "f9822734-07d4-11e1-a16e-2396601839a1", 
+        "volumeId" : "15e59938-07d5-11e1-90e3-e3dffe0c5983", 
+        "created" : "2011-09-09T00:00:00Z", 
+        "tenantId" : "27765", 
+        "userId" : "joeuser", 
+        "size" : 1024, 
+        "status" : "AVAILABLE", 
+        "metadata" : {
+            "BackupType" : "Yearly", 
+            "ImageVersion" : "2.1"
+        }, 
+        "links" : [ 
+            {
+                "rel" : "self", 
+                "href" : "http://servers.api.openstack.org/v1.1/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"
+            }, 
+            {
+                "rel" : "bookmark", 
+                "href" : "http://servers.api.openstack.org/1234/OS-BS/backups/f9822734-07d4-11e1-a16e-2396601839a1"
+            }
+         ]
+    }
+}
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="DELETE_deleteBackup_v1.1__tenantId__OS-BS_backups__id__"/>2.3.2.2.4. Delete Backup</h5></div></div></div><table rules="all" id="d7e2187"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>DELETE</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}</code></td><td>
+                Delete the backup.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">204</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>)
+   </p><table frame="void" id="d7e2216"><tbody><tr>
+                        <td>Status Transition:</td>
+                        <td colspan="3">
+                           <code class="code">AVAILABLE</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">DELETING</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">DELETED</code>
+                        </td>
+                     </tr><tr>
+                        <td/>
+                        <td colspan="3">
+                           <code class="code">AVAILABLE</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">DELETING</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">ERROR</code>
+                 (on error)</td>
+                     </tr></tbody></table><p>
+                Deletes the backup.  The backup must be in the
+                <code class="code">AVAILABLE</code> or in
+                <code class="code">ERROR</code> before it can be deleted.
+            </p><table rules="all" id="d7e2261"><caption>Table 2.20. Delete Backup Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the backup.
+                            </p>
+                        <p/></td></tr></tbody></table><p>This operation does not require a request body and does not return a response body.</p></div></div><div class="section"><div xmlns="" class="titlepage"><div><div><h4 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="d7e2291"/>2.3.2.3. Backup Metadata</h4></div></div></div><div class="toc"><dl><dt><span class="section"><a href="ch02.html#PUT_setMetadata_v1.1__tenantId__OS-BS_backups__id__metadata_">2.3.2.3.1. Create or Replace Metadata</a></span></dt><dt><span class="section"><a href="ch02.html#POST_updateMetadata_v1.1__tenantId__OS-BS_backups__id__metadata_">2.3.2.3.2. Update Metadata</a></span></dt><dt><span class="section"><a href="ch02.html#GET_listMetadata_v1.1__tenantId__OS-BS_backups__id__metadata_">2.3.2.3.3. List Metadata</a></span></dt><dt><span class="section"><a href="ch02.html#GET_getMetadataItem_v1.1__tenantId__OS-BS_backups__id__metadata__key__">2.3.2.3.4. Get Metadata Item</a></span></dt><dt><span class="section"><a href="ch02.html#PUT_setMetadataItem_v1.1__tenantId__OS-BS_backups__id__metadata__key__">2.3.2.3.5. Create or Update Metadata Item</a></span></dt><dt><span class="section"><a href="ch02.html#DELETE_deleteMetadataItem_v1.1__tenantId__OS-BS_backups__id__metadata__key__">2.3.2.3.6. Delete Metadata Item</a></span></dt></dl></div><p>
+                        The following operations allow access to
+                        volume metadata.
+                    </p><table rules="all" id="d7e2294"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata</code></td><td>
+                Set metadata.
+            </td></tr><tr><td><span class="command"><strong>POST</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata</code></td><td>
+                Update metadata items.
+            </td></tr><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata</code></td><td>
+               <p>
+                List metadata associated with the resource.
+            </p>
+            </td></tr><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata/{key}</code></td><td>
+                Get a metadata item associated with a resource.
+            </td></tr><tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata/{key}</code></td><td>
+                Set metadata item.
+            </td></tr><tr><td><span class="command"><strong>DELETE</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata/{key}</code></td><td>
+               <p>
+                Delete a metadata item.
+            </p>
+            </td></tr></tbody></table><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="PUT_setMetadata_v1.1__tenantId__OS-BS_backups__id__metadata_"/>2.3.2.3.1. Create or Replace Metadata</h5></div></div></div><table rules="all" id="d7e2344"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata</code></td><td>
+                Set metadata.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>),
+            badMediaType (<span class="errorcode">415</span>),
+            buildInProgress (<span class="errorcode">409</span>)
+   </p><p>
+                Sets metadata for the resource. The metadata items set
+                on the resource will be exactly those specified on the
+                requests. Existing metadata items are replaced with
+                the ones provided in the request. Metadata items, set
+                previously, but not sepcifed in the request will
+                be removed.
+            </p><p>
+                An overLimit (<span class="errorcode">413</span>) fault
+                may be thrown if the maximum number of metadata items
+                is exceeded.
+            </p><table rules="all" id="d7e2378"><caption>Table 2.21. Create or Replace Metadata Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the backup.
+                            </p>
+                        <p/></td></tr></tbody></table><div class="example"><a id="d7e2407"/><p class="title"><strong>Example 2.45. Create or Replace Metadata Request: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;metadata xmlns="http://docs.openstack.org/compute/api/v1.1"&gt;
+    &lt;meta key="Label"&gt;Web&lt;/meta&gt;
+    &lt;meta key="Version"&gt;2.1&lt;/meta&gt;
+&lt;/metadata&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2410"/><p class="title"><strong>Example 2.46. Create or Replace Metadata Request: JSON</strong></p><div class="example-contents"><pre class="programlisting">{
+    "metadata" :  {
+            "Label" : "Web",
+            "Version" : "2.1"
+        }
+}
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2413"/><p class="title"><strong>Example 2.47. Create or Replace Metadata Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;metadata xmlns="http://docs.openstack.org/compute/api/v1.1"&gt;
+    &lt;meta key="Label"&gt;Web&lt;/meta&gt;
+    &lt;meta key="Version"&gt;2.1&lt;/meta&gt;
+&lt;/metadata&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2416"/><p class="title"><strong>Example 2.48. Create or Replace Metadata Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;metadata xmlns="http://docs.openstack.org/compute/api/v1.1"&gt;
+    &lt;meta key="Label"&gt;Web&lt;/meta&gt;
+    &lt;meta key="Version"&gt;2.1&lt;/meta&gt;
+&lt;/metadata&gt;
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="POST_updateMetadata_v1.1__tenantId__OS-BS_backups__id__metadata_"/>2.3.2.3.2. Update Metadata</h5></div></div></div><table rules="all" id="d7e2421"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>POST</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata</code></td><td>
+                Update metadata items.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>),
+            badMediaType (<span class="errorcode">415</span>),
+            buildInProgress (<span class="errorcode">409</span>)
+   </p><p>
+                Updates resource metadata. Updates will replace
+                existing metadata items with the same key. Items
+                not explicitly mentioned in the request will not be
+                modified. An overLimit (<span class="errorcode">413</span>)
+                fault may be thrown if the operation causes the
+                maximum number of metadata items to be exceeded.
+            </p><table rules="all" id="d7e2454"><caption>Table 2.22. Update Metadata Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the backup.
+                            </p>
+                        <p/></td></tr></tbody></table><div class="example"><a id="d7e2483"/><p class="title"><strong>Example 2.49. Update Metadata Request: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;metadata xmlns="http://docs.openstack.org/compute/api/v1.1"&gt;
+    &lt;meta key="Label"&gt;Web2&lt;/meta&gt;
+&lt;/metadata&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2486"/><p class="title"><strong>Example 2.50. Update Metadata Request: JSON</strong></p><div class="example-contents"><pre class="programlisting">{
+    "metadata" : {
+            "Label" : "Web2"
+        }
+}
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2489"/><p class="title"><strong>Example 2.51. Update Metadata Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;metadata xmlns="http://docs.openstack.org/compute/api/v1.1"&gt;
+    &lt;meta key="Label"&gt;Web2&lt;/meta&gt;
+    &lt;meta key="Version"&gt;2.1&lt;/meta&gt;
+&lt;/metadata&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2492"/><p class="title"><strong>Example 2.52. Update Metadata Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">{
+    "metadata" : {
+            "Label" : "Web2",
+            "Version" : "2.1"
+        }
+}
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="GET_listMetadata_v1.1__tenantId__OS-BS_backups__id__metadata_"/>2.3.2.3.3. List Metadata</h5></div></div></div><table rules="all" id="d7e2497"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata</code></td><td>
+               <p>
+                List metadata associated with the resource.
+            </p>
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span>, <span class="returnvalue">203</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>)
+   </p>
+               <p>
+                List metadata associated with the resource.
+            </p>
+            <table rules="all" id="d7e2529"><caption>Table 2.23. List Metadata Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the backup.
+                            </p>
+                        <p/></td></tr></tbody></table><p>This operation does not require a request body.</p><div class="example"><a id="d7e2559"/><p class="title"><strong>Example 2.53. List Metadata Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;metadata xmlns="http://docs.openstack.org/compute/api/v1.1"&gt;
+    &lt;meta key="Label"&gt;Web&lt;/meta&gt;
+    &lt;meta key="Version"&gt;2.1&lt;/meta&gt;
+&lt;/metadata&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2562"/><p class="title"><strong>Example 2.54. List Metadata Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">{
+    "metadata" :  {
+            "Label" : "Web",
+            "Version" : "2.1"
+        }
+}
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="GET_getMetadataItem_v1.1__tenantId__OS-BS_backups__id__metadata__key__"/>2.3.2.3.4. Get Metadata Item</h5></div></div></div><table rules="all" id="d7e2567"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata/{key}</code></td><td>
+                Get a metadata item associated with a resource.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span>, <span class="returnvalue">203</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>)
+   </p><p>
+                Retrieves a single metadata item by key.
+            </p><table rules="all" id="d7e2598"><caption>Table 2.24. Get Metadata Item Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the backup.
+                            </p>
+                        <p/></td></tr><tr><td align="center"><code class="code">key</code></td><td align="center">template</td><td align="center">MetadataKey</td><td>
+                    <p>
+                        A string no longer than 255 characters.
+                    </p>
+                <p/></td></tr></tbody></table><p>This operation does not require a request body.</p><div class="example"><a id="d7e2636"/><p class="title"><strong>Example 2.55. Get Metadata Item Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;meta
+    xmlns="http://docs.openstack.org/compute/api/v1.1"
+    key="Label"&gt;Web&lt;/meta&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2639"/><p class="title"><strong>Example 2.56. Get Metadata Item Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">{
+    "meta" : {
+            "Label" : "Web"
+        } 
+}
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="PUT_setMetadataItem_v1.1__tenantId__OS-BS_backups__id__metadata__key__"/>2.3.2.3.5. Create or Update Metadata Item</h5></div></div></div><table rules="all" id="d7e2644"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>PUT</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata/{key}</code></td><td>
+                Set metadata item.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>),
+            badMediaType (<span class="errorcode">415</span>),
+            buildInProgress (<span class="errorcode">409</span>)
+   </p><p>
+                Sets a metadata item by its key.  An overLimit
+                (<span class="errorcode">413</span>) fault may be thrown if
+                the operation causes the maximum number of metadata
+                items to be exceeded.
+            </p><table rules="all" id="d7e2677"><caption>Table 2.25. Create or Update Metadata Item Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the backup.
+                            </p>
+                        <p/></td></tr><tr><td align="center"><code class="code">key</code></td><td align="center">template</td><td align="center">MetadataKey</td><td>
+                    <p>
+                        A string no longer than 255 characters.
+                    </p>
+                <p/></td></tr></tbody></table><div class="example"><a id="d7e2714"/><p class="title"><strong>Example 2.57. Create or Update Metadata Item Request: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;meta
+    xmlns="http://docs.openstack.org/compute/api/v1.1"
+    key="Label"&gt;Web&lt;/meta&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2717"/><p class="title"><strong>Example 2.58. Create or Update Metadata Item Request: JSON</strong></p><div class="example-contents"><pre class="programlisting">{
+    "meta" : {
+            "Label" : "Web"
+        } 
+}
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2720"/><p class="title"><strong>Example 2.59. Create or Update Metadata Item Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;meta
+    xmlns="http://docs.openstack.org/compute/api/v1.1"
+    key="Label"&gt;Web&lt;/meta&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2723"/><p class="title"><strong>Example 2.60. Create or Update Metadata Item Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">{
+    "meta" : {
+            "Label" : "Web"
+        } 
+}
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h5 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="DELETE_deleteMetadataItem_v1.1__tenantId__OS-BS_backups__id__metadata__key__"/>2.3.2.3.6. Delete Metadata Item</h5></div></div></div><table rules="all" id="d7e2728"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>DELETE</strong></span></td><td><code class="code">/{tenantId}/OS-BS/backups/{id}/metadata/{key}</code></td><td>
+               <p>
+                Delete a metadata item.
+            </p>
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">204</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>),
+            buildInProgress (<span class="errorcode">409</span>)
+   </p>
+               <p>
+                Delete a metadata item.
+            </p>
+            <table rules="all" id="d7e2760"><caption>Table 2.26. Delete Metadata Item Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the backup.
+                            </p>
+                        <p/></td></tr><tr><td align="center"><code class="code">key</code></td><td align="center">template</td><td align="center">MetadataKey</td><td>
+                    <p>
+                        A string no longer than 255 characters.
+                    </p>
+                <p/></td></tr></tbody></table><p>This operation does not require a request body and does not return a response body.</p></div></div></div><div class="section"><div xmlns="" class="titlepage"><div><div><h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="d7e2798"/>2.3.3. Types</h3></div></div></div><div class="toc"><dl><dt><span class="section"><a href="ch02.html#GET_listTypes_v1.1__tenantId__OS-BS_types_">2.3.3.1. List Types</a></span></dt><dt><span class="section"><a href="ch02.html#GET_getType_v1.1__tenantId__OS-BS_types__id__">2.3.3.2. Get Type Details</a></span></dt></dl></div><table rules="all" id="d7e2800"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody>
+                        <tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/types​?name=<em class="replaceable"><code>string</code></em>&amp;​marker=<em class="replaceable"><code>UUID</code></em>&amp;​limit=<em class="replaceable"><code>int</code></em></code></td><td>
+                List all types.
+            </td></tr>
+                    <tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/types/{id}</code></td><td>
+                List details of the specified type.
+            </td></tr></tbody></table><div class="section"><div xmlns="" class="titlepage"><div><div><h4 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="GET_listTypes_v1.1__tenantId__OS-BS_types_"/>2.3.3.1. List Types</h4></div></div></div><table rules="all" id="d7e2827"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/types​?name=<em class="replaceable"><code>string</code></em>&amp;​marker=<em class="replaceable"><code>UUID</code></em>&amp;​limit=<em class="replaceable"><code>int</code></em></code></td><td>
+                List all types.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span>, <span class="returnvalue">203</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>)
+   </p><table rules="all" id="d7e2859"><caption>Table 2.27. List Types Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">name</code></td><td align="center">query</td><td align="center">String</td><td><p>The <code class="code">name</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">marker</code></td><td align="center">query</td><td align="center">UUID</td><td><p>The <code class="code">marker</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">limit</code></td><td align="center">query</td><td align="center">Int</td><td><p>The <code class="code">limit</code> parameter  is optional. </p></td></tr><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr></tbody></table><div class="example"><a id="d7e2904"/><p class="title"><strong>Example 2.61. List Types Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;types xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
+       xmlns:atom="http://www.w3.org/2005/Atom"&gt;
+    &lt;type id="02d1ab86-e479-11e0-98ab-c7be696d5830" name="NFS"&gt;
+        &lt;atom:link
+            rel="self"
+            href="http://servers.api.openstack.org/v1.1/1234/OS-BS/types/02d1ab86-e479-11e0-98ab-c7be696d5830"/&gt;
+        &lt;atom:link
+            rel="bookmark"
+            href="http://servers.api.openstack.org/1234/OS-BS/types/02d1ab86-e479-11e0-98ab-c7be696d5830"/&gt;
+    &lt;/type&gt;
+    &lt;type id="35e1c8d2-e477-11e0-93ed-4f2505dfa32e" name="SSD"&gt;
+        &lt;atom:link
+            rel="self"
+            href="http://servers.api.openstack.org/v1.1/1234/OS-BS/types/35e1c8d2-e477-11e0-93ed-4f2505dfa32e"/&gt;
+        &lt;atom:link
+            rel="bookmark"
+            href="http://servers.api.openstack.org/1234/OS-BS/types/35e1c8d2-e477-11e0-93ed-4f2505dfa32e"/&gt;
+    &lt;/type&gt;
+&lt;/types&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2907"/><p class="title"><strong>Example 2.62. List Types Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BS:types" : [ 
+        {
+            "name" : "NFS", 
+            "id" : "02d1ab86-e479-11e0-98ab-c7be696d5830", 
+            "links" : [ 
+                {
+                    "rel" : "self", 
+                    "href" : "http://servers.api.openstack.org/v1.1/1234/OS-BS/types/02d1ab86-e479-11e0-98ab-c7be696d5830"
+                }, 
+                {
+                    "rel" : "bookmark", 
+                    "href" : "http://servers.api.openstack.org/1234/OS-BS/types/02d1ab86-e479-11e0-98ab-c7be696d5830"
+                }
+             ]
+        }, 
+        {
+            "name" : "SSD", 
+            "id" : "35e1c8d2-e477-11e0-93ed-4f2505dfa32e", 
+            "links" : [ 
+                {
+                    "rel" : "self", 
+                    "href" : "http://servers.api.openstack.org/v1.1/1234/OS-BS/types/35e1c8d2-e477-11e0-93ed-4f2505dfa32e"
+                }, 
+                {
+                    "rel" : "bookmark", 
+                    "href" : "http://servers.api.openstack.org/1234/OS-BS/types/35e1c8d2-e477-11e0-93ed-4f2505dfa32e"
+                }
+             ]
+        }
+     ]
+}
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h4 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="GET_getType_v1.1__tenantId__OS-BS_types__id__"/>2.3.3.2. Get Type Details</h4></div></div></div><table rules="all" id="d7e2912"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>GET</strong></span></td><td><code class="code">/{tenantId}/OS-BS/types/{id}</code></td><td>
+                List details of the specified type.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">200</span>, <span class="returnvalue">203</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>)
+   </p><table rules="all" id="d7e2942"><caption>Table 2.28. Get Type Details Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">id</code></td><td align="center">template</td><td align="center">Uuid</td><td>
+                            <p>
+                                A unique identifier for the type.
+                            </p>
+                        <p/></td></tr></tbody></table><p>This operation does not require a request body.</p><div class="example"><a id="d7e2972"/><p class="title"><strong>Example 2.63. Get Type Details Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;type xmlns="http://docs.openstack.org/servers/api/ext/volumes/v1.0"
+      xmlns:atom="http://www.w3.org/2005/Atom"
+      id="35e1c8d2-e477-11e0-93ed-4f2505dfa32e" name="SSD"&gt;
+    &lt;atom:link
+        rel="self"
+        href="http://servers.api.openstack.org/v1.1/1234/OS-BS/types/35e1c8d2-e477-11e0-93ed-4f2505dfa32e"/&gt;
+    &lt;atom:link
+        rel="bookmark"
+        href="http://servers.api.openstack.org/1234/OS-BS/types/35e1c8d2-e477-11e0-93ed-4f2505dfa32e"/&gt;
+&lt;/type&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e2975"/><p class="title"><strong>Example 2.64. Get Type Details Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BS:type" : {
+        "name" : "SSD", 
+        "id" : "35e1c8d2-e477-11e0-93ed-4f2505dfa32e", 
+        "links" : [ 
+            {
+                "rel" : "self", 
+                "href" : "http://servers.api.openstack.org/v1.1/1234/OS-BS/types/35e1c8d2-e477-11e0-93ed-4f2505dfa32e"
+            }, 
+            {
+                "rel" : "bookmark", 
+                "href" : "http://servers.api.openstack.org/1234/OS-BS/types/35e1c8d2-e477-11e0-93ed-4f2505dfa32e"
+            }
+         ]
+    }
+}
+</pre></div></div><br class="example-break"/></div></div></div><div class="section"><div xmlns="" class="titlepage"><div><div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="d7e2978"/>2.4. New Actions</h2></div></div></div><p>None.</p></div><div class="section"><div xmlns="" class="titlepage"><div><div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="d7e2981"/>2.5. 
+                Changes to the OpenStack Compute API
+            </h2></div></div></div><p>
+                None. This extension simply introduces the ability to
+                create and backup volmes.  Please consult the Block
+                Storage Attach/Detach Extensions (OS-BSAD) to allow
+                mounting these volumes to a particular server.
+            </p></div></div><script type="text/javascript" src="../common/main.js"><!----></script><hr/><div class="legal"><a href="index.html">Legal notices</a></div></div><div><div id="leftnavigation" style="padding-top:3px; background-color:white;"><div id="tabs"><ul><li><a href="#treeDiv" tabindex="1"><span class="contentsTab">Contents</span></a></li><li><a href="#searchDiv" tabindex="1"><span class="searchTab">Search</span></a></li></ul><div id="treeDiv"><img src="../common/images/loading.gif" alt="loading table of contents..." id="tocLoading" style="display:block;"/><div id="ulTreeDiv" style="display:none" class="thisisthat"><ul id="tree" class="filetree"><li tabindex="2"><span class="file"><a href="ch01.html">1. About This Extension</a></span><ul><li tabindex="2"><span class="file"><a href="ch01.html#d7e91">1.1. Document Change History</a></span></li></ul></li><li tabindex="2" id="webhelp-currentid"><span class="file"><a href="ch02.html">2. Summary of Changes</a></span><ul><li tabindex="2"><span class="file"><a href="ch02.html#d7e112">2.1. New Headers</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#d7e115">2.2. New Faults</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#d7e118">2.3. New Resources</a></span><ul><li tabindex="2"><span class="file"><a href="ch02.html#d7e338">2.3.1. Volumes</a></span><ul><li tabindex="2"><span class="file"><a href="ch02.html#d7e340">2.3.1.1. Volume Lists</a></span><ul><li tabindex="2"><span class="file"><a href="ch02.html#GET_listVolumes_v1.1__tenantId__OS-BS_volumes_">2.3.1.1.1. List Volumes</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#GET_listDetailVolumes_v1.1__tenantId__OS-BS_volumes_detail_">2.3.1.1.2. Detailed List Volumes</a></span></li></ul></li><li tabindex="2"><span class="file"><a href="ch02.html#d7e653">2.3.1.2. Volume Opreations</a></span><ul><li tabindex="2"><span class="file"><a href="ch02.html#POST_createVolume_v1.1__tenantId__OS-BS_volumes_">2.3.1.2.1. Create Volume</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#PUT_updateVolume_v1.1__tenantId__OS-BS_volumes__id__">2.3.1.2.2. Update Volume Name</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#GET_getVolume_v1.1__tenantId__OS-BS_volumes__id__">2.3.1.2.3. Get Volume Details</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#DELETE_deleteVolume_v1.1__tenantId__OS-BS_volumes__id__">2.3.1.2.4. Delete Volume</a></span></li></ul></li><li tabindex="2"><span class="file"><a href="ch02.html#d7e1077">2.3.1.3. Volume Metadata</a></span><ul><li tabindex="2"><span class="file"><a href="ch02.html#PUT_setMetadata_v1.1__tenantId__OS-BS_volumes__id__metadata_">2.3.1.3.1. Create or Replace Metadata</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#POST_updateMetadata_v1.1__tenantId__OS-BS_volumes__id__metadata_">2.3.1.3.2. Update Metadata</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#GET_listMetadata_v1.1__tenantId__OS-BS_volumes__id__metadata_">2.3.1.3.3. List Metadata</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#GET_getMetadataItem_v1.1__tenantId__OS-BS_volumes__id__metadata__key__">2.3.1.3.4. Get Metadata Item</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#PUT_setMetadataItem_v1.1__tenantId__OS-BS_volumes__id__metadata__key__">2.3.1.3.5. Create or Update Metadata Item</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#DELETE_deleteMetadataItem_v1.1__tenantId__OS-BS_volumes__id__metadata__key__">2.3.1.3.6. Delete Metadata Item</a></span></li></ul></li></ul></li><li tabindex="2"><span class="file"><a href="ch02.html#d7e1584">2.3.2. Backups</a></span><ul><li tabindex="2"><span class="file"><a href="ch02.html#d7e1586">2.3.2.1. Backup Lists</a></span><ul><li tabindex="2"><span class="file"><a href="ch02.html#GET_listBackups_v1.1__tenantId__OS-BS_backups_">2.3.2.1.1. List Backups</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#GET_listDetailBackups_v1.1__tenantId__OS-BS_backups_detail_">2.3.2.1.2. Detailed List Backups</a></span></li></ul></li><li tabindex="2"><span class="file"><a href="ch02.html#d7e1868">2.3.2.2. Backup Opreations</a></span><ul><li tabindex="2"><span class="file"><a href="ch02.html#POST_createBackup_v1.1__tenantId__OS-BS_backups_">2.3.2.2.1. Create Backup</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#PUT_updateBackup_v1.1__tenantId__OS-BS_backups__id__">2.3.2.2.2. Update Backup Name</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#GET_getBackup_v1.1__tenantId__OS-BS_backups__id__">2.3.2.2.3. Get Backup Details</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#DELETE_deleteBackup_v1.1__tenantId__OS-BS_backups__id__">2.3.2.2.4. Delete Backup</a></span></li></ul></li><li tabindex="2"><span class="file"><a href="ch02.html#d7e2291">2.3.2.3. Backup Metadata</a></span><ul><li tabindex="2"><span class="file"><a href="ch02.html#PUT_setMetadata_v1.1__tenantId__OS-BS_backups__id__metadata_">2.3.2.3.1. Create or Replace Metadata</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#POST_updateMetadata_v1.1__tenantId__OS-BS_backups__id__metadata_">2.3.2.3.2. Update Metadata</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#GET_listMetadata_v1.1__tenantId__OS-BS_backups__id__metadata_">2.3.2.3.3. List Metadata</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#GET_getMetadataItem_v1.1__tenantId__OS-BS_backups__id__metadata__key__">2.3.2.3.4. Get Metadata Item</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#PUT_setMetadataItem_v1.1__tenantId__OS-BS_backups__id__metadata__key__">2.3.2.3.5. Create or Update Metadata Item</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#DELETE_deleteMetadataItem_v1.1__tenantId__OS-BS_backups__id__metadata__key__">2.3.2.3.6. Delete Metadata Item</a></span></li></ul></li></ul></li><li tabindex="2"><span class="file"><a href="ch02.html#d7e2798">2.3.3. Types</a></span><ul><li tabindex="2"><span class="file"><a href="ch02.html#GET_listTypes_v1.1__tenantId__OS-BS_types_">2.3.3.1. List Types</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#GET_getType_v1.1__tenantId__OS-BS_types__id__">2.3.3.2. Get Type Details</a></span></li></ul></li></ul></li><li tabindex="2"><span class="file"><a href="ch02.html#d7e2978">2.4. New Actions</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#d7e2981">2.5. 
                 Changes to the OpenStack Compute API
             </a></span></li></ul></li></ul></div></div><div id="searchDiv"><div id="search"><form onsubmit="Verifie(ditaSearch_Form);return false" name="ditaSearch_Form" class="searchForm"><fieldset class="searchFieldSet"><legend>Search</legend><center><input id="textToSearch" name="textToSearch" type="text" class="searchText"/> &nbsp; <input onclick="Verifie(ditaSearch_Form)" type="button" class="searchButton" value="Go" id="doSearch"/></center></fieldset></form></div><div id="searchResults"><center/></div><p class="searchHighlight"><a href="#" onclick="toggleHighlight()">Search Highlighter (On/Off)</a></p></div></div></div></div><script type="text/javascript" src="../common/jquery/jquery.qtip-1.0.0-rc3/jquery.qtip-1.0.0-rc3.min.js"><!--jQuery plugin for glossary popups. -->
                    $('a[title]').qtip({ style: { name: 'cream', tip: true } })

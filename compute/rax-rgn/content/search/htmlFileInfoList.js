@@ -1,10 +1,3 @@
 fil = new Array();
 fil["0"]= "ch01.html@@@Chapter 1. About This Extension - OpenStack Compute Region Extension@@@null";
-fil["1"]= "ch01s01.html@@@1.1. Document Change History - OpenStack Compute Region Extension@@@null";
-fil["2"]= "ch02.html@@@Chapter 2. Summary of Changes - OpenStack Compute Region Extension@@@null";
-fil["3"]= "ch02s01.html@@@2.1. New Headers - OpenStack Compute Region Extension@@@null";
-fil["4"]= "ch02s02.html@@@2.2. New Faults - OpenStack Compute Region Extension@@@null";
-fil["5"]= "ch02s03.html@@@2.3. New Resources - OpenStack Compute Region Extension@@@null";
-fil["6"]= "ch02s04.html@@@2.4. New Actions - OpenStack Compute Region Extension@@@null";
-fil["7"]= "ch02s05.html@@@2.5.  Changes to the OpenStack Compute API - OpenStack Compute Region Extension@@@null";
-fil["8"]= "ch02s05s01.html@@@2.5.1. Changes to 4.1.3 Get Server Details - OpenStack Compute Region Extension@@@null";
+fil["1"]= "ch02.html@@@Chapter 2. Summary of Changes - OpenStack Compute Region Extension@@@null";

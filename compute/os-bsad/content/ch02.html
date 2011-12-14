@@ -3,7 +3,7 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:exsl="http://exslt.org/common" xmlns:ng="http://docbook.org/docbook-ng"><head>
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
-<title>Chapter 2. Summary of Changes - OpenStack Compute Block Storage Attach/Detach Extension</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OpenStack Compute Block Storage Attach/Detach Extension"/><link rel="up" href="index.html" title="OpenStack Compute Block Storage Attach/Detach Extension"/><link rel="prev" href="ch01s01.html" title="1.1. Document Change History"/><link rel="next" href="ch02s01.html" title="2.1. New Headers"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
+<title>Chapter 2. Summary of Changes - OpenStack Compute Block Storage Attach/Detach Extension</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="OpenStack Compute Block Storage Attach/Detach Extension"/><link rel="up" href="index.html" title="OpenStack Compute Block Storage Attach/Detach Extension"/><link rel="prev" href="ch01.html" title="Chapter 1. About This Extension"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
             var treeCookieId = "treeview-242";
             var language = "en";
@@ -30,16 +30,363 @@
         </style><link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/><link rel="stylesheet" type="text/css" href="../common/css/positioning.css"/><link rel="stylesheet" type="text/css" href="../common/css/custom.css"/><link href="../atom.xml" type="application/atom+xml" rel="alternate" title="Document ATOM Feed"/><link rel="canonical" href="http://docs.rackspacecloud.com/openstack-extensions/compute/os-bsad/content/ch02.html"/><!--[if IE]>
 	<link rel="stylesheet" type="text/css" href="../common/css/ie.css"/>
 	<![endif]--><link rel="stylesheet" type="text/css" href="../common/jquery/theme-redmond/jquery-ui-1.8.2.custom.css"/><link rel="stylesheet" type="text/css" href="../common/jquery/treeview/jquery.treeview.css"/><script type="text/javascript" src="../common/jquery/jquery-1.4.3.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery-ui-1.8.2.custom.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery.cookie.js"><!----></script><script type="text/javascript" src="../common/jquery/treeview/jquery.treeview.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery.qtip-1.0.0-rc3/jquery.qtip-1.0.0-rc3.min.js"><!--jQuery plugin for glossary popups. --></script><script type="text/javascript" src="search/htmlFileList.js"><!----></script><script type="text/javascript" src="search/htmlFileInfoList.js"><!----></script><script type="text/javascript" src="search/nwSearchFnt.js"><!----></script><script type="text/javascript" src="search/stemmers/en_stemmer.js"><!--//make this scalable to other languages as well.--></script><script type="text/javascript" src="search/index-1.js"><!----></script><script type="text/javascript" src="search/index-2.js"><!----></script><script type="text/javascript" src="search/index-3.js"><!----></script></head><body><div id="header"><a onclick="_gaq.push(['_trackEvent', 'Header', 'logo', 'click', 1]);" target="_blank" href="http://www.openstack.org"><img src="../common/images/openstack-logo.png" alt="OpenStack Documentation" width="157" height="47"/></a><h1>Chapter 2. Summary of Changes</h1><div id="navheader" align="right"><!----><table class="navLinks"><tr><td><a id="showHideButton" onclick="showHideToc(); _gaq.push(['_trackEvent', 'Header', 'show/hide', 'click', 1]);" class="pointLeft" title="Hide TOC tree">Sidebar
-                            </a></td><td><a accesskey="p" class="navLinkPrevious" onclick="_gaq.push(['_trackEvent', 'Header', 'prevLink', 'click', 1]);" tabindex="5" href="ch01s01.html">Prev</a> 
-				  |
-                                    <a accesskey="n" class="navLinkNext" onclick="_gaq.push(['_trackEvent', 'Header', 'nextLink', 'click', 1]);" tabindex="5" href="ch02s01.html">Next</a></td></tr></table></div></div><div id="toolbar" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><div id="toolbar-left"><p class="breadcrumbs"><a href="http://docs.openstack.org/">OpenStack Manuals</a><a href="index.html">OpenStack Compute Block Storage Attach/Detach Extension</a></p><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" alt="Download a pdf of this document" class="pdficon" href="os-bsad.pdf"><img src="../common/images/pdf.png"/></a>
+                            </a></td><td><a accesskey="p" class="navLinkPrevious" onclick="_gaq.push(['_trackEvent', 'Header', 'prevLink', 'click', 1]);" tabindex="5" href="ch01.html">Prev</a> </td></tr></table></div></div><div id="toolbar" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><div id="toolbar-left"><p class="breadcrumbs"><a href="http://docs.openstack.org/">OpenStack Manuals</a><a href="index.html">OpenStack Compute Block Storage Attach/Detach Extension</a></p><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" alt="Download a pdf of this document" class="pdficon" href="os-bsad.pdf"><img src="../common/images/pdf.png"/></a>
        
-      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext"> </div><div class="chapter"><div xmlns="" class="titlepage"><div><div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="d7e104"/>Chapter 2. Summary of Changes</h2></div></div></div><div class="toc"><p><strong>Contents</strong></p><dl><dt><span class="section"><a href="ch02s01.html">2.1. New Headers</a></span></dt><dt><span class="section"><a href="ch02s02.html">2.2. New Faults</a></span></dt><dt><span class="section"><a href="ch02s03.html">2.3. New Resources</a></span></dt><dt><span class="section"><a href="ch02s04.html">2.4. New Actions</a></span></dt><dd><dl><dt><span class="section"><a href="POST_attachVolume_v1.1__tenantId__servers__serverId__action_.html">2.4.1. Attach a Volume</a></span></dt><dt><span class="section"><a href="POST_detachVolume_v1.1__tenantId__servers__serverId__action_.html">2.4.2. Detach a Volume</a></span></dt></dl></dd><dt><span class="section"><a href="ch02s05.html">2.5. 
+      <a href="../atom.xml"><img alt="Atom feed of this document" src="../common/images/feed-icon.png"/></a></div></div><div id="content"><div class="statustext"> </div><div class="chapter"><div xmlns="" class="titlepage"><div><div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="d7e104"/>Chapter 2. Summary of Changes</h2></div></div></div><div class="toc"><p><strong>Contents</strong></p><dl><dt><span class="section"><a href="ch02.html#d7e107">2.1. New Headers</a></span></dt><dt><span class="section"><a href="ch02.html#d7e110">2.2. New Faults</a></span></dt><dt><span class="section"><a href="ch02.html#d7e135">2.3. New Resources</a></span></dt><dt><span class="section"><a href="ch02.html#d7e138">2.4. New Actions</a></span></dt><dd><dl><dt><span class="section"><a href="ch02.html#POST_attachVolume_v1.1__tenantId__servers__serverId__action_">2.4.1. Attach a Volume</a></span></dt><dt><span class="section"><a href="ch02.html#POST_detachVolume_v1.1__tenantId__servers__serverId__action_">2.4.2. Detach a Volume</a></span></dt></dl></dd><dt><span class="section"><a href="ch02.html#d7e391">2.5. 
               Changes to the OpenStack Compute Specification
           </a></span></dt></dl></div><p>
             The extension allows OpenStack Compute servers to attach
             and detach block storage volumes.
-        </p></div><script type="text/javascript" src="../common/main.js"><!----></script><hr/><div class="legal"><a href="index.html">Legal notices</a></div></div><div><div id="leftnavigation" style="padding-top:3px; background-color:white;"><div id="tabs"><ul><li><a href="#treeDiv" tabindex="1"><span class="contentsTab">Contents</span></a></li><li><a href="#searchDiv" tabindex="1"><span class="searchTab">Search</span></a></li></ul><div id="treeDiv"><img src="../common/images/loading.gif" alt="loading table of contents..." id="tocLoading" style="display:block;"/><div id="ulTreeDiv" style="display:none" class="thisisthat"><ul id="tree" class="filetree"><li tabindex="2"><span class="file"><a href="ch01.html">1. About This Extension</a></span><ul><li tabindex="2"><span class="file"><a href="ch01s01.html">1.1. Document Change History</a></span></li></ul></li><li tabindex="2" id="webhelp-currentid"><span class="file"><a href="ch02.html">2. Summary of Changes</a></span><ul><li tabindex="2"><span class="file"><a href="ch02s01.html">2.1. New Headers</a></span></li><li tabindex="2"><span class="file"><a href="ch02s02.html">2.2. New Faults</a></span></li><li tabindex="2"><span class="file"><a href="ch02s03.html">2.3. New Resources</a></span></li><li tabindex="2"><span class="file"><a href="ch02s04.html">2.4. New Actions</a></span><ul><li tabindex="2"><span class="file"><a href="POST_attachVolume_v1.1__tenantId__servers__serverId__action_.html">2.4.1. Attach a Volume</a></span></li><li tabindex="2"><span class="file"><a href="POST_detachVolume_v1.1__tenantId__servers__serverId__action_.html">2.4.2. Detach a Volume</a></span></li></ul></li><li tabindex="2"><span class="file"><a href="ch02s05.html">2.5. 
+        </p><div class="section"><div xmlns="" class="titlepage"><div><div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="d7e107"/>2.1. New Headers</h2></div></div></div><p>None.</p></div><div class="section"><div xmlns="" class="titlepage"><div><div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="d7e110"/>2.2. New Faults</h2></div></div></div><table rules="all" id="d7e112"><caption>Table 2.1. Fault Elements and Error Codes</caption><thead><tr>
+                        <td>Fault Element</td>
+                        <td>Associated Error Codes</td>
+                        <td>Expected in All Requests?</td>
+                    </tr></thead><tbody><tr>
+                        <td>OS-BSAD:volumeAttached</td>
+                        <td>409</td>
+                        <td/>
+                    </tr><tr>
+                        <td>OS-BSAD:attachNotAllowed</td>
+                        <td>403</td>
+                        <td/>
+                    </tr></tbody></table><p>
+                The faults above extend directly from the base
+                OpenStack Compute API Fault and do not add any new
+                attributes.
+            </p><div class="example"><a id="d7e129"/><p class="title"><strong>Example 2.1. Fault Response, volumeAttached: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;os-bsad:volumeAttached
+    xmlns:os-bsad="http://docs.openstack.org/servers/api/ext/volume-attach/v1.0"
+    xmlns="http://docs.openstack.org/compute/api/v1.1"
+    code="409"&gt;
+    &lt;message&gt;Fault!&lt;/message&gt;
+    &lt;details&gt;Error Details...&lt;/details&gt;
+&lt;/os-bsad:volumeAttached&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e132"/><p class="title"><strong>Example 2.2. Fault Response, volumeAttached: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BSAD:volumeAttached" : {
+        "code" : 409, 
+        "message" : "Fault!", 
+        "details" : "Error Details..."
+    }
+}
+</pre></div></div><br class="example-break"/></div><div class="section"><div xmlns="" class="titlepage"><div><div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="d7e135"/>2.3. New Resources</h2></div></div></div><p>None.</p></div><div class="section"><div xmlns="" class="titlepage"><div><div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="d7e138"/>2.4. New Actions</h2></div></div></div><div class="toc"><dl><dt><span class="section"><a href="ch02.html#POST_attachVolume_v1.1__tenantId__servers__serverId__action_">2.4.1. Attach a Volume</a></span></dt><dt><span class="section"><a href="ch02.html#POST_detachVolume_v1.1__tenantId__servers__serverId__action_">2.4.2. Detach a Volume</a></span></dt></dl></div><p>
+                This extensin adds the following server actions.
+            </p><table rules="all" id="d7e141"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>POST</strong></span></td><td><code class="code">/{tenantId}/servers/{serverId}/action</code></td><td>
+                Attach a volume to the specified server.
+            </td></tr><tr><td><span class="command"><strong>POST</strong></span></td><td><code class="code">/{tenantId}/servers/{serverId}/action</code></td><td>
+                Detach a volume from the specified server.
+            </td></tr></tbody></table><div class="section"><div xmlns="" class="titlepage"><div><div><h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="POST_attachVolume_v1.1__tenantId__servers__serverId__action_"/>2.4.1. Attach a Volume</h3></div></div></div><table rules="all" id="d7e165"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>POST</strong></span></td><td><code class="code">/{tenantId}/servers/{serverId}/action</code></td><td>
+                Attach a volume to the specified server.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">202</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>),
+            badMediaType (<span class="errorcode">415</span>),
+            buildInProgress (<span class="errorcode">409</span>),
+            volumeAttached (<span class="errorcode">409</span>),
+            attachNotAllowed (<span class="errorcode">403</span>)
+   </p><table frame="void" id="d7e198"><tbody><tr>
+                        <td>Status Transition:</td>
+                        <td colspan="3">
+                           <code class="code">AVAILABLE</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">OS-BSAD:ATTACHING</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">AVAILABLE</code>
+                        </td>
+                     </tr><tr>
+                        <td/>
+                        <td colspan="3">
+                           <code class="code">AVAILABLE</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">OS-BSAD:ATTACHING</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">ERROR</code>
+                 (on error)</td>
+                     </tr></tbody></table><p>
+                The attach function attaches a storage volume to the
+                specified server. If the volume is already attached,
+                the operation will fail with a RS-CBS:volumeAttached
+                (<span class="errorcode">409</span>) fault. A response
+                of RS-CBS:attachNotAllowed
+                (<span class="errorcode">403</span>) indicates that the
+                server lacks privileges to attach the volume.
+            </p><table rules="all" id="d7e243"><caption>Table 2.2. Attach a Volume Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">serverId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the server.
+                    </p>
+                <p/></td></tr></tbody></table><div class="example"><a id="d7e272"/><p class="title"><strong>Example 2.3. Attach a Volume Request: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;attach-volume
+    xmlns="http://docs.openstack.org/servers/api/ext/volume-attach/v1.0"
+    href="https://cbs.api.rackspacecloud.com/12934/volumes/f346f12e-0fa4-11e1-9b13-8770fd1fda6b"/&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e275"/><p class="title"><strong>Example 2.4. Attach a Volume Request: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BSAD:attach-volume" : {
+        "href" : "https://cbs.api.rackspacecloud.com/12934/volumes/f346f12e-0fa4-11e1-9b13-8770fd1fda6b"
+    }
+}
+</pre></div></div><br class="example-break"/><p>This operation does not return a response body.</p></div><div class="section"><div xmlns="" class="titlepage"><div><div><h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="POST_detachVolume_v1.1__tenantId__servers__serverId__action_"/>2.4.2. Detach a Volume</h3></div></div></div><table rules="all" id="d7e281"><col width="10%"/><col width="40%"/><col width="50%"/><thead><tr><th align="center">Verb</th><th align="center">URI</th><th align="center">Description</th></tr></thead><tbody><tr><td><span class="command"><strong>POST</strong></span></td><td><code class="code">/{tenantId}/servers/{serverId}/action</code></td><td>
+                Detach a volume from the specified server.
+            </td></tr></tbody></table><p>
+                    Normal Response Code(s):
+					<span class="returnvalue">202</span></p><p>
+                    Error Response Code(s):
+                    
+					computeFault (<span class="errorcode">400</span>, <span class="returnvalue">500</span>, <span class="returnvalue">…</span>),
+            serviceUnavailable (<span class="errorcode">503</span>),
+            unauthorized (<span class="errorcode">401</span>),
+            forbidden (<span class="errorcode">403</span>),
+            badRequest (<span class="errorcode">400</span>),
+            badMethod (<span class="errorcode">405</span>),
+            overLimit (<span class="errorcode">413</span>),
+            itemNotFound (<span class="errorcode">404</span>),
+            badMediaType (<span class="errorcode">415</span>),
+            buildInProgress (<span class="errorcode">409</span>)
+   </p><table frame="void" id="d7e312"><tbody><tr>
+                        <td>Status Transition:</td>
+                        <td colspan="3">
+                           <code class="code">AVAILABLE</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">OS-BSAD:DETACHING</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">AVAILABLE</code>
+                        </td>
+                     </tr><tr>
+                        <td/>
+                        <td colspan="3">
+                           <code class="code">AVAILABLE</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">OS-BSAD:DETACHING</code>
+                           <span class="inlinemediaobject"><span>→</span></span>
+                           <code class="code">ERROR</code>
+                 (on error)</td>
+                     </tr></tbody></table><p>
+                The detach function detaches a storage volume from the
+                specified server. The volume should be synced and
+                unmounted before the detach operation to avoid data
+                loss.
+            </p><table rules="all" id="d7e355"><caption>Table 2.3. Detach a Volume Request Parameters</caption><col width="20%"/><col width="10%"/><col width="20%"/><col width="40%"/><thead><tr><th align="center">Name</th><th align="center">Style</th><th align="center">Type</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code class="code">tenantId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the tenant who
+                        owns the resource.
+                    </p>
+                <p/></td></tr><tr><td align="center"><code class="code">serverId</code></td><td align="center">template</td><td align="center">String</td><td>
+                    <p>
+                        A unique identifier for the server.
+                    </p>
+                <p/></td></tr></tbody></table><div class="example"><a id="d7e384"/><p class="title"><strong>Example 2.5. Detach a Volume Request: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;detach-volume
+    xmlns="http://docs.openstack.org/servers/api/ext/volume-attach/v1.0"
+    href="https://cbs.api.rackspacecloud.com/12934/volumes/00426eee-0fa5-11e1-a56e-dbed44d02223"/&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e387"/><p class="title"><strong>Example 2.6. Detach a Volume Request: JSON</strong></p><div class="example-contents"><pre class="programlisting">
+{
+    "OS-BSAD:detach-volume" : {
+        "href" : "https://cbs.api.rackspacecloud.com/12934/volumes/00426eee-0fa5-11e1-a56e-dbed44d02223"
+    }
+}
+</pre></div></div><br class="example-break"/><p>This operation does not return a response body.</p></div></div><div class="section"><div xmlns="" class="titlepage"><div><div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="d7e391"/>2.5. 
+              Changes to the OpenStack Compute Specification
+          </h2></div></div></div><p>
+              A server has the capability to list mounted
+              volumes. This affects List Servers (4.1.1) and Get
+              Server Details (4.1.3).  An example of a server with
+              mounted volumes is illustrated below.
+          </p><div class="example"><a id="d7e394"/><p class="title"><strong>Example 2.7. Server Details Response: XML</strong></p><div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;server xmlns="http://docs.openstack.org/compute/api/v1.1"
+        xmlns:atom="http://www.w3.org/2005/Atom"
+        id="52415800-8b69-11e0-9b19-734f000004d2"
+        tenantId="1234" userId="5678"
+        name="sample-server" status="BUILD"
+        updated="2010-10-10T12:00:00Z" created="2010-08-10T12:00:00Z"
+        progress="60" hostId="e4d909c290d0fb1ca068ffaddf22cbd0"
+        accessIPv4="67.23.10.132"
+        accessIPv6="::babe:67.23.10.132"&gt;
+    &lt;image id="52415800-8b69-11e0-9b19-734f6f006e54"&gt;
+        &lt;atom:link
+            rel="self"
+            href="http://servers.api.openstack.org/v1.1/1234/images/52415800-8b69-11e0-9b19-734f6f006e54"/&gt;
+        &lt;atom:link
+            rel="bookmark"
+            href="http://servers.api.openstack.org/1234/images/52415800-8b69-11e0-9b19-734f6f006e54"/&gt;
+    &lt;/image&gt;
+    &lt;flavor id="52415800-8b69-11e0-9b19-734f216543fd"&gt;
+        &lt;atom:link
+            rel="self"
+            href="http://servers.api.openstack.org/v1.1/1234/flavors/52415800-8b69-11e0-9b19-734f216543fd"/&gt;
+        &lt;atom:link
+            rel="bookmark"
+            href="http://servers.api.openstack.org/1234/flavors/52415800-8b69-11e0-9b19-734f216543fd"/&gt;
+    &lt;/flavor&gt;
+    &lt;metadata&gt;
+        &lt;meta key="Server Label"&gt;Web Head 1&lt;/meta&gt;
+        &lt;meta key="Image Version"&gt;2.1&lt;/meta&gt;
+    &lt;/metadata&gt;
+    &lt;addresses&gt;
+        &lt;network id="public"&gt;
+            &lt;ip version="4" addr="67.23.10.132"/&gt;
+            &lt;ip version="6" addr="::babe:67.23.10.132"/&gt;
+            &lt;ip version="4" addr="67.23.10.131"/&gt;
+            &lt;ip version="6" addr="::babe:4317:0A83"/&gt;
+        &lt;/network&gt;
+        &lt;network id="private"&gt;
+            &lt;ip version="4" addr="10.176.42.16"/&gt;
+            &lt;ip version="6" addr="::babe:10.176.42.16"/&gt;
+        &lt;/network&gt;
+    &lt;/addresses&gt;
+    &lt;volumes xmlns="http://docs.openstack.org/servers/api/ext/volume-attach/v1.0"&gt;
+        &lt;volume id="636b0b58-0f40-11e1-8d92-fb520ad3fe9d"&gt;
+            &lt;atom:link
+                rel="self"
+                href="http://volumes.api.openstack.org/v1.1/1234/volumes/636b0b58-0f40-11e1-8d92-fb520ad3fe9d"/&gt;
+            &lt;atom:link
+                rel="bookmark"
+                href="http://volumes.api.openstack.org/1234/volumes/636b0b58-0f40-11e1-8d92-fb520ad3fe9d"/&gt;
+        &lt;/volume&gt;
+        &lt;volume id="72071c06-0f40-11e1-9723-b7109e1127cd"&gt;
+            &lt;atom:link
+                rel="self"
+                href="http://volumes.api.openstack.org/v1.1/1234/volumes/72071c06-0f40-11e1-9723-b7109e1127cd"/&gt;
+            &lt;atom:link
+                rel="bookmark"
+                href="http://volumes.api.openstack.org/1234/volumes/72071c06-0f40-11e1-9723-b7109e1127cd"/&gt;
+        &lt;/volume&gt;
+    &lt;/volumes&gt;
+    &lt;atom:link
+        rel="self"
+        href="http://servers.api.openstack.org/v1.1/1234/servers/52415800-8b69-11e0-9b19-734f000004d2"/&gt;
+    &lt;atom:link
+        rel="bookmark"
+        href="http://servers.api.openstack.org/1234/servers/52415800-8b69-11e0-9b19-734f000004d2"/&gt;
+&lt;/server&gt;
+</pre></div></div><br class="example-break"/><div class="example"><a id="d7e397"/><p class="title"><strong>Example 2.8. Server Details Response: JSON</strong></p><div class="example-contents"><pre class="programlisting">{
+    "server": {
+        "id": "52415800-8b69-11e0-9b19-734f000004d2",
+        "tenantId": "1234",
+        "userId": "5678",
+        "name": "sample-server",
+        "updated": "2010-10-10T12:00:00Z",
+        "created": "2010-08-10T12:00:00Z",
+        "hostId": "e4d909c290d0fb1ca068ffaddf22cbd0",
+        "accessIPv4" : "67.23.10.132",
+        "accessIPv6" : "::babe:67.23.10.132",
+        "status": "BUILD",
+        "progress": 60,
+        "image" : {
+            "id": "52415800-8b69-11e0-9b19-734f6f006e54",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "http://servers.api.openstack.org/v1.1/1234/images/52415800-8b69-11e0-9b19-734f6f006e54"
+                },
+                {
+                    "rel": "bookmark",
+                    "href": "http://servers.api.openstack.org/1234/images/52415800-8b69-11e0-9b19-734f6f006e54"
+                }
+            ]
+        },
+        "flavor" : {
+            "id": "52415800-8b69-11e0-9b19-734f216543fd",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "http://servers.api.openstack.org/v1.1/1234/flavors/52415800-8b69-11e0-9b19-734f216543fd"
+                },
+                {
+                    "rel": "bookmark",
+                    "href": "http://servers.api.openstack.org/1234/flavors/52415800-8b69-11e0-9b19-734f216543fd"
+                }
+            ]
+        },
+        "addresses":  {
+            "public" : [
+                {
+                    "version": 4,
+                    "addr": "67.23.10.132"
+                },
+                {
+                    "version": 6,
+                    "addr": "::babe:67.23.10.132"
+                },
+                {
+                    "version": 4,
+                    "addr": "67.23.10.131"
+                },
+                {
+                    "version": 6,
+                    "addr": "::babe:4317:0A83"
+                }
+            ],
+            "private" : [
+                {
+                    "version": 4,
+                    "addr": "10.176.42.16"
+                },
+                {
+                    "version": 6,
+                    "addr": "::babe:10.176.42.16"
+                }
+            ]
+        },
+        "metadata": {
+            "Server Label": "Web Head 1",
+            "Image Version": "2.1"
+        },
+        "OS-BSAD:volumes" : [
+            {
+                "id" : "636b0b58-0f40-11e1-8d92-fb520ad3fe9d",
+                "links" : [
+                    {
+                        "rel" : "self",
+                        "href" : "http://volumes.api.openstack.org/v1.1/1234/volumes/636b0b58-0f40-11e1-8d92-fb520ad3fe9d"
+                    },
+                    {
+                        "rel" : "bookmark",
+                        "href" : "http://volumes.api.openstack.org/1234/volumes/636b0b58-0f40-11e1-8d92-fb520ad3fe9d"
+                    }
+                ]
+            },
+            {
+                "id" : "72071c06-0f40-11e1-9723-b7109e1127cd",
+                "links" : [
+                    {
+                        "rel" : "self",
+                        "href" : "http://volumes.api.openstack.org/v1.1/1234/volumes/72071c06-0f40-11e1-9723-b7109e1127cd"
+                    },
+                    {
+                        "rel" : "bookmark",
+                        "href" : "http://volumes.api.openstack.org/1234/volumes/72071c06-0f40-11e1-9723-b7109e1127cd"
+                    }
+                ]
+            }
+        ],
+        "links": [
+            {
+                "rel": "self",
+                "href": "http://servers.api.openstack.org/v1.1/1234/servers/52415800-8b69-11e0-9b19-734f000004d2"
+            },
+            {
+                "rel": "bookmark",
+                "href": "http://servers.api.openstack.org/1234/servers/52415800-8b69-11e0-9b19-734f000004d2"
+            }
+        ]
+    }
+}
+</pre></div></div><br class="example-break"/></div></div><script type="text/javascript" src="../common/main.js"><!----></script><hr/><div class="legal"><a href="index.html">Legal notices</a></div></div><div><div id="leftnavigation" style="padding-top:3px; background-color:white;"><div id="tabs"><ul><li><a href="#treeDiv" tabindex="1"><span class="contentsTab">Contents</span></a></li><li><a href="#searchDiv" tabindex="1"><span class="searchTab">Search</span></a></li></ul><div id="treeDiv"><img src="../common/images/loading.gif" alt="loading table of contents..." id="tocLoading" style="display:block;"/><div id="ulTreeDiv" style="display:none" class="thisisthat"><ul id="tree" class="filetree"><li tabindex="2"><span class="file"><a href="ch01.html">1. About This Extension</a></span><ul><li tabindex="2"><span class="file"><a href="ch01.html#d7e86">1.1. Document Change History</a></span></li></ul></li><li tabindex="2" id="webhelp-currentid"><span class="file"><a href="ch02.html">2. Summary of Changes</a></span><ul><li tabindex="2"><span class="file"><a href="ch02.html#d7e107">2.1. New Headers</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#d7e110">2.2. New Faults</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#d7e135">2.3. New Resources</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#d7e138">2.4. New Actions</a></span><ul><li tabindex="2"><span class="file"><a href="ch02.html#POST_attachVolume_v1.1__tenantId__servers__serverId__action_">2.4.1. Attach a Volume</a></span></li><li tabindex="2"><span class="file"><a href="ch02.html#POST_detachVolume_v1.1__tenantId__servers__serverId__action_">2.4.2. Detach a Volume</a></span></li></ul></li><li tabindex="2"><span class="file"><a href="ch02.html#d7e391">2.5. 
               Changes to the OpenStack Compute Specification
           </a></span></li></ul></li></ul></div></div><div id="searchDiv"><div id="search"><form onsubmit="Verifie(ditaSearch_Form);return false" name="ditaSearch_Form" class="searchForm"><fieldset class="searchFieldSet"><legend>Search</legend><center><input id="textToSearch" name="textToSearch" type="text" class="searchText"/> &nbsp; <input onclick="Verifie(ditaSearch_Form)" type="button" class="searchButton" value="Go" id="doSearch"/></center></fieldset></form></div><div id="searchResults"><center/></div><p class="searchHighlight"><a href="#" onclick="toggleHighlight()">Search Highlighter (On/Off)</a></p></div></div></div></div><script type="text/javascript" src="../common/jquery/jquery.qtip-1.0.0-rc3/jquery.qtip-1.0.0-rc3.min.js"><!--jQuery plugin for glossary popups. -->
                    $('a[title]').qtip({ style: { name: 'cream', tip: true } })
