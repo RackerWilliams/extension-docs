@@ -228,8 +228,7 @@ Content-type: text/html
                                 
                                 <li><a href='http://www.openstack.org/blog/' title='Go to the OpenStack Blog'>Blog</a></li> 
                                 <li><a href='http://wiki.openstack.org/' title='Go to the OpenStack Wiki'>Wiki</a></li> 
-                                <li><a href='http://docs.openstack.org/' title='Go to OpenStack Documentation'>Documentation</a></li> 
-                                <li><a href='#' title='Go to OpenStack Extentions Documentation' class='current'>Extensions Documentation</a></li> 
+                                <li><a href='http://docs.openstack.org/' title='Go to OpenStack Documentation' class='current'>Documentation</a></li> 
                             </ul> 
                         </div> 
                         

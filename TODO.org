@@ -1,6 +1,6 @@
 * Extension Document Todos
 ** DONE All links should point directly to /content/ to avoid redirects.
-** TODO Only Documentation should be highlighted in Red.  Not Extension Documentation.
+** DONE Only Documentation should be highlighted in Red.  Not Extension Documentation.
 ** TODO Chunking should occur at the chapter level.
 ** TODO Publish XSDs and WADLs for each of the extensions.
 ** TODO Remove OS-BS extension??
